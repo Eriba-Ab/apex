@@ -1,0 +1,357 @@
+{
+  "slug": "home",
+  "title": "Apex Cybersecurity Solutions | The trusted cybersecurity company",
+  "description": "Apex Cybersecurity Solutions is a cybersecurity company that provides services to protect people and businesses. Protecting client systems and data from unauthorized access and destruction through outsourced technology support, managed services, software tools, penetration testing, systems auditing, vulnerability analysis and consulting.",
+  "sections": [
+    {
+      "theme": "black",
+      "classes": [
+        "background-width--full-bleed",
+        "section-height--small",
+        "content-width--medium",
+        "horizontal-alignment--left",
+        "vertical-alignment--bottom"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": {
+        "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1612587817376-TLGVQYHFY7DZ8A3NWRDY/Top-5-Trends-Shaping-the-Modern-Data-Center.jpg?format=2500w",
+        "focal": "0.5,0.5",
+        "overlay": 0.4
+      },
+      "divider": null,
+      "kind": "classic",
+      "rows": [
+        {
+          "cols": [
+            {
+              "span": 12,
+              "items": [
+                {
+                  "block": {
+                    "type": "text",
+                    "html": "<h3 style=\"white-space:pre-wrap;\" data-ph=\"home-1\">elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exe</h3>"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "",
+      "classes": [
+        "background-width--full-bleed",
+        "section-height--medium",
+        "content-width--wide",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "classic",
+      "rows": [
+        {
+          "cols": [
+            {
+              "span": 12,
+              "items": [
+                {
+                  "block": {
+                    "type": "button",
+                    "label": "Learn more",
+                    "href": "about.html",
+                    "size": "small",
+                    "variant": "tertiary",
+                    "align": "center"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "text",
+                    "html": "<h3 style=\"text-align:center;white-space:pre-wrap;\">Our Services</h3>"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "spacer",
+                    "vsize": 1
+                  }
+                },
+                {
+                  "row": {
+                    "cols": [
+                      {
+                        "span": 4,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/50597445-75c6-41f4-883d-c7d2b4f37e71/Cybersecurity.jpg?format=1500w",
+                              "alt": "",
+                              "dims": "2230x1254",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "44.5945930480957%",
+                              "maxWidth": "100%",
+                              "href": "mdr.html",
+                              "caption": "<p style=\"text-align:center;white-space:pre-wrap;\" class=\"sqsrte-large\"><strong>Cybersecurity Services</strong></p>"
+                            }
+                          },
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/a0a11a3a-1264-49e6-8e85-7f7f09235fa9/CS+training.jpg?format=1500w",
+                              "alt": "",
+                              "dims": "275x183",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "50%",
+                              "maxWidth": "100%",
+                              "href": "learning-platform.html",
+                              "caption": "<p class=\"\" style=\"white-space:pre-wrap;\">Apex Cybersecurity Institute</p>"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "span": 4,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1614841184085-2VDCQW4AGYOZEAVH88L3/ACS+GRC.jpg?format=1500w",
+                              "alt": "Governance Risk and Compliance",
+                              "dims": "310x162",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "44.5945930480957%",
+                              "maxWidth": "100%",
+                              "href": "https://www.apexcybersecurity.org/grc",
+                              "caption": "<p style=\"text-align:center;white-space:pre-wrap;\" class=\"sqsrte-large\"><strong>Governance Risk and Compliance </strong></p>"
+                            }
+                          },
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/3c96e763-f1ab-4987-921e-687dcad29453/AppDev.jpg?format=1500w",
+                              "alt": "",
+                              "dims": "1024x512",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "50%",
+                              "maxWidth": "1024px",
+                              "href": "devops.html",
+                              "caption": "<h4 style=\"text-align:center;white-space:pre-wrap;\"><strong>Application Development</strong></h4>"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "span": 4,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/ce391ba7-bc81-4b2c-92a6-185424f620c3/Network.jpg?format=1500w",
+                              "alt": "",
+                              "dims": "722x359",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "45.27027130126953%",
+                              "maxWidth": "100%",
+                              "href": "network-infrastructure.html",
+                              "caption": "<p style=\"text-align:center;white-space:pre-wrap;\" class=\"sqsrte-large\"><strong>Network Infrastructure</strong></p>"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "block": {
+                    "type": "button",
+                    "label": "Learn more about our Services",
+                    "href": "services.html",
+                    "size": "large",
+                    "variant": "secondary",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "",
+      "classes": [
+        "background-width--full-bleed",
+        "section-height--small",
+        "content-width--narrow",
+        "horizontal-alignment--center",
+        "vertical-alignment--top"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "classic",
+      "rows": [
+        {
+          "cols": [
+            {
+              "span": 12,
+              "items": [
+                {
+                  "block": {
+                    "type": "text",
+                    "html": "<h3 style=\"text-align:center;white-space:pre-wrap;\">Our Partners</h3>"
+                  }
+                },
+                {
+                  "row": {
+                    "cols": [
+                      {
+                        "span": 3,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1617338737347-G8OYMMLAFYDUB8K7V3ES/appguard-solo.jpg?format=1500w",
+                              "alt": "appguard-solo.jpg",
+                              "dims": "388x248",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "48.81516647338867%",
+                              "maxWidth": "388px",
+                              "href": "https://www.appguard.us/",
+                              "caption": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "span": 3,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1617255754758-ZUOMXEUXY9BZCL3J6B2F/Uponda.png?format=1500w",
+                              "alt": "Uponda.png",
+                              "dims": "388x130",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "33.50515365600586%",
+                              "maxWidth": "388px",
+                              "href": "https://uponder.com/",
+                              "caption": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "span": 3,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1617338692433-X1915VOKSPD8YV4OROBV/KTG+2.jpg?format=1500w",
+                              "alt": "KTG 2.jpg",
+                              "dims": "388x167",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "44.74474334716797%",
+                              "maxWidth": "388px",
+                              "href": "https://www.krimsongroup.com/",
+                              "caption": null
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "span": 3,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/c465a40b-1fd5-4cee-a8a3-d583275da6ae/Range+Force.jpg?format=1500w",
+                              "alt": "",
+                              "dims": "634x280",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "44.164039611816406%",
+                              "maxWidth": "634px",
+                              "href": "https://rangeforce.com",
+                              "caption": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "textSeq": [
+    {
+      "tag": "h3",
+      "words": 14,
+      "ph": "home-1"
+    },
+    {
+      "tag": "h3",
+      "words": 2,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 2,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 3,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "h4",
+      "words": 2,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 2,
+      "ph": null
+    },
+    {
+      "tag": "h3",
+      "words": 2,
+      "ph": null
+    }
+  ]
+}

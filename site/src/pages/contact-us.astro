@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { CONTACT } from '../data/site';
+const include = [
+  ['Your organisation', 'Agency or company name, and your role.'],
+  ['What you are buying for', 'The framework function or service line, for example an ISO 27001 readiness assessment or 24/7 monitoring.'],
+  ['Scope and size', 'Sites, users, endpoints or cameras, roughly.'],
+  ['Timeline', 'When you need it in place, and any bid or RFP due dates.'],
+  ['Tender details', 'Tender or bid reference and any social value requirements.'],
+];
+const body = encodeURIComponent('Organisation:\nWhat we are buying for:\nScope and size:\nTimeline:\nTender / bid reference (if any):\n');
+---
+<Base title="Contact" page="contact-us" close={false} description="Contact Apex Cybersecurity Solutions, 52 High Street, Sevenoaks, Kent TN13 1JG. For immediate support with a cybersecurity incident, call 01322 400328. Email info@apexcybersecurity.co.uk.">
+  <header class="page-head" data-band="RS">
+    <div class="wrap">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol>
+      <h1>No matter the need, we’re here for you.</h1>
+      <div class="incident">
+        <p><strong>Responding to an incident?</strong> Call us directly for immediate support.</p>
+        <a class="btn" href={CONTACT.phoneHref}><Icon name="phone" />Call {CONTACT.phone}</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="main">
+        <h2>Start a conversation</h2>
+        <p class="lede" style="margin-top:1.25rem">Interested in our services, putting a bid team together, or want to join Apex? Email or call and the right person will come back to you.</p>
+        <div class="lines">
+          <a href={`mailto:${CONTACT.email}?subject=Request%20for%20information&body=${body}`}><span class="l-k">Email</span><span class="l-v">{CONTACT.email}</span><Icon name="mail" /></a>
+          <a href={CONTACT.phoneHref}><span class="l-k">Office</span><span class="l-v">{CONTACT.phone}</span><Icon name="phone" /></a>
+          <a href={CONTACT.mobileHref}><span class="l-k">Mobile</span><span class="l-v">{CONTACT.mobile}</span><Icon name="phone" /></a>
+          <a href={CONTACT.mapHref} target="_blank" rel="noopener"><span class="l-k">Office address</span><span class="l-v">{CONTACT.address.join(', ')}</span><Icon name="external" /></a>
+          <a href={CONTACT.linkedin} target="_blank" rel="noopener"><span class="l-k">LinkedIn</span><span class="l-v">Damond Singleton, CEO</span><Icon name="external" /></a>
+        </div>
+      </div>
+      <aside class="side">
+        <h2 class="side-h">For a faster, more accurate scope, include</h2>
+        <dl class="glance">{include.map(([k, v]) => <><dt>{k}</dt><dd style="font-weight:400;font-size:var(--t-small)">{v}</dd></>)}</dl>
+      </aside>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .side-h { font-family: var(--f-text); font-size: var(--t-small); font-weight: 600; letter-spacing: 0; margin-bottom: .5rem; }
+  .side .glance dt { color: var(--ink); font-weight: 600; }
+  .incident { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2rem; margin-top: var(--s4); padding-top: var(--s3); border-top: 1px solid color-mix(in srgb, var(--fg) 40%, transparent); }
+  .incident p { margin: 0; font-size: var(--t-lede); }
+  .lines { margin-top: var(--s4); border-top: 2px solid var(--ink); }
+  .lines a { display: grid; grid-template-columns: 7rem 1fr 1.4rem; gap: 1rem; align-items: center; padding: 1.25rem 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
+  .l-k { font-size: var(--t-small); color: var(--ink-2); }
+  .l-v { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.2rem, 1rem + 1vw, 1.75rem); font-variation-settings: 'wdth' 106; overflow-wrap: anywhere; }
+  .lines svg { width: 1.3rem; height: 1.3rem; }
+  .lines a:hover .l-v { color: var(--id); }
+  @media (max-width: 520px) { .lines a { grid-template-columns: 1fr 1.4rem; } .l-k { grid-column: 1 / -1; } }
+</style>

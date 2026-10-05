@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from './Icon.astro';
+import { CONTACT, SERVICES, svc, fn } from '../data/site';
+
+interface Props { slug: string; description: string; tableNo?: number; }
+const { slug, description, tableNo = 1 } = Astro.props;
+const s = svc(slug);
+const primary = s.fns[0];
+const hasCat = s.scope.some((r) => r.cat);
+const related = SERVICES.filter((o) => o.slug !== slug && o.fns.some((c) => s.fns.includes(c)));
+---
+<Base title={s.name} page={slug} description={description}>
+  <header class="page-head" data-band={primary}>
+    <div class="wrap">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li aria-current="page">{s.short}</li></ol>
+      <h1>{s.name}</h1>
+      <p class="lede">{s.lede}</p>
+      <ul class="fns" aria-label="NIST CSF functions">
+        {s.fns.map((c) => <li><a class="fn fn--name" data-fn={c} href={`services.html#${fn(c).slug}`} style="text-decoration:none"><span class="code">{c}</span> {fn(c).name}</a></li>)}
+      </ul>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="main prose">
+        {s.body.map((p, i) => <p class={i === 0 ? 'lede' : ''}>{p}</p>)}
+        <slot name="intro" />
+      </div>
+      <aside class="side">
+        <dl class="glance">
+          <dt>Framework functions</dt><dd>{s.fns.map((c) => fn(c).name).join(', ')}</dd>
+          <dt>UK office</dt><dd>{CONTACT.city}</dd>
+          <dt>Talk to us about scope</dt><dd><a href={`mailto:${CONTACT.email}?subject=${encodeURIComponent(s.name)}`}>{CONTACT.email}</a><br><a href={CONTACT.phoneHref}>{CONTACT.phone}</a><br><a href={CONTACT.mobileHref}>{CONTACT.mobile}</a></dd>
+        </dl>
+        <div class="side-actions no-print"><a class="btn" href="contact-us.html">Discuss your scope <Icon name="arrow" /></a><button type="button" class="btn btn--line" data-print><Icon name="download" />Print or save for your bid file</button></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="scope" style="padding-top:0">
+    <div class="wrap">
+      <table class="table">
+        <caption><b>Table {tableNo}.</b> {s.scopeTitle}.</caption>
+        <thead><tr><th scope="col">Item</th><th scope="col">Description</th>{hasCat && <th scope="col" class="t-cat">CSF category</th>}</tr></thead>
+        <tbody>
+          {s.scope.map((r) => (
+            <tr>
+              <th scope="row" class="t-item">{r.item}</th>
+              <td class="t-desc">{r.desc}</td>
+              {hasCat && <td class="t-cat">{r.cat ? <span class="fn" data-fn={r.cat.slice(0, 2)}>{r.cat}</span> : <span class="sr-only">None</span>}</td>}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <slot />
+
+  <section class="section related" style="padding-top:0">
+    <div class="wrap">
+      <h2 class="related-title">Works alongside</h2>
+      <ul class="related-list">
+        {related.map((o) => (
+          <li><a href={`${o.slug}.html`}><span class="r-name">{o.name}</span><span class="fns">{o.fns.map((c) => <span class="fn" data-fn={c}>{c}</span>)}</span><Icon name="arrow" /></a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<script>
+  document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
+</script>
+
+<style>
+  .prose :global(h2) { font-size: var(--t-h3); margin: 2.5rem 0 1rem; font-variation-settings: 'wdth' 104; }
+  .prose :global(ul) { margin: 0 0 1em; padding-left: 1.2em; }
+  .prose :global(li) { margin-bottom: .35em; }
+  .related-title { font-size: var(--t-h2); padding-top: var(--s4); border-top: 2px solid var(--ink); margin-bottom: 1rem; }
+  .side-actions { display: grid; gap: .75rem; margin-top: 1.25rem; justify-items: start; }
+  .related-list { list-style: none; margin: 0; padding: 0; }
+  .related-list a { display: grid; grid-template-columns: 1fr auto 1.25rem; gap: 1.5rem; align-items: center; padding: 1.1rem 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
+  .related-list .r-name { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.15rem, 1rem + .6vw, 1.5rem); font-variation-settings: 'wdth' 106; letter-spacing: -.01em; }
+  .related-list svg { width: 1.25rem; height: 1.25rem; transition: transform .3s var(--ease); }
+  .related-list a:hover svg { transform: translateX(5px); }
+  .related-list a:hover .r-name { color: var(--id); }
+  @media (max-width: 640px) { .related-list a { grid-template-columns: 1fr 1.25rem; gap: .5rem 1rem; } .related-list .fns { grid-row: 2; } }
+</style>

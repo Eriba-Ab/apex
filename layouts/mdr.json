@@ -1,0 +1,127 @@
+{
+  "slug": "mdr",
+  "title": "Managed Detection and Response-Apex Cybersecurity Solutions",
+  "description": "",
+  "sections": [
+    {
+      "theme": "",
+      "classes": [
+        "background-width--full-bleed",
+        "section-height--small",
+        "content-width--narrow",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "classic",
+      "rows": [
+        {
+          "cols": [
+            {
+              "span": 12,
+              "items": [
+                {
+                  "block": {
+                    "type": "image",
+                    "fluid": false,
+                    "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1620835029570-YO1HUUGVOU50FGG30L4O/managed-detection-response-fig1.jpg?format=1500w",
+                    "alt": "24/7 Protection and Monitoring",
+                    "dims": "600x390",
+                    "focal": "0.5,0.5",
+                    "fit": "cover",
+                    "crop": "65%",
+                    "maxWidth": "600px",
+                    "href": null,
+                    "caption": "<p style=\"text-align:center;white-space:pre-wrap;\" class=\"\"><strong>24/7 Protection and Monitoring</strong></p>"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "text",
+                    "html": "<h4 style=\"text-align:center;white-space:pre-wrap;\"><strong>Managed Detection and Response </strong></h4><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mdr-1\">elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit sed do e </p>"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "line"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "text",
+                    "html": "<ul data-rte-list=\"default\"><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mdr-2\"><strong>labore et dolore magna a</strong> dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisix</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mdr-3\"><strong>ad minim veniamx</strong> veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mdr-4\"><strong>laboris nisi u</strong> ut aliquip ex ea commodo conse </p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mdr-5\"><strong>consequat duis aut</strong> aute irure dolor in reprehenderit in voluptate velit esse cillu</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mdr-6\"><strong>in voluptate</strong> velit esse cillum dolore eu fugiat nulla </p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mdr-7\"><strong>fugiat nul</strong> nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dol</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mdr-8\"><strong>non proident sunt in culpa qui off </strong> culpa qui officia deserunt mollit anim id est laborum lorem ipsumx</p></li></ul>"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "button",
+                    "label": "Goverence Risk and Compliance Services ?",
+                    "href": "https://www.apexcybersecurity.org/grc",
+                    "size": "medium",
+                    "variant": "primary",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "textSeq": [
+    {
+      "tag": "p",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "h4",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 63,
+      "ph": "mdr-1"
+    },
+    {
+      "tag": "p",
+      "words": 13,
+      "ph": "mdr-2"
+    },
+    {
+      "tag": "p",
+      "words": 12,
+      "ph": "mdr-3"
+    },
+    {
+      "tag": "p",
+      "words": 7,
+      "ph": "mdr-4"
+    },
+    {
+      "tag": "p",
+      "words": 10,
+      "ph": "mdr-5"
+    },
+    {
+      "tag": "p",
+      "words": 7,
+      "ph": "mdr-6"
+    },
+    {
+      "tag": "p",
+      "words": 18,
+      "ph": "mdr-7"
+    },
+    {
+      "tag": "p",
+      "words": 14,
+      "ph": "mdr-8"
+    }
+  ]
+}

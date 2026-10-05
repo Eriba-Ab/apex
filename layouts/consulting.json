@@ -1,0 +1,244 @@
+{
+  "slug": "consulting",
+  "title": "General 3-Apex Cybersecurity Solutions",
+  "description": "",
+  "sections": [
+    {
+      "theme": "",
+      "classes": [
+        "full-bleed-section",
+        "background-width--full-bleed",
+        "section-height--medium",
+        "content-width--wide",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "fluid",
+      "fluid": {
+        "id": "67f81b0baf0e743275f1dbe1",
+        "css": ".fe-67f81b0baf0e743275f1dbe1 { --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 ); display: grid; position: relative; grid-area: 1/1/-1/-1; grid-template-rows: repeat(49,minmax(24px, auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); row-gap: 11.0px; column-gap: 11.0px; overflow-x: hidden; overflow-x: clip; } @media (min-width: 768px) { .background-width--inset .fe-67f81b0baf0e743275f1dbe1 { --inset-padding: calc(var(--sqs-site-gutter) * 2); } .fe-67f81b0baf0e743275f1dbe1 { --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 ); --inset-padding: 0vw; --row-height-scaling-factor: 0.0215; --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) )); grid-template-rows: repeat(21,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); } } .fe-block-yui_3_17_2_1_1744310125687_25557 { grid-area: 1/2/6/10; z-index: 1; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1744310125687_25557 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1744310125687_25557 .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1744310125687_25557 { grid-area: 1/5/3/23; z-index: 1; } .fe-block-yui_3_17_2_1_1744310125687_25557 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1744310125687_25557 .sqs-block-alignment-wrapper { align-items: flex-start; } } .fe-block-8a465ce07edcbe58a664 { grid-area: 6/2/48/10; z-index: 0; @media (max-width: 767px) { } } .fe-block-8a465ce07edcbe58a664 .sqs-block { justify-content: flex-start; } .fe-block-8a465ce07edcbe58a664 .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-8a465ce07edcbe58a664 { grid-area: 4/2/22/26; z-index: 0; } .fe-block-8a465ce07edcbe58a664 .sqs-block { justify-content: flex-start; } .fe-block-8a465ce07edcbe58a664 .sqs-block-alignment-wrapper { align-items: flex-start; } }",
+        "blocks": [
+          {
+            "id": "yui_3_17_2_1_1744310125687_25557",
+            "block": {
+              "type": "text",
+              "html": "<h2 style=\"text-align:center;white-space:pre-wrap;\">Cybersecurity Assessment &amp; Consulting Services</h2>"
+            }
+          },
+          {
+            "id": "8a465ce07edcbe58a664",
+            "block": {
+              "type": "text",
+              "html": "<p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"consulting-1\">elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum do</p><h4 style=\"text-align:justify;white-space: normal !important;white-space:pre-wrap;\">🔍 <strong>Key Services Include:</strong></h4><ul data-rte-list=\"default\"><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"consulting-2\"><strong>labore et dolore magna al</strong><br> magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo co</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"consulting-3\"><strong>ad minim veniam quis nostrud ex</strong><br> nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"consulting-4\"><strong>laboris nisi ut aliquip ex ea commodo co</strong><br>ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco la</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"consulting-5\"><strong>consequat duis aute irure do</strong><br> irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur si</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"consulting-6\"><strong>in voluptate velit esse cillum dolore eu fugiat</strong><br> eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia de</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"consulting-7\"><strong>fugiat nulla pariatur excepte</strong><br> sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum l</p></li></ul><p class=\"\" data-rte-preserve-empty=\"true\" style=\"white-space:pre-wrap;\"></p>"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "theme": "black",
+      "classes": [
+        "full-bleed-section",
+        "background-width--full-bleed",
+        "section-height--large",
+        "content-width--wide",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847938105-HMG5F9IQGCYLYA6CXCWF/20140301_Trade-151_0124-copy.jpg?format=2500w",
+        "focal": "0.5,0.5",
+        "overlay": 0.15
+      },
+      "divider": null,
+      "kind": "fluid",
+      "fluid": {
+        "id": "67f81b0baf0e743275f1dbe4",
+        "css": ".fe-67f81b0baf0e743275f1dbe4 { --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 ); display: grid; position: relative; grid-area: 1/1/-1/-1; grid-template-rows: repeat(1,minmax(24px, auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); row-gap: 11.0px; column-gap: 11.0px; overflow-x: hidden; overflow-x: clip; } @media (min-width: 768px) { .background-width--inset .fe-67f81b0baf0e743275f1dbe4 { --inset-padding: calc(var(--sqs-site-gutter) * 2); } .fe-67f81b0baf0e743275f1dbe4 { --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 ); --inset-padding: 0vw; --row-height-scaling-factor: 0.0215; --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) )); grid-template-rows: repeat(1,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); } } .fe-block-960b2ca70d0b9ff3d7f8 { grid-area: 1/2/2/10; z-index: 0; @media (max-width: 767px) { } } .fe-block-960b2ca70d0b9ff3d7f8 .sqs-block { justify-content: flex-start; } .fe-block-960b2ca70d0b9ff3d7f8 .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-960b2ca70d0b9ff3d7f8 { grid-area: 1/5/2/23; z-index: 0; } .fe-block-960b2ca70d0b9ff3d7f8 .sqs-block { justify-content: flex-start; } .fe-block-960b2ca70d0b9ff3d7f8 .sqs-block-alignment-wrapper { align-items: flex-start; } }",
+        "blocks": [
+          {
+            "id": "960b2ca70d0b9ff3d7f8",
+            "block": {
+              "type": "text",
+              "html": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "theme": "white",
+      "classes": [
+        "full-bleed-section"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "list",
+      "list": {
+        "style": "min-height: 100px; padding-top: 10vmax; padding-bottom: 10vmax;",
+        "layout": "simple",
+        "columns": 2,
+        "gridGap": "80px 0px",
+        "title": "<p class=\"\" style=\"white-space:pre-wrap;\">Make it stand out.</p>",
+        "titleStyle": "padding-bottom: 70px;",
+        "titleAlign": "left",
+        "items": [
+          {
+            "image": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1618497259178-6XJGK9GR6YAVBQL5L519/20140301_Trade-151_012-2.jpg?format=1500w",
+            "aspect": "16:9",
+            "mediaStyle": "\n          \n            margin-bottom: 6%;\n          \n          width: 100%;\n        ",
+            "title": "Dream it.",
+            "titleStyle": "max-width: 75%;",
+            "description": "<p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"consulting-8\">non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco labo </p>",
+            "descStyle": "\n            margin-top: 6%;\n            max-width: 75%;\n          ",
+            "button": {
+              "label": "Make It",
+              "href": "#",
+              "size": "medium",
+              "style": "\n          margin-top: 6%;\n          max-width: 75%;\n        "
+            }
+          },
+          {
+            "image": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1607638148090-Y6OFDI575CM3NQV732RJ/Large+JPG-Aro+Ha_0387.jpg?format=1500w",
+            "aspect": "16:9",
+            "mediaStyle": "\n          \n            margin-bottom: 6%;\n          \n          width: 100%;\n        ",
+            "title": "Build it.",
+            "titleStyle": "max-width: 75%;",
+            "description": "<p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"consulting-9\">deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conse </p>",
+            "descStyle": "\n            margin-top: 6%;\n            max-width: 75%;\n          ",
+            "button": {
+              "label": "Make It",
+              "href": "#",
+              "size": "medium",
+              "style": "\n          margin-top: 6%;\n          max-width: 75%;\n        "
+            }
+          }
+        ]
+      }
+    },
+    {
+      "theme": "black",
+      "classes": [
+        "full-bleed-section",
+        "background-width--full-bleed",
+        "section-height--medium",
+        "content-width--wide",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1589847927770-FXBMO7HI25HEVCWW1IGZ/20140301_Trade-151_0124-copy.jpg?format=2500w",
+        "focal": "0.5,0.5",
+        "overlay": 0.15
+      },
+      "divider": null,
+      "kind": "fluid",
+      "fluid": {
+        "id": "67f81b0baf0e743275f1dbe9",
+        "css": ".fe-67f81b0baf0e743275f1dbe9 { --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 ); display: grid; position: relative; grid-area: 1/1/-1/-1; grid-template-rows: repeat(10,minmax(24px, auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); row-gap: 11.0px; column-gap: 11.0px; overflow-x: hidden; overflow-x: clip; } @media (min-width: 768px) { .background-width--inset .fe-67f81b0baf0e743275f1dbe9 { --inset-padding: calc(var(--sqs-site-gutter) * 2); } .fe-67f81b0baf0e743275f1dbe9 { --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 ); --inset-padding: 0vw; --row-height-scaling-factor: 0.0215; --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) )); grid-template-rows: repeat(9,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); } } .fe-block-4c8f027d37a07d7c0f3f { grid-area: 1/2/8/10; z-index: 0; @media (max-width: 767px) { } } .fe-block-4c8f027d37a07d7c0f3f .sqs-block { justify-content: flex-start; } .fe-block-4c8f027d37a07d7c0f3f .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-4c8f027d37a07d7c0f3f { grid-area: 3/2/8/20; z-index: 0; } .fe-block-4c8f027d37a07d7c0f3f .sqs-block { justify-content: flex-start; } .fe-block-4c8f027d37a07d7c0f3f .sqs-block-alignment-wrapper { align-items: flex-start; } } .fe-block-c7aee98da837a3bee6f8 { grid-area: 9/2/11/5; z-index: 1; @media (max-width: 767px) { } } .fe-block-c7aee98da837a3bee6f8 .sqs-block { justify-content: center; } .fe-block-c7aee98da837a3bee6f8 .sqs-block-alignment-wrapper { align-items: center; } @media (min-width: 768px) { .fe-block-c7aee98da837a3bee6f8 { grid-area: 8/2/10/6; z-index: 1; } .fe-block-c7aee98da837a3bee6f8 .sqs-block { justify-content: center; } .fe-block-c7aee98da837a3bee6f8 .sqs-block-alignment-wrapper { align-items: center; } }",
+        "blocks": [
+          {
+            "id": "4c8f027d37a07d7c0f3f",
+            "block": {
+              "type": "text",
+              "html": "<h2 style=\"white-space:pre-wrap;\" data-ph=\"consulting-10\">ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididu</h2>"
+            }
+          },
+          {
+            "id": "c7aee98da837a3bee6f8",
+            "block": {
+              "type": "button",
+              "label": "Make It",
+              "href": null,
+              "size": "medium",
+              "variant": "primary",
+              "align": "left"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "textSeq": [
+    {
+      "tag": "h2",
+      "words": 5,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 48,
+      "ph": "consulting-1"
+    },
+    {
+      "tag": "h4",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 15,
+      "ph": "consulting-2"
+    },
+    {
+      "tag": "p",
+      "words": 17,
+      "ph": "consulting-3"
+    },
+    {
+      "tag": "p",
+      "words": 58,
+      "ph": "consulting-4"
+    },
+    {
+      "tag": "p",
+      "words": 17,
+      "ph": "consulting-5"
+    },
+    {
+      "tag": "p",
+      "words": 20,
+      "ph": "consulting-6"
+    },
+    {
+      "tag": "p",
+      "words": 17,
+      "ph": "consulting-7"
+    },
+    {
+      "tag": "p",
+      "words": 0,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 50,
+      "ph": "consulting-8"
+    },
+    {
+      "tag": "p",
+      "words": 50,
+      "ph": "consulting-9"
+    },
+    {
+      "tag": "h2",
+      "words": 15,
+      "ph": "consulting-10"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "slug": "edr",
+  "title": "Endpoint Detection and Response-Apex Cybersecurity Solutions",
+  "description": "",
+  "sections": [
+    {
+      "theme": "",
+      "classes": [
+        "background-width--full-bleed",
+        "section-height--small",
+        "content-width--narrow",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "classic",
+      "rows": [
+        {
+          "cols": [
+            {
+              "span": 12,
+              "items": [
+                {
+                  "block": {
+                    "type": "image",
+                    "fluid": false,
+                    "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1620834521519-NEAG7UIYKO04NWJBZ4VB/edr+complete-detection-response-solution.jpg?format=1500w",
+                    "alt": "Threat Hunting, Identification, and Mitigation",
+                    "dims": "545x550",
+                    "focal": "0.5,0.5",
+                    "fit": "cover",
+                    "crop": "100.91743469238281%",
+                    "maxWidth": "545px",
+                    "href": null,
+                    "caption": "<p style=\"text-align:center;white-space:pre-wrap;\" class=\"\"><strong>Threat Hunting, Identification, and Mitigation</strong></p>"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "text",
+                    "html": "<h4 style=\"text-align:center;white-space:pre-wrap;\"><strong>Endpoint Detection and Response </strong></h4><p style=\"text-align:center;white-space:pre-wrap;\" class=\"\" data-ph=\"edr-1\">elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deseru</p>"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "line"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "text",
+                    "html": "<ul data-rte-list=\"default\"><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"edr-2\">labore et dolore magna aliqua ut enim ad minim veniam quis nostrud </p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Prevention of known attacks &nbsp;&nbsp;&nbsp;&nbsp; </p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"edr-3\">ad minim veniam quis nostrud exercitation ullamco lab </p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"edr-4\">laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit inx </p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Active threat hunting &nbsp; </p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Singular agent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"edr-5\">consequat duis aute irure dolor in reprehenderit in voluptate veli </p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Root cause determination &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"edr-6\">in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupi</p></li></ul>"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "button",
+                    "label": "Contact Us",
+                    "href": "contact-us.html",
+                    "size": "medium",
+                    "variant": "primary",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "textSeq": [
+    {
+      "tag": "p",
+      "words": 5,
+      "ph": null
+    },
+    {
+      "tag": "h4",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 45,
+      "ph": "edr-1"
+    },
+    {
+      "tag": "p",
+      "words": 8,
+      "ph": "edr-2"
+    },
+    {
+      "tag": "p",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 7,
+      "ph": "edr-3"
+    },
+    {
+      "tag": "p",
+      "words": 13,
+      "ph": "edr-4"
+    },
+    {
+      "tag": "p",
+      "words": 3,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 2,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 8,
+      "ph": "edr-5"
+    },
+    {
+      "tag": "p",
+      "words": 3,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 13,
+      "ph": "edr-6"
+    }
+  ]
+}

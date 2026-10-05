@@ -1,0 +1,104 @@
+{
+  "title": "Choose the visual world for the Apex Cybersecurity redesign",
+  "question": "The roll assigned the NIST Framework Profile. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Framework Profile",
+      "kicker": "THE ROLL",
+      "lineage": "NIST Cybersecurity Framework 2.0: the six-function wheel, outcome IDs like DE.CM-01, profile tables",
+      "thesis": "Apex is the one certified Chicago vendor that covers all six NIST functions, so the site is laid out as a framework profile.",
+      "palette": ["#0b1f33", "#f4f1ea", "#d9a520", "#2f6db5", "#6b3fa0", "#e07b1f", "#c4342d", "#2e8b57"],
+      "materials": ["framework wheel", "outcome-ID codes", "profile tables on a strict baseline", "numbered figures"],
+      "viewport": "A large interactive six-segment CSF wheel beside the headline 'Govern to Recover. One certified partner.' Pick a function and Apex's services for it come up. MBE badge and the incident line stay in the top bar.",
+      "risk": "If the wheel looks like decoration rather than a working index, it reads as a compliance brochure.",
+      "raised": [
+        { "from": "challenger-metro", "raise": "Function colors fill whole page bands at full saturation, not small chips on white." },
+        { "from": "challenger-steprow", "raise": "A live 24-hour watch line shows Chicago time and 'Security Conservators on watch', so 'now' is always visible." },
+        { "from": "challenger-cracktro", "raise": "No cards or boxes: hierarchy comes from the baseline grid, weight and color only." },
+        { "from": "challenger-crease", "raise": "Every diagram and table is numbered and captioned like a published figure (Fig. 1, Table 2)." }
+      ],
+      "hero": "",
+      "board": ""
+    },
+    {
+      "id": "model-pick",
+      "label": "The Capability Statement",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Public-sector vendor capability statements and Statements of Qualifications",
+      "thesis": "The website as the capability statement buyers already file: core competencies, differentiators, certifications and contacts, laid out as a bid-ready document.",
+      "palette": ["#14213d", "#ffffff", "#e9e4d8", "#b8322a"],
+      "materials": ["document grid", "numbered sections", "certification block", "signature line"],
+      "viewport": "A one-page capability statement fills the screen: name, MBE certification, the core-competency list, and a 'Download capability statement' button.",
+      "risk": "This is the most familiar choice and where most government-vendor sites end up. It's safe, but it won't stand out."
+    },
+    {
+      "id": "challenger-metro",
+      "label": "Metro Typographic Tiles",
+      "verdict": "declined",
+      "lineage": "Metro design language: flat color tiles and very large lowercase type",
+      "thesis": "Services become flat color tiles with oversized lowercase headlines that run off the edge of the screen.",
+      "palette": ["#000000", "#00aba9", "#ff0097", "#a4c400", "#ffffff"],
+      "materials": ["flat tiles", "cropped giant type"],
+      "viewport": "A side-scrolling row of service tiles, with 'protect' cropped off the right edge.",
+      "case": "Clear to read, but procurement buyers have no particular connection to it. Loses to the NIST profile on both counts.",
+      "kept": "Commit fully to color: function colors fill whole regions.",
+      "risk": "Can look like a 2012 Windows tribute.",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-metro-typographic-tiles-hero.webp"
+    },
+    {
+      "id": "challenger-steprow",
+      "label": "Rhythm Machine Step Row",
+      "verdict": "declined",
+      "lineage": "Early-80s drum machine with a sixteen-step row and a moving chase light",
+      "thesis": "24/7 monitoring shown as a chase light running across a row of step keys.",
+      "palette": ["#2a2a2a", "#d6322b", "#f08a1c", "#f2c230", "#f4f1ea"],
+      "materials": ["silkscreen panel", "LED steps"],
+      "viewport": "A row of 24 hour-keys with a light moving across it.",
+      "case": "Shows 'always on' well, but it's a musical instrument. Buyers won't recognize it, and it says nothing about scope.",
+      "kept": "Always show where 'now' is: the live watch line.",
+      "risk": "Feels like a toy.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-drum-machine-step-row-hero.webp"
+    },
+    {
+      "id": "challenger-cracktro",
+      "label": "Cracktro Scroller",
+      "verdict": "declined",
+      "lineage": "Demoscene title screens: bitmap type over a drifting black starfield",
+      "thesis": "Services as layered lines of bitmap text, with depth showing priority.",
+      "palette": ["#050505", "#e8e2d0", "#7a7a7a", "#f2a516"],
+      "materials": ["bitmap type", "parallax dust"],
+      "viewport": "One ivory line of text, still, over drifting grey dots.",
+      "case": "Leans straight into the hacker look this audience distrusts.",
+      "kept": "Never box content in; let the type create the hierarchy.",
+      "risk": "Looks like the cybersecurity stereotype.",
+      "hero": "https://impeccable.style/worlds/cards/operate-c-cracktro-scroller-queue-hero.webp"
+    },
+    {
+      "id": "challenger-crease",
+      "label": "Curved-Crease Shell",
+      "verdict": "declined",
+      "lineage": "Folded-paper geometry: one curved crease that makes a rigid shell",
+      "thesis": "One line that creates structure: a single crease standing in for a single partner.",
+      "palette": ["#f2ead8", "#2b2b2b", "#8a8a8a"],
+      "materials": ["cotton paper", "compass arcs"],
+      "viewport": "A cream disc folding into a saddle shape under the headline.",
+      "case": "Elegant, but abstract. A procurement officer can't see services in it.",
+      "kept": "Number every figure like a published plate.",
+      "risk": "Looks like an art piece.",
+      "hero": "https://impeccable.style/worlds/cards/paper-folds-pleats-deployable-curved-crease-shell-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code" },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A typical security-company site, done to a high standard.",
+    "palette": ["#0a1628", "#ffffff", "#1e6fff"],
+    "materials": ["dark hero photo", "service card grid", "trust logos"],
+    "viewport": "A data-center photo with a headline over it, a 'Get a consultation' button, and service cards below.",
+    "risk": "Looks like every competitor on purpose."
+  },
+  "steer": true
+}

@@ -1,0 +1,296 @@
+{
+  "slug": "team",
+  "title": "Leadership-Apex Cybersecurity Solutions",
+  "description": "",
+  "sections": [
+    {
+      "theme": "",
+      "classes": [
+        "background-width--full-bleed",
+        "section-height--small",
+        "content-width--medium",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "classic",
+      "rows": [
+        {
+          "cols": [
+            {
+              "span": 12,
+              "items": [
+                {
+                  "block": {
+                    "type": "text",
+                    "html": "<h2 style=\"text-align:center;white-space:pre-wrap;\">Our Team</h2>"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "spacer",
+                    "vsize": 1
+                  }
+                },
+                {
+                  "row": {
+                    "cols": [
+                      {
+                        "span": 4,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1621008243735-KN28RA8OCYBUWNI7EY64/Damond+4.png?format=1500w",
+                              "alt": "",
+                              "dims": "300x300",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "100%",
+                              "maxWidth": "300px",
+                              "href": null,
+                              "caption": ""
+                            }
+                          },
+                          {
+                            "block": {
+                              "type": "text",
+                              "html": "<p class=\"\" style=\"white-space:pre-wrap;\"><strong>Damond Singleton</strong>, CEO and Founder</p><p class=\"sqsrte-small\" style=\"white-space:pre-wrap;\" data-ph=\"team-1\">elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laborisx</p>"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "span": 4,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1621008081852-DMIMW8P4DVTU9LB9KEYW/Tre+3.png?format=1500w",
+                              "alt": "Tre 3.png",
+                              "dims": "300x300",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "100%",
+                              "maxWidth": "300px",
+                              "href": null,
+                              "caption": ""
+                            }
+                          },
+                          {
+                            "block": {
+                              "type": "text",
+                              "html": "<p class=\"\" style=\"white-space:pre-wrap;\"><strong>Tremicka Bryant</strong>, VP of Procurement</p><p class=\"sqsrte-small\" style=\"white-space:pre-wrap;\" data-ph=\"team-2\">labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip</p><p class=\"\" data-rte-preserve-empty=\"true\" style=\"white-space:pre-wrap;\"></p>"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "span": 4,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1621008008344-7VFSD273SGE74MEFTDTV/Corey+4.png?format=1500w",
+                              "alt": "Corey 4.png",
+                              "dims": "300x300",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "100%",
+                              "maxWidth": "300px",
+                              "href": null,
+                              "caption": ""
+                            }
+                          },
+                          {
+                            "block": {
+                              "type": "text",
+                              "html": "<p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"team-3\"><strong>ad minim veni</strong>veniam quis nostrud exercitation ullamco labor </p><p class=\"sqsrte-small\" style=\"white-space:pre-wrap;\" data-ph=\"team-4\">laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore ma</p><p class=\"sqsrte-small\" data-rte-preserve-empty=\"true\" style=\"white-space:pre-wrap;\"></p>"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "",
+      "classes": [
+        "background-width--full-bleed",
+        "section-height--small",
+        "content-width--narrow",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "classic",
+      "rows": [
+        {
+          "cols": [
+            {
+              "span": 12,
+              "items": [
+                {
+                  "row": {
+                    "cols": [
+                      {
+                        "span": 6,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1621007584449-9TASHOR59U1K097RGMDT/Al+Stamps+4.png?format=1500w",
+                              "alt": "",
+                              "dims": "300x300",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "100%",
+                              "maxWidth": "300px",
+                              "href": null,
+                              "caption": ""
+                            }
+                          },
+                          {
+                            "block": {
+                              "type": "text",
+                              "html": "<p class=\"\" style=\"white-space:pre-wrap;\"><strong>Algarnon Stamps</strong>, Chief Technology Officer</p><p class=\"sqsrte-small\" style=\"white-space:pre-wrap;\" data-ph=\"team-5\">consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteu</p>"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "span": 6,
+                        "items": [
+                          {
+                            "block": {
+                              "type": "image",
+                              "fluid": false,
+                              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1621007843875-NW5IRXOXPIQBKR74QEI9/Emery+4.png?format=1500w",
+                              "alt": "",
+                              "dims": "300x300",
+                              "focal": "0.5,0.5",
+                              "fit": "cover",
+                              "crop": "100%",
+                              "maxWidth": "300px",
+                              "href": null,
+                              "caption": ""
+                            }
+                          },
+                          {
+                            "block": {
+                              "type": "text",
+                              "html": "<p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"team-6\"><strong>in voluptate vel</strong>esse cillum dolore eu fugiat nulla p</p><p class=\"sqsrte-small\" style=\"white-space:pre-wrap;\" data-ph=\"team-7\">fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dol</p>"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "block": {
+                    "type": "spacer",
+                    "vsize": 1
+                  }
+                },
+                {
+                  "block": {
+                    "type": "button",
+                    "label": "Our Services",
+                    "href": "https://www.apexcybersecurity.org/ourservices",
+                    "size": "medium",
+                    "variant": "primary",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "textSeq": [
+    {
+      "tag": "h2",
+      "words": 2,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 5,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 82,
+      "ph": "team-1"
+    },
+    {
+      "tag": "p",
+      "words": 5,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 73,
+      "ph": "team-2"
+    },
+    {
+      "tag": "p",
+      "words": 0,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 8,
+      "ph": "team-3"
+    },
+    {
+      "tag": "p",
+      "words": 50,
+      "ph": "team-4"
+    },
+    {
+      "tag": "p",
+      "words": 0,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 5,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 70,
+      "ph": "team-5"
+    },
+    {
+      "tag": "p",
+      "words": 7,
+      "ph": "team-6"
+    },
+    {
+      "tag": "p",
+      "words": 52,
+      "ph": "team-7"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-04T00:00:00Z",
+  "title": "Design System: Apex Cybersecurity Solutions",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Cool Paper", "canonical": "oklch(97.2% 0.004 121.6)", "tonalRamp": ["oklch(15% 0.001 121.6)", "oklch(26% 0.001 121.6)", "oklch(37% 0.002 121.6)", "oklch(48% 0.002 121.6)", "oklch(60% 0.003 121.6)", "oklch(71% 0.003 121.6)", "oklch(83% 0.004 121.6)", "oklch(95% 0.004 121.6)"] },
+      "paper-2": { "role": "neutral", "displayName": "Paper Shade", "canonical": "oklch(94.0% 0.007 124.5)", "tonalRamp": ["oklch(15% 0.002 124.5)", "oklch(26% 0.003 124.5)", "oklch(37% 0.003 124.5)", "oklch(48% 0.004 124.5)", "oklch(60% 0.005 124.5)", "oklch(71% 0.006 124.5)", "oklch(83% 0.006 124.5)", "oklch(95% 0.007 124.5)"] },
+      "ink": { "role": "neutral", "displayName": "Navy Ink", "canonical": "oklch(23.4% 0.047 250.5)", "tonalRamp": ["oklch(15% 0.043 250.5)", "oklch(26% 0.046 250.5)", "oklch(37% 0.041 250.5)", "oklch(48% 0.036 250.5)", "oklch(60% 0.031 250.5)", "oklch(71% 0.027 250.5)", "oklch(83% 0.022 250.5)", "oklch(95% 0.017 250.5)"] },
+      "ink-2": { "role": "neutral", "displayName": "Slate", "canonical": "oklch(42.9% 0.029 250.4)", "tonalRamp": ["oklch(15% 0.021 250.4)", "oklch(26% 0.024 250.4)", "oklch(37% 0.027 250.4)", "oklch(48% 0.027 250.4)", "oklch(60% 0.024 250.4)", "oklch(71% 0.021 250.4)", "oklch(83% 0.018 250.4)", "oklch(95% 0.015 250.4)"] },
+      "rule": { "role": "neutral", "displayName": "Hairline", "canonical": "oklch(83.5% 0.012 141.3)", "tonalRamp": ["oklch(15% 0.004 141.3)", "oklch(26% 0.006 141.3)", "oklch(37% 0.007 141.3)", "oklch(48% 0.008 141.3)", "oklch(60% 0.009 141.3)", "oklch(71% 0.010 141.3)", "oklch(83% 0.012 141.3)", "oklch(95% 0.010 141.3)"] },
+      "ink-band-muted": { "role": "neutral", "displayName": "Ink-Band Mist", "canonical": "oklch(81.2% 0.017 245.1)", "tonalRamp": ["oklch(15% 0.007 245.1)", "oklch(26% 0.008 245.1)", "oklch(37% 0.010 245.1)", "oklch(48% 0.012 245.1)", "oklch(60% 0.014 245.1)", "oklch(71% 0.015 245.1)", "oklch(83% 0.017 245.1)", "oklch(95% 0.015 245.1)"] },
+      "on-band-white": { "role": "neutral", "displayName": "On-Band White", "canonical": "oklch(100% 0 0)", "tonalRamp": ["oklch(15% 0 0)", "oklch(26% 0 0)", "oklch(37% 0 0)", "oklch(48% 0 0)", "oklch(60% 0 0)", "oklch(71% 0 0)", "oklch(83% 0 0)", "oklch(95% 0 0)"] },
+      "gv": { "role": "primary", "displayName": "Govern Gold", "canonical": "oklch(73.5% 0.146 84.3)", "tonalRamp": ["oklch(15% 0.069 84.3)", "oklch(26% 0.084 84.3)", "oklch(37% 0.098 84.3)", "oklch(48% 0.113 84.3)", "oklch(60% 0.128 84.3)", "oklch(71% 0.143 84.3)", "oklch(83% 0.134 84.3)", "oklch(95% 0.118 84.3)"] },
+      "id": { "role": "primary", "displayName": "Identify Blue", "canonical": "oklch(53.1% 0.130 254.2)", "tonalRamp": ["oklch(15% 0.085 254.2)", "oklch(26% 0.098 254.2)", "oklch(37% 0.111 254.2)", "oklch(48% 0.124 254.2)", "oklch(60% 0.122 254.2)", "oklch(71% 0.109 254.2)", "oklch(83% 0.095 254.2)", "oklch(95% 0.081 254.2)"] },
+      "pr": { "role": "primary", "displayName": "Protect Purple", "canonical": "oklch(46.9% 0.152 301.7)", "tonalRamp": ["oklch(15% 0.109 301.7)", "oklch(26% 0.124 301.7)", "oklch(37% 0.139 301.7)", "oklch(48% 0.151 301.7)", "oklch(60% 0.134 301.7)", "oklch(71% 0.119 301.7)", "oklch(83% 0.103 301.7)", "oklch(95% 0.086 301.7)"] },
+      "de": { "role": "primary", "displayName": "Detect Orange", "canonical": "oklch(68.1% 0.157 55.5)", "tonalRamp": ["oklch(15% 0.082 55.5)", "oklch(26% 0.098 55.5)", "oklch(37% 0.113 55.5)", "oklch(48% 0.129 55.5)", "oklch(60% 0.146 55.5)", "oklch(71% 0.153 55.5)", "oklch(83% 0.136 55.5)", "oklch(95% 0.119 55.5)"] },
+      "rs": { "role": "primary", "displayName": "Respond Red", "canonical": "oklch(54.6% 0.182 27.8)", "tonalRamp": ["oklch(15% 0.117 27.8)", "oklch(26% 0.135 27.8)", "oklch(37% 0.153 27.8)", "oklch(48% 0.171 27.8)", "oklch(60% 0.173 27.8)", "oklch(71% 0.155 27.8)", "oklch(83% 0.135 27.8)", "oklch(95% 0.116 27.8)"] },
+      "rc": { "role": "primary", "displayName": "Recover Green", "canonical": "oklch(50.7% 0.107 155.6)", "tonalRamp": ["oklch(15% 0.073 155.6)", "oklch(26% 0.083 155.6)", "oklch(37% 0.094 155.6)", "oklch(48% 0.105 155.6)", "oklch(60% 0.098 155.6)", "oklch(71% 0.088 155.6)", "oklch(83% 0.076 155.6)", "oklch(95% 0.065 155.6)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Closing call-to-action heading on the navy ink band; the home hero h1 is a sibling one-off at clamp(2.5rem, 1.6rem + 2.6vw, 3.6rem), line-height .98." },
+      "monogram": { "displayName": "Monogram", "purpose": "Giant two-letter function code heading each function band on Services." },
+      "headline": { "displayName": "Headline", "purpose": "Page h1; 18ch max in page heads; text-wrap: balance." },
+      "title": { "displayName": "Title", "purpose": "Section h2." },
+      "title-sm": { "displayName": "Title Small", "purpose": "h3 and prose subheads; the only heading back at normal width." },
+      "lede": { "displayName": "Lede", "purpose": "Opening paragraph, 46ch (52ch in page heads)." },
+      "body": { "displayName": "Body", "purpose": "Running text, 68ch max, text-wrap: pretty." },
+      "small": { "displayName": "Small", "purpose": "Captions, table cells, definition terms, footer." },
+      "label": { "displayName": "Label", "purpose": "Table and footer column heads, watch strip; sentence case, no tracking." },
+      "button": { "displayName": "Button", "purpose": "Buttons; nav links use the same face at .975rem." },
+      "code": { "displayName": "Code", "purpose": "Framework IDs (DE.CM), function codes, the watch-strip clock." },
+      "clock": { "displayName": "Clock", "purpose": "The large live Chicago clock on the Detect band." }
+    },
+    "shadows": [
+      { "name": "dropdown-lift", "value": "0 18px 40px -12px rgba(11, 31, 51, .28)", "purpose": "Desktop nav dropdowns only, with a 2px ink top border." },
+      { "name": "now-halo", "value": "0 0 0 3px rgba(224, 122, 31, .3)", "purpose": "The orange 'now' dot on the watch line." },
+      { "name": "current-underline", "value": "inset 0 -2px 0 #0b1f33", "purpose": "Active top-level nav link." },
+      { "name": "glass-header", "value": "background: color-mix(in srgb, #f5f6f3 94%, transparent); backdrop-filter: saturate(1.4) blur(10px)", "purpose": "Sticky header over scrolling content, 1px hairline beneath." },
+      { "name": "focus-ring", "value": "outline: 3px solid #2f6db5; outline-offset: 3px; border-radius: 2px", "purpose": "Global :focus-visible; inside a band the outline takes currentColor." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "Exponential ease-out for every transition and the entrance." },
+      { "name": "state", "value": ".25s", "purpose": "Button fill/text/border, nav chevron, dropdown transform (.2s opacity)." },
+      { "name": "arrow-nudge", "value": "translateX(4px to 5px) over .3s", "purpose": "Arrow icons in arrow links and link rows on hover." },
+      { "name": "segment-extrude", "value": "transform .6s; hover 6px, selected 16px along the wedge's center angle; hub scale(1.06)", "purpose": "Wheel wedge response to hover and selection." },
+      { "name": "wheel-entrance", "value": "1s from scale(.72) rotate(-14deg) and opacity 0; delay index * 90ms + 150ms", "purpose": "The one orchestrated entrance; JS and prefers-reduced-motion: no-preference only." },
+      { "name": "panel-in", "value": ".5s from opacity 0, translateY(6px)", "purpose": "Wheel panel swap." },
+      { "name": "portrait-reveal", "value": "filter .5s, grayscale(1) contrast(1.05) to none", "purpose": "Leadership portraits return to color on hover." }
+    ],
+    "breakpoints": [
+      { "name": "nav", "value": "1080px", "purpose": "Burger and full-screen menu; hero stacks; leaders 3-up; footer 2-up." },
+      { "name": "split", "value": "860px", "purpose": "Split and two-part grids stack; tables become stacked rows; watch track hides." },
+      { "name": "wheel", "value": "640px", "purpose": "Wheel stacks above its panel, max 420px; tabs wrap three per row." },
+      { "name": "phone", "value": "520px", "purpose": "Logo 36px; watch label hides (phone stays); footer one column." },
+      { "name": "print", "value": "@media print", "purpose": "Service page prints as a bid-file sheet: 14mm margins, 10.5pt, chrome hidden, band color kept, link URLs printed." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Square ink button for the main forward action; turns Identify Blue on hover.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Start a conversation <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: .6em; min-height: 48px; padding: .7rem 1.25rem; font: 600 1rem/1.2 var(--f-text, 'Public Sans', system-ui, sans-serif); text-decoration: none; border: 1.5px solid var(--ink, #0b1f33); border-radius: 2px; background: var(--ink, #0b1f33); color: var(--paper, #f5f6f3); cursor: pointer; transition: background-color .25s cubic-bezier(.16,1,.3,1), color .25s cubic-bezier(.16,1,.3,1), border-color .25s cubic-bezier(.16,1,.3,1); } .ds-btn svg { width: 1.1em; height: 1.1em; flex: none; } .ds-btn:hover { background: var(--id, #2f6db5); border-color: var(--id, #2f6db5); color: #fff; } .ds-btn:focus-visible { outline: 3px solid var(--id, #2f6db5); outline-offset: 3px; }"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Outlined secondary action (call, print for bid file); fills ink on hover.",
+      "html": "<a class=\"ds-btn-line\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z\"/></svg>Call (312) 566-7491</a>",
+      "css": ".ds-btn-line { display: inline-flex; align-items: center; gap: .6em; min-height: 48px; padding: .7rem 1.25rem; font: 600 1rem/1.2 var(--f-text, 'Public Sans', system-ui, sans-serif); text-decoration: none; border: 1.5px solid var(--ink, #0b1f33); border-radius: 2px; background: transparent; color: var(--ink, #0b1f33); cursor: pointer; transition: background-color .25s cubic-bezier(.16,1,.3,1), color .25s cubic-bezier(.16,1,.3,1); } .ds-btn-line svg { width: 1.1em; height: 1.1em; flex: none; } .ds-btn-line:hover { background: var(--ink, #0b1f33); color: var(--paper, #f5f6f3); } .ds-btn-line:focus-visible { outline: 3px solid var(--id, #2f6db5); outline-offset: 3px; }"
+    },
+    {
+      "name": "Buttons on a Function Band",
+      "kind": "button",
+      "refersTo": "band-de",
+      "description": "Inside a band, buttons invert to the band's ink; primary becomes ink-on-band, line keeps band-ink border.",
+      "html": "<div class=\"ds-band\"><a class=\"ds-band-btn\" href=\"#\">Managed Detection and Response</a> <a class=\"ds-band-btn ds-band-btn--line\" href=\"#\">Endpoint Detection and Response</a></div>",
+      "css": ".ds-band { --bg: var(--de, #e07a1f); --fg: var(--de-ink, #0b1f33); background: var(--bg); color: var(--fg); padding: 2rem; display: flex; flex-wrap: wrap; gap: .75rem; } .ds-band-btn { display: inline-flex; align-items: center; min-height: 48px; padding: .7rem 1.25rem; font: 600 1rem/1.2 var(--f-text, 'Public Sans', system-ui, sans-serif); text-decoration: none; border: 1.5px solid var(--fg); border-radius: 2px; background: var(--fg); color: var(--bg); transition: background-color .25s cubic-bezier(.16,1,.3,1), color .25s cubic-bezier(.16,1,.3,1); } .ds-band-btn:hover { background: transparent; color: var(--fg); } .ds-band-btn--line { background: transparent; color: var(--fg); } .ds-band-btn--line:hover { background: var(--fg); color: var(--bg); } .ds-band-btn:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }"
+    },
+    {
+      "name": "Function Marks",
+      "kind": "chip",
+      "refersTo": "function-mark",
+      "description": "A filled square in the function color plus the mono code or the function name; used in function lists, tables and the footer.",
+      "html": "<ul class=\"ds-fns\"><li><a class=\"ds-fn\" style=\"--c:#d4a017\" href=\"#\"><span class=\"ds-code\">GV</span> Govern</a></li><li><a class=\"ds-fn\" style=\"--c:#2f6db5\" href=\"#\"><span class=\"ds-code\">ID</span> Identify</a></li><li><a class=\"ds-fn\" style=\"--c:#6b3fa0\" href=\"#\"><span class=\"ds-code\">PR</span> Protect</a></li><li><a class=\"ds-fn\" style=\"--c:#e07a1f\" href=\"#\"><span class=\"ds-code\">DE</span> Detect</a></li><li><a class=\"ds-fn\" style=\"--c:#c4342d\" href=\"#\"><span class=\"ds-code\">RS</span> Respond</a></li><li><a class=\"ds-fn\" style=\"--c:#23774a\" href=\"#\"><span class=\"ds-code\">RC</span> Recover</a></li></ul>",
+      "css": ".ds-fns { display: flex; flex-wrap: wrap; gap: .5rem 1.1rem; margin: 0; padding: 0; list-style: none; } .ds-fn { display: inline-flex; align-items: center; gap: .45em; font: 600 .9rem/1 var(--f-text, 'Public Sans', system-ui, sans-serif); color: var(--ink, #0b1f33); text-decoration: none; white-space: nowrap; } .ds-fn::before { content: ''; width: .8em; height: .8em; background: var(--c); flex: none; } .ds-fn:hover { text-decoration: underline; text-underline-offset: .2em; } .ds-fn:focus-visible { outline: 3px solid var(--id, #2f6db5); outline-offset: 3px; } .ds-code { font-family: var(--f-code, 'Red Hat Mono', ui-monospace, monospace); font-size: .82em; font-weight: 500; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Watch Strip",
+      "kind": "nav",
+      "refersTo": "watch-strip",
+      "description": "Navy top strip: SC on watch, 24-hour track with the orange 'now' marker, mono Chicago clock, incident phone.",
+      "html": "<div class=\"ds-watch\"><span class=\"ds-watch-label\"><b>Security Conservators (SC)®</b> on watch, 24 hours a day</span><div class=\"ds-watch-track\" aria-hidden=\"true\"><div class=\"ds-watch-done\"></div><div class=\"ds-watch-now\"></div></div><span class=\"ds-watch-clock\">Chicago 10:56 CT</span><a class=\"ds-watch-phone\" href=\"#\">Incident? (312) 566-7491</a></div>",
+      "css": ".ds-watch { --now: 45.6%; display: flex; align-items: center; gap: 1.25rem; min-height: 38px; padding: 0 1rem; background: var(--ink, #0b1f33); color: var(--paper, #f5f6f3); font: 400 .8rem/1.4 var(--f-text, 'Public Sans', system-ui, sans-serif); } .ds-watch-label { white-space: nowrap; } .ds-watch-label b { font-weight: 600; } .ds-watch-track { position: relative; flex: 1; height: 14px; min-width: 120px; } .ds-watch-track::before { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(245,246,243,.45); } .ds-watch-done { position: absolute; left: 0; top: 50%; height: 2px; margin-top: -1px; width: var(--now); background: var(--de, #e07a1f); } .ds-watch-now { position: absolute; top: 50%; left: var(--now); width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%; background: var(--de, #e07a1f); box-shadow: 0 0 0 3px rgba(224,122,31,.3); } .ds-watch-clock { font-family: var(--f-code, 'Red Hat Mono', ui-monospace, monospace); font-weight: 500; white-space: nowrap; font-variant-numeric: tabular-nums; } .ds-watch-phone { color: inherit; font-weight: 600; text-decoration: none; white-space: nowrap; } .ds-watch-phone:hover { text-decoration: underline; } .ds-watch-phone:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky glass paper header; 600-weight links turn Identify Blue on hover, current page gets a 2px inset ink underline; primary button closes the row.",
+      "html": "<header class=\"ds-header\"><span class=\"ds-logo\">Apex Cybersecurity</span><nav class=\"ds-nav\"><a href=\"#\">About <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M6 9l6 6 6-6\"/></svg></a><a href=\"#\" aria-current=\"page\">Services <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M6 9l6 6 6-6\"/></svg></a><a href=\"#\">Careers</a></nav><a class=\"ds-nav-cta\" href=\"#\">Contact us</a></header>",
+      "css": ".ds-header { display: flex; align-items: center; gap: 2rem; min-height: 76px; padding: 0 1rem; background: color-mix(in srgb, var(--paper, #f5f6f3) 94%, transparent); backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--rule, #c5cbc4); } .ds-logo { font: 800 1.1rem/1 var(--f-display, 'Archivo', sans-serif); color: var(--ink, #0b1f33); font-variation-settings: 'wdth' 112; } .ds-nav { display: flex; gap: .25rem; margin-left: auto; } .ds-nav a { display: inline-flex; align-items: center; gap: .3em; min-height: 44px; padding: 0 .8rem; font: 600 .975rem/1 var(--f-text, 'Public Sans', system-ui, sans-serif); color: var(--ink, #0b1f33); text-decoration: none; } .ds-nav a svg { width: .8em; height: .8em; } .ds-nav a:hover { color: var(--id, #2f6db5); } .ds-nav a[aria-current='page'] { box-shadow: inset 0 -2px 0 var(--ink, #0b1f33); } .ds-nav a:focus-visible, .ds-nav-cta:focus-visible { outline: 3px solid var(--id, #2f6db5); outline-offset: 3px; } .ds-nav-cta { display: inline-flex; align-items: center; min-height: 48px; padding: .7rem 1.25rem; font: 600 1rem/1.2 var(--f-text, 'Public Sans', system-ui, sans-serif); text-decoration: none; border: 1.5px solid var(--ink, #0b1f33); border-radius: 2px; background: var(--ink, #0b1f33); color: var(--paper, #f5f6f3); transition: background-color .25s cubic-bezier(.16,1,.3,1); } .ds-nav-cta:hover { background: var(--id, #2f6db5); border-color: var(--id, #2f6db5); color: #fff; }"
+    },
+    {
+      "name": "CSF Wheel",
+      "kind": "custom",
+      "refersTo": "wheel-tab",
+      "description": "Signature Fig. 1: function tabs over a Govern-hub wheel; the selected wedge extrudes 16px with an ink stroke.",
+      "html": "<figure class=\"ds-wheel\"><div class=\"ds-wheel-tabs\" role=\"tablist\"><button role=\"tab\" aria-selected=\"false\" style=\"--c:#d4a017\"><span class=\"ds-wc\">GV</span> Govern</button><button role=\"tab\" aria-selected=\"false\" style=\"--c:#2f6db5\"><span class=\"ds-wc\">ID</span> Identify</button><button role=\"tab\" aria-selected=\"false\" style=\"--c:#6b3fa0\"><span class=\"ds-wc\">PR</span> Protect</button><button role=\"tab\" aria-selected=\"true\" style=\"--c:#e07a1f\"><span class=\"ds-wc\">DE</span> Detect</button><button role=\"tab\" aria-selected=\"false\" style=\"--c:#c4342d\"><span class=\"ds-wc\">RS</span> Respond</button><button role=\"tab\" aria-selected=\"false\" style=\"--c:#23774a\"><span class=\"ds-wc\">RC</span> Recover</button></div><svg class=\"ds-wheel-svg\" viewBox=\"-300 -300 600 600\" aria-hidden=\"true\"><circle r=\"292\" fill=\"none\" stroke=\"#c5cbc4\"/><g class=\"ds-seg\"><path d=\"M-158.7 -218.4 A270 270 0 0 1 158.7 -218.4 L65.8 -90.6 A112 112 0 0 0 -65.8 -90.6 Z\" fill=\"#2f6db5\"/><text x=\"0\" y=\"-190\" fill=\"#fff\" class=\"ds-seg-name\">Identify</text><text x=\"0\" y=\"-164\" fill=\"#fff\" class=\"ds-seg-code\">ID</text></g><g class=\"ds-seg\"><path d=\"M158.7 -218.4 A270 270 0 0 1 256.8 83.4 L106.5 34.6 A112 112 0 0 0 65.8 -90.6 Z\" fill=\"#6b3fa0\"/><text x=\"181\" y=\"-59\" fill=\"#fff\" class=\"ds-seg-name\">Protect</text><text x=\"181\" y=\"-33\" fill=\"#fff\" class=\"ds-seg-code\">PR</text></g><g class=\"ds-seg is-on\" transform=\"translate(9.4 12.9)\"><path d=\"M256.8 83.4 A270 270 0 0 1 0.0 270.0 L0.0 112.0 A112 112 0 0 0 106.5 34.6 Z\" fill=\"#e07a1f\"/><text x=\"112\" y=\"154\" fill=\"#0b1f33\" class=\"ds-seg-name\">Detect</text><text x=\"112\" y=\"180\" fill=\"#0b1f33\" class=\"ds-seg-code\">DE</text></g><g class=\"ds-seg\"><path d=\"M0.0 270.0 A270 270 0 0 1 -256.8 83.4 L-106.5 34.6 A112 112 0 0 0 0.0 112.0 Z\" fill=\"#c4342d\"/><text x=\"-112\" y=\"154\" fill=\"#fff\" class=\"ds-seg-name\">Respond</text><text x=\"-112\" y=\"180\" fill=\"#fff\" class=\"ds-seg-code\">RS</text></g><g class=\"ds-seg\"><path d=\"M-256.8 83.4 A270 270 0 0 1 -158.7 -218.4 L-65.8 -90.6 A112 112 0 0 0 -106.5 34.6 Z\" fill=\"#23774a\"/><text x=\"-181\" y=\"-59\" fill=\"#fff\" class=\"ds-seg-name\">Recover</text><text x=\"-181\" y=\"-33\" fill=\"#fff\" class=\"ds-seg-code\">RC</text></g><g class=\"ds-seg\"><circle r=\"98\" fill=\"#d4a017\"/><text y=\"4\" fill=\"#0b1f33\" class=\"ds-seg-name\">Govern</text><text y=\"28\" fill=\"#0b1f33\" class=\"ds-seg-code\">GV</text></g></svg><figcaption class=\"ds-figcap\"><b>Fig. 1</b><span>Apex services by NIST Cybersecurity Framework 2.0 function.</span></figcaption></figure>",
+      "css": ".ds-wheel { margin: 0; max-width: 520px; } .ds-wheel-tabs { display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--rule, #c5cbc4); margin-bottom: 1.25rem; } .ds-wheel-tabs button { min-height: 44px; padding: .5rem .85rem .6rem; margin-bottom: -1px; background: none; border: 0; border-bottom: 3px solid transparent; font: 500 .9rem/1 var(--f-text, 'Public Sans', system-ui, sans-serif); color: var(--ink-2, #44515f); cursor: pointer; transition: color .2s, border-color .3s cubic-bezier(.16,1,.3,1); } .ds-wheel-tabs button:hover { color: var(--ink, #0b1f33); } .ds-wheel-tabs button[aria-selected='true'] { color: var(--ink, #0b1f33); font-weight: 700; border-bottom-color: var(--c); } .ds-wheel-tabs button:focus-visible { outline: 3px solid var(--id, #2f6db5); outline-offset: 3px; } .ds-wc { font-family: var(--f-code, 'Red Hat Mono', ui-monospace, monospace); font-size: .78rem; font-weight: 500; color: var(--ink-2, #44515f); } .ds-wheel-svg { width: 100%; height: auto; overflow: visible; font-family: var(--f-display, 'Archivo', sans-serif); } .ds-seg { cursor: pointer; transition: transform .6s cubic-bezier(.16,1,.3,1); } .ds-seg path, .ds-seg circle { stroke: var(--paper, #f5f6f3); stroke-width: 5; } .ds-seg.is-on path { stroke: var(--ink, #0b1f33); stroke-width: 3; } .ds-seg-name { font-size: 25px; font-weight: 700; font-variation-settings: 'wdth' 106; letter-spacing: -.01em; text-anchor: middle; pointer-events: none; } .ds-seg-code { font-family: var(--f-code, 'Red Hat Mono', ui-monospace, monospace); font-size: 18px; font-weight: 500; text-anchor: middle; pointer-events: none; } .ds-figcap { display: flex; gap: .6rem; margin-top: 1rem; padding-top: .65rem; border-top: 1px solid var(--rule, #c5cbc4); font: 400 .9rem/1.5 var(--f-text, 'Public Sans', system-ui, sans-serif); color: var(--ink-2, #44515f); } .ds-figcap b { color: var(--ink, #0b1f33); font-weight: 700; white-space: nowrap; }"
+    },
+    {
+      "name": "Function Band",
+      "kind": "card",
+      "refersTo": "band-id",
+      "description": "Full-bleed function region: monogram code, name and line beside a hairline link-row list of framework IDs. Replaces cards.",
+      "html": "<section class=\"ds-fband\"><div class=\"ds-fband-id\"><p class=\"ds-fband-code\" aria-hidden=\"true\">ID</p><h2>Identify</h2><p class=\"ds-fband-line\">Know your assets, your risks and exactly where you stand today.</p></div><ol class=\"ds-fband-list\"><li><a href=\"#\"><span class=\"ds-c\">ID.RA</span><span>Security risk assessments across infrastructure, policy and user behavior</span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></a></li><li><a href=\"#\"><span class=\"ds-c\">ID.IM</span><span>Security architecture review for network, cloud and endpoints</span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></a></li></ol></section>",
+      "css": ".ds-fband { --bg: var(--id, #2f6db5); --fg: var(--id-ink, #ffffff); --muted: color-mix(in srgb, var(--fg) 92%, var(--bg)); display: grid; grid-template-columns: 4fr 8fr; gap: 2.5rem; align-items: start; padding: 3.5rem 2rem; background: var(--bg); color: var(--fg); font-family: var(--f-text, 'Public Sans', system-ui, sans-serif); } .ds-fband-code { margin: 0 0 1rem; font: 800 6rem/.8 var(--f-display, 'Archivo', sans-serif); font-variation-settings: 'wdth' 125; letter-spacing: -.04em; } .ds-fband h2 { margin: 0 0 .75rem; font: 700 2rem/1.04 var(--f-display, 'Archivo', sans-serif); font-variation-settings: 'wdth' 108; letter-spacing: -.02em; } .ds-fband-line { margin: 0; color: var(--muted); } .ds-fband-list { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--fg); } .ds-fband-list a { display: grid; grid-template-columns: 4.5rem 1fr 1.25rem; gap: 1rem; align-items: baseline; padding: 1.05rem 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 35%, transparent); color: inherit; text-decoration: none; font-size: 1.1rem; font-weight: 600; line-height: 1.35; } .ds-c { font-family: var(--f-code, 'Red Hat Mono', ui-monospace, monospace); font-size: .8rem; font-weight: 500; color: var(--muted); } .ds-fband-list svg { width: 1.2rem; height: 1.2rem; align-self: center; transition: transform .3s cubic-bezier(.16,1,.3,1); } .ds-fband-list a:hover svg { transform: translateX(5px); } .ds-fband-list a:hover span:nth-child(2) { text-decoration: underline; text-underline-offset: .2em; } .ds-fband-list a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }"
+    },
+    {
+      "name": "Numbered Table",
+      "kind": "custom",
+      "refersTo": "table-head",
+      "description": "Borderless scope table: 2px ink head rule, slate labels, hairline rows, bold 'Table n.' caption above; function marks in the category column.",
+      "html": "<table class=\"ds-table\"><caption><b>Table 1.</b> Scope of services.</caption><thead><tr><th scope=\"col\">Item</th><th scope=\"col\">Description</th><th scope=\"col\">CSF category</th></tr></thead><tbody><tr><th scope=\"row\">Security risk assessment</th><td>Infrastructure, policy and user behavior reviewed against the framework.</td><td><span class=\"ds-tfn\" style=\"--c:#2f6db5\">ID.RA</span></td></tr><tr><th scope=\"row\">Tabletop exercises</th><td>Incident response plans tested with your team before you need them.</td><td><span class=\"ds-tfn\" style=\"--c:#c4342d\">RS.MA</span></td></tr></tbody></table>",
+      "css": ".ds-table { width: 100%; border-collapse: collapse; font: 400 .9rem/1.5 var(--f-text, 'Public Sans', system-ui, sans-serif); color: var(--ink, #0b1f33); } .ds-table caption { caption-side: top; text-align: left; padding-bottom: .9rem; color: var(--ink-2, #44515f); } .ds-table caption b { color: var(--ink, #0b1f33); } .ds-table th, .ds-table td { text-align: left; vertical-align: top; padding: .95rem 1rem .95rem 0; border-top: 1px solid var(--rule, #c5cbc4); } .ds-table thead th { border-top: 2px solid var(--ink, #0b1f33); font-weight: 600; font-size: .8rem; color: var(--ink-2, #44515f); padding-block: .65rem; } .ds-table tbody tr:last-child > * { border-bottom: 1px solid var(--rule, #c5cbc4); } .ds-table tbody th { font-weight: 600; font-size: 1rem; width: 32%; } .ds-tfn { display: inline-flex; align-items: center; gap: .45em; font: 500 .8rem/1 var(--f-code, 'Red Hat Mono', ui-monospace, monospace); white-space: nowrap; } .ds-tfn::before { content: ''; width: .8em; height: .8em; background: var(--c); }"
+    },
+    {
+      "name": "Close Lines",
+      "kind": "custom",
+      "refersTo": "band-ink",
+      "description": "Closing contact rows on the navy ink band: Archivo values with small muted labels, hairlines between, Govern Gold on hover.",
+      "html": "<div class=\"ds-close\"><a href=\"#\">Start a conversation <span>Scope, RFPs, teaming</span></a><a href=\"#\">info@apexcybersecurity.org <span>Email</span></a><a href=\"#\">(312) 566-7491 <span>Call, including incidents</span></a></div>",
+      "css": ".ds-close { --fg: var(--paper, #f5f6f3); display: grid; padding: 2rem; background: var(--ink, #0b1f33); color: var(--fg); } .ds-close a { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 1.1rem 0; border-top: 1px solid color-mix(in srgb, var(--fg) 30%, transparent); color: inherit; text-decoration: none; font: 600 1.4rem/1.2 var(--f-display, 'Archivo', sans-serif); font-variation-settings: 'wdth' 104; } .ds-close a:last-child { border-bottom: 1px solid color-mix(in srgb, var(--fg) 30%, transparent); } .ds-close a span { font: 400 .8rem/1 var(--f-text, 'Public Sans', system-ui, sans-serif); color: #b9c3cc; } .ds-close a:hover { color: var(--gv, #d4a017); } .ds-close a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Framework Profile",
+    "overview": "The site is written as a NIST Cybersecurity Framework 2.0 profile, not as a security brochure. Each of the six CSF functions, Govern, Identify, Protect, Detect, Respond and Recover, has its own color, and those six colors are the whole palette. They are not small chips on white. They fill full-width bands at full saturation, so a page reads as a run of function regions. Between the bands is a cool, slightly green-grey paper with navy ink. Hierarchy comes from weight, width and color, ruled off by hairlines like a printed standards document. There are no cards, boxes or drop shadows holding content.\n\nThe tone is documentary and procurement-grade. Figures and tables are numbered and captioned (\"Fig. 1\", \"Table 2.\"). Outcome IDs such as `DE.CM` sit in a monospace beside the plain-language line they index. Service pages print cleanly as one sheet for a bid file. Two live details keep the page from feeling static. A 24-hour watch line at the top shows where \"now\" falls in the Chicago day. The interactive CSF wheel answers \"what do you cover\" for any function in one click.\n\nThe confirmed rejections come from the direction contract: no dark data-center photography, no neon padlocks, no card grid of services.",
+    "keyCharacteristics": [
+      "Six full-saturation CSF function colors on cool paper and navy ink. The colors fill whole bands.",
+      "Archivo set wide for display, Public Sans (the USWDS face) for text, Red Hat Mono only for IDs and clocks.",
+      "No enclosing boxes: hairline rules, a 2px ink rule to open a list, and filled cells.",
+      "Numbered, captioned figures and tables throughout.",
+      "One orchestrated entrance (the wheel). All other motion is state feedback on an exponential ease-out.",
+      "Square corners (2px at most), except true circles: portraits, the MBE seal and the watch dot."
+    ],
+    "rules": [
+      { "name": "The Six Functions Rule", "body": "A function color always means its function: its band, its wedge, its tab underline, its matrix cell, its code square. Only three secondary jobs are sanctioned: Identify Blue for interaction (hover, focus), Detect Orange for \"now\" and selection, and Govern Gold for hover and selection on the navy ink band. Never use a function color as plain decoration.", "section": "colors" },
+      { "name": "The Full-Bleed Band Rule", "body": "When a function color appears at scale, it fills the full width of the viewport at full saturation and inverts everything inside it. Text takes the band's ink. The primary button becomes ink-on-band, and the line button keeps a border in the band's ink. Do not tint, fade or box a function color.", "section": "colors" },
+      { "name": "The Paired Ink Rule", "body": "Gold and orange take navy ink. Blue, purple, red and green take white. The pairings are fixed in `--{fn}-ink` and every band, wedge and label follows them.", "section": "colors" },
+      { "name": "The Expanded Display Rule", "body": "Archivo always runs wider than normal: 108 for headings, 112 for display, 125 for monograms and 104 to 106 for row names. Only h3 returns to 100. A normal-width Archivo heading is off-system.", "section": "typography" },
+      { "name": "The Mono-Is-Data Rule", "body": "Red Hat Mono is reserved for framework IDs, function codes and clock time. Never set prose, buttons or headings in it.", "section": "typography" },
+      { "name": "The No-Box Rule", "body": "Content is never enclosed in cards or bordered panels. Use 1px hairlines between rows, a 2px ink rule to open a list, section or table head, and filled cells or bands for emphasis.", "section": "layout" },
+      { "name": "The Numbered Figure Rule", "body": "Every figure and data table carries a caption that starts with a bold sequence label (\"Fig. 1\", \"Table 2.\"). Fig. captions sit below, above a hairline. Table captions sit above.", "section": "layout" },
+      { "name": "The Flat Content Rule", "body": "Shadows belong to floating chrome (dropdowns) and the live \"now\" marker, never to content. Use a rule or a band for emphasis, never a lifted card.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** fill whole, full-width bands with a single function color at full saturation, and pair it with its fixed ink (navy on gold and orange, white on blue, purple, red and green).",
+      "**Do** use Identify Blue as the hover and focus color, and Detect Orange to mark \"now\".",
+      "**Do** set every heading in Archivo at an expanded width (108 for headings, 112 for display, 125 for monograms).",
+      "**Do** use Red Hat Mono only for framework IDs, function codes and clock time.",
+      "**Do** separate content with 1px hairlines (`rule`) and open lists, tables and sections with a 2px ink rule.",
+      "**Do** number and caption every figure and table (\"Fig. 1\", \"Table 2.\") in bold, followed by a plain sentence.",
+      "**Do** keep the incident phone number visible in the watch strip at every breakpoint.",
+      "**Do** mark missing vendor facts as italic \"Apex to supply\" slots rather than inventing them.",
+      "**Do** keep motion on the exponential ease-out `cubic-bezier(.16, 1, .3, 1)`, and keep the wheel's draw-in as the only entrance animation.",
+      "**Do** check every new band and text pairing against WCAG 2.1 AA, which is the floor for public-sector buyers."
+    ],
+    "donts": [
+      "**Don't** enclose content in cards, tiles or bordered boxes, and don't lift content with shadows.",
+      "**Don't** use a function color for plain decoration, as a tint or a gradient, or in a role unrelated to its function.",
+      "**Don't** add colors beyond the six function hues and the paper and ink neutrals.",
+      "**Don't** round content corners beyond 2px. Circles are reserved for portraits, the MBE seal and the \"now\" dot.",
+      "**Don't** use dark data-center photography, neon padlock imagery or a card grid of services.",
+      "**Don't** set labels in uppercase or with letter-spacing. Labels are sentence case at .8rem, weight 600.",
+      "**Don't** add a second orchestrated entrance or scroll-triggered reveals."
+    ]
+  }
+}

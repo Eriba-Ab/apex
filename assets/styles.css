@@ -1,0 +1,365 @@
+/* Apex Cybersecurity Solutions — static rebuild of the Squarespace 7.1 site.
+   Values were measured from the live site at a 1440px viewport. Class names
+   mirror Squarespace's so the extracted fluid-engine grid CSS works unchanged. */
+
+:root {
+  --text: #3f4a49;
+  --accent: #2779a5;
+  --link: #011983;
+  --white: #fff;
+
+  /* The live site uses Adobe Typekit fonts (adonis-web, adelle-sans) that are
+     licensed to its domain. These are the closest free substitutes; Newsreader
+     measures within ~2% of adonis-web's width. */
+  --font-heading: "Newsreader", Georgia, serif;
+  --font-body: "Pontano Sans", Helvetica, Arial, sans-serif;
+  --font-button: "Source Sans 3", Helvetica, Arial, sans-serif;
+
+  /* Squarespace scales type as (value - 1) * 1.2vw + 1rem. */
+  --h1: 3.977; --h2: 2.907; --h3: 3.296; --h4: 1.352; --body: 1.449;
+  --large: 0.963; --small: 0.6685; /* this theme's "large" text is smaller than body */
+
+  --page-padding: 4vw;
+  --max-page-width: 1400px;
+  --header-h: 232px; /* updated from the real header by main.js */
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--white);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: calc((var(--body) - 1) * 1.2vw + 1rem);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+
+/* ---------- Type ---------- */
+
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 400; margin: 24px 0; }
+p { margin: 0.5em 0; }
+h1 { font-size: calc((var(--h1) - 1) * 1.2vw + 1rem); line-height: 1.2152; }
+h2 { font-size: calc((var(--h2) - 1) * 1.2vw + 1rem); line-height: 1.2768; }
+h3 { font-size: calc((var(--h3) - 1) * 1.2vw + 1rem); line-height: 1.2544; }
+h4 { font-size: calc((var(--h4) - 1) * 1.2vw + 1rem); line-height: 1.3664; }
+.sqsrte-large { font-size: calc((var(--large) - 1) * 1.2vw + 1rem); }
+.sqsrte-small { font-size: calc((var(--small) - 1) * 1.2vw + 1rem); }
+.sqsrte-text-color--black { color: var(--text); }
+
+/* Squarespace keeps blank lines: an empty paragraph still takes one line. */
+.sqs-html-content [data-rte-preserve-empty]:empty::before { content: "\200b"; }
+.sqs-html-content > *:first-child { margin-top: 0; }
+.sqs-html-content > *:last-child { margin-bottom: 0; }
+.sqs-html-content ul, .sqs-html-content ol { margin: 0; padding-left: 40px; }
+.sqs-html-content a { color: var(--link); }
+.sqs-html-content blockquote { margin: 24px 0; padding-left: 1em; border-left: 2px solid currentColor; }
+
+/* Highlight placeholder copy with ?placeholders in the URL */
+.show-placeholders [data-ph] { outline: 2px dashed #e0a100; outline-offset: 2px; }
+
+/* ---------- Header ---------- */
+
+.header {
+  position: relative;
+  z-index: 10;
+  background: var(--white);
+  padding: 2.5vw var(--page-padding);
+}
+.header-inner { display: flex; align-items: center; gap: 4vw; }
+.header-logo img { width: clamp(180px, 44vw, 633px); height: auto; }
+
+.header-nav {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 1.2em;
+  max-width: 34vw;
+}
+.nav-item { position: relative; }
+.nav-item > a,
+.nav-item > button {
+  font: inherit;
+  line-height: 1.5;
+  color: var(--text);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav-item > a:hover,
+.nav-item > button:hover { opacity: 0.6; }
+
+.nav-folder {
+  position: absolute;
+  top: 100%;
+  left: -1em;
+  min-width: 14em;
+  background: var(--white);
+  padding: 0.5em 1em;
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease;
+}
+.nav-item:hover .nav-folder,
+.nav-item:focus-within .nav-folder,
+.nav-item.open .nav-folder { opacity: 1; visibility: visible; }
+.nav-folder a { display: block; line-height: 1.5; color: var(--text); text-decoration: none; white-space: nowrap; }
+.nav-folder a:hover { opacity: 0.6; }
+
+.header-actions { margin-left: auto; }
+.header-actions a { color: var(--text); text-decoration: none; }
+
+.burger {
+  display: none;
+  margin-left: auto;
+  width: 34px; height: 24px;
+  background: none; border: 0; padding: 0; cursor: pointer;
+  position: relative;
+}
+.burger span, .burger span::before, .burger span::after {
+  position: absolute; left: 0; right: 0;
+  height: 2px; background: var(--text); content: "";
+  transition: transform 0.2s ease;
+}
+.burger span { top: 11px; }
+.burger span::before { top: -9px; }
+.burger span::after { top: 9px; }
+.menu-open .burger span { background: transparent; }
+.menu-open .burger span::before { transform: translateY(9px) rotate(45deg); }
+.menu-open .burger span::after { transform: translateY(-9px) rotate(-45deg); }
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  background: var(--white);
+  padding: 120px var(--page-padding) 40px;
+  overflow-y: auto;
+}
+.menu-open .mobile-menu { display: block; }
+.mobile-menu details { margin-bottom: 0.6em; }
+.mobile-menu summary, .mobile-menu > a {
+  display: block; font-size: 1.6rem; color: var(--text);
+  text-decoration: none; cursor: pointer; list-style: none; margin-bottom: 0.6em;
+}
+.mobile-menu summary::-webkit-details-marker { display: none; }
+.mobile-menu details a { display: block; font-size: 1.15rem; color: var(--text); text-decoration: none; padding: 0.3em 0 0.3em 1em; }
+
+/* ---------- Sections ---------- */
+
+.page-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--section-bg);
+  color: var(--section-text);
+  --section-bg: var(--white);
+  --section-text: var(--text);
+}
+.page-section[data-section-theme="black"] { --section-bg: #3f4a49; --section-text: var(--white); }
+.page-section[data-section-theme="bright"] { --section-bg: var(--accent); --section-text: var(--white); }
+.page-section[data-section-theme="black"] .sqs-html-content a,
+.page-section[data-section-theme="bright"] .sqs-html-content a { color: var(--white); }
+
+.section-background { position: absolute; inset: 0; overflow: hidden; background: var(--section-bg); }
+.section-background img { width: 100%; height: 100%; object-fit: cover; }
+.section-background-overlay { position: absolute; inset: 0; background: var(--section-bg); }
+
+/* The 1400px max width applies inside the side padding (content-box), as on the live site. */
+.content-wrapper {
+  position: relative;
+  box-sizing: content-box;
+  width: calc(100% - 2 * var(--page-padding));
+  max-width: var(--max-page-width);
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+  display: flex;
+}
+.full-bleed-section > .content-wrapper { width: 100%; max-width: 100%; padding-left: 0; padding-right: 0; }
+.content { width: 100%; }
+
+/* Heights */
+.section-height--small  { min-height: 33vh; }
+.section-height--medium { min-height: 66vh; }
+.section-height--large  { min-height: 100vh; }
+.page-section.first.section-height--small  { min-height: max(0px, calc(33vh - var(--header-h))); }
+.page-section.first.section-height--medium { min-height: max(0px, calc(66vh - var(--header-h))); }
+.page-section.first.section-height--large  { min-height: max(0px, calc(100vh - var(--header-h))); }
+
+/* Vertical padding by height + alignment (vmax, as on the live site) */
+.section-height--small  > .content-wrapper { padding-top: 3.3vmax; padding-bottom: 3.3vmax; }
+.section-height--medium > .content-wrapper { padding-top: 6.6vmax; padding-bottom: 6.6vmax; }
+.section-height--large  > .content-wrapper { padding-top: 10vmax; padding-bottom: 10vmax; }
+.section-height--small.vertical-alignment--top    > .content-wrapper { padding-top: 4vmax; padding-bottom: 6.6vmax; }
+.section-height--small.vertical-alignment--bottom > .content-wrapper { padding-top: 6.6vmax; padding-bottom: 4vmax; }
+.section-height--custom > .content-wrapper { padding-top: 0; padding-bottom: 0; }
+
+/* Vertical alignment inside the min-height */
+.vertical-alignment--top    > .content-wrapper { margin-bottom: auto; }
+.vertical-alignment--middle > .content-wrapper { margin-top: auto; margin-bottom: auto; }
+.vertical-alignment--bottom > .content-wrapper { margin-top: auto; }
+
+/* Content width + horizontal alignment */
+.content-width--medium:not(.full-bleed-section) .content { width: 75%; }
+.content-width--narrow:not(.full-bleed-section) .content { width: 50%; }
+.horizontal-alignment--center .content { margin: 0 auto; }
+.horizontal-alignment--left .content { margin-right: auto; }
+.horizontal-alignment--right .content { margin-left: auto; }
+
+/* ---------- Classic 12-column layout ---------- */
+
+.sqs-layout .sqs-row { display: flex; margin: 0 -17px; }
+.sqs-layout .col { min-width: 0; }
+.sqs-block { position: relative; padding: 17px; }
+/* Measured: blocks at the top of each column in the first row lose their top
+   padding (including nested rows); a block alone in a first-row column loses both. */
+.sqs-layout > .sqs-row:first-child > .col > .sqs-block:first-child,
+.sqs-layout > .sqs-row:first-child > .col > .sqs-row:first-child > .col > .sqs-block:first-child { padding-top: 0; }
+.sqs-layout > .sqs-row:first-child > .col > .sqs-block:only-child { padding-bottom: 0; }
+.col .sqs-row { margin: 0; }
+.spacer-block .spacer { height: calc(var(--vsize) * 34px); }
+
+/* ---------- Fluid engine ---------- */
+
+.fluid-engine { --sqs-site-gutter: var(--page-padding); --sqs-site-max-width: var(--max-page-width); }
+.fe-block { position: relative; }
+.fe-block > .sqs-block { display: flex; flex-direction: column; height: 100%; padding: 0; }
+.fe-block .sqs-block-alignment-wrapper { display: flex; flex-direction: column; height: 100%; }
+
+/* ---------- Image blocks ---------- */
+
+.image-block figure { margin: 0; }
+.image-block figure img { width: 100%; height: auto; }
+/* Caption text keeps its own margins (the first/last-child reset doesn't apply here). */
+.image-block figcaption.sqs-html-content > p { margin: 12px 0; }
+.image-block figcaption.sqs-html-content > h4 { margin: 24px 0; }
+.image-block a:hover img { opacity: 0.85; }
+.image-block .crop { position: relative; overflow: hidden; }
+.image-block .crop img { position: absolute; inset: 0; height: 100%; object-fit: var(--fit, cover); object-position: var(--focal, 50% 50%); }
+.image-block.fluid figure,
+.image-block.fluid figure > a { height: 100%; display: block; }
+.image-block.fluid figure img { height: 100%; object-fit: var(--fit, cover); object-position: var(--focal, 50% 50%); }
+
+/* ---------- Buttons ---------- */
+
+.button-block { display: flex; }
+.button-block.align-left { justify-content: flex-start; }
+.button-block.align-center { justify-content: center; }
+.button-block.align-right { justify-content: flex-end; }
+.btn {
+  display: inline-block;
+  font-family: var(--font-button);
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  transition: opacity 0.1s linear;
+  background: var(--accent);
+  color: var(--white);
+}
+.btn:hover { opacity: 0.8; }
+.btn--secondary { background: var(--white); color: var(--accent); }
+.btn--small  { font-size: 10.272px; padding: 14.38px 24.02px; }
+.btn--medium { font-size: 16.2px;   padding: 22.68px 55.08px; }
+.btn--large  { font-size: 13.68px;  padding: 19.15px 31.98px; }
+
+/* In fluid-engine grids, buttons fill their grid cell's height. */
+.fe-block .button-block { height: 100%; }
+.fe-block .btn { display: flex; align-items: center; justify-content: center; text-align: center; height: 100%; padding-top: 0; padding-bottom: 0; }
+
+/* ---------- List sections (cards) ---------- */
+
+.user-items-list { padding-left: var(--page-padding); padding-right: var(--page-padding); }
+.list-section-title > p { margin: 0; font-family: var(--font-heading); font-size: calc((var(--h2) - 1) * 1.2vw + 1rem); line-height: 1.5; }
+.list-section-title.align-center { text-align: center; }
+.list-items { list-style: none; margin: 0; padding: 0; display: grid; }
+.list-item-media img { width: 100%; object-fit: cover; display: block; }
+/* This list overrides its sizes: title 1.2, description 0.9, button 0.8 (measured at 1440px). */
+.list-item-title { margin: 0; font-size: calc((var(--large) - 1) * 1.2vw + 1rem); line-height: 1.2768; }
+.list-item-description p { margin: 0; font-size: calc((var(--small) - 1) * 1.2vw + 1rem); line-height: 1.5; }
+.list-item .btn { font-size: 8.544px; padding: 11.96px 29.05px; }
+
+/* ---------- Line, video, social ---------- */
+
+.line-block hr { border: 0; height: 1px; margin: 0.5em 0; background: currentColor; }
+
+/* Section divider (shaped bottom edge) */
+.has-divider { padding-bottom: var(--divider-height); }
+.section-divider { position: absolute; left: 0; bottom: 0; width: 100%; height: var(--divider-height); overflow: visible; }
+.section-divider .divider-fill { fill: var(--white); }
+.section-divider .divider-stroke { fill: none; vector-effect: non-scaling-stroke; }
+.video-block .embed { position: relative; padding-bottom: 56.5%; }
+.video-block iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.social-block { display: flex; gap: 12px; }
+.social-block.align-center { justify-content: center; }
+.social-block.align-right { justify-content: flex-end; }
+.social-block svg { width: 20px; height: 20px; fill: currentColor; }
+
+/* ---------- Blog list (side by side) ---------- */
+
+.blog-list { display: flex; flex-direction: column; gap: 6vw; padding: 6.6vmax var(--page-padding); }
+.blog-item { display: flex; align-items: center; gap: 4vw; }
+.blog-item .blog-image { flex: 0 0 40%; }
+.blog-item .blog-image img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.blog-item .blog-text { flex: 1; }
+.blog-item .blog-meta { margin-bottom: 12px; }
+.blog-item .blog-title { margin: 0 0 12px; font-size: calc((var(--h2) - 1) * 1.2vw + 1rem); line-height: 1.4; }
+.blog-item .blog-title a { text-decoration: none; }
+.blog-item .blog-more { color: var(--accent); text-decoration: none; }
+
+/* ---------- Events list (stacked) ---------- */
+
+.event-list { max-width: var(--max-page-width); margin: 0 auto; padding: 6.6vmax var(--page-padding); }
+.event-item { display: flex; gap: 4vw; align-items: flex-start; }
+.event-item .event-image { flex: 0 0 40%; }
+.event-item .event-image img { width: 100%; height: auto; }
+.event-item h2 { margin-top: 0; }
+.event-item .event-more { color: var(--accent); text-decoration: none; }
+
+/* ---------- Footer ---------- */
+
+.footer { padding: 4vw var(--page-padding) 5vw; text-align: center; }
+.footer-logo { display: inline-block; }
+.footer-logo img { width: min(655px, 90vw); height: auto; }
+.footer p { margin: 1.2em 0; line-height: 1.5; }
+.footer a { color: var(--link); text-decoration: none; }
+.footer a:hover { opacity: 0.7; }
+.footer-links a + a { margin-left: 1.25em; }
+
+/* ---------- Fade-in on scroll (Squarespace "preFade") ---------- */
+
+.fade { opacity: 0; transition: opacity 0.6s ease; }
+.fade.in { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .fade { opacity: 1; transition: none; } }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1024px) {
+  .header-nav, .header-actions { display: none; }
+  .burger { display: block; }
+  .header { position: sticky; top: 0; }
+}
+
+@media (max-width: 767px) {
+  :root { --page-padding: 6vw; }
+  body { font-size: 1rem; }
+  h1 { font-size: 2.2rem; } h2 { font-size: 1.9rem; } h3 { font-size: 2rem; } h4 { font-size: 1.25rem; }
+  .content-width--medium .content, .content-width--narrow .content { width: 100% !important; }
+  .sqs-layout .sqs-row { display: block; }
+  .sqs-layout .col { width: 100% !important; }
+  .list-items { grid-template-columns: 1fr !important; }
+  .blog-item, .event-item { flex-direction: column; }
+  .blog-item .blog-image, .event-item .event-image { flex-basis: auto; width: 100%; }
+  .footer-links a + a { margin-left: 0.8em; }
+  .footer p { font-size: 1.05rem; }
+}

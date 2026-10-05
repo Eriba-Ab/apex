@@ -1,0 +1,164 @@
+---
+// Fig. 1: the NIST CSF 2.0 wheel. Govern is the hub because it informs the other five.
+// Selecting a function lists the Apex services that align to it.
+import { FUNCTIONS, PROFILE, type FnCode } from '../data/site';
+import Icon from './Icon.astro';
+
+const R_OUT = 270, R_IN = 112, R_HUB = 98, R_TICK = 286;
+const rad = (d: number) => (d * Math.PI) / 180;
+const pt = (r: number, d: number) => `${(r * Math.cos(rad(d))).toFixed(2)} ${(r * Math.sin(rad(d))).toFixed(2)}`;
+const ring = FUNCTIONS.filter((f) => f.code !== 'GV').map((f, i) => {
+  const c = -90 + i * 72, a = c - 36, b = c + 36;
+  const n = PROFILE[f.code].length;
+  const ticks = Array.from({ length: n }, (_, k) => c - (n - 1) * 3 + k * 6);
+  return {
+    ...f, c, ticks,
+    d: `M${pt(R_OUT, a)} A${R_OUT} ${R_OUT} 0 0 1 ${pt(R_OUT, b)} L${pt(R_IN, b)} A${R_IN} ${R_IN} 0 0 0 ${pt(R_IN, a)} Z`,
+    lx: (190 * Math.cos(rad(c))).toFixed(1), ly: (190 * Math.sin(rad(c))).toFixed(1),
+    dx: Math.cos(rad(c)), dy: Math.sin(rad(c)),
+  };
+});
+const gvTicks = Array.from({ length: PROFILE.GV.length }, (_, k) => -90 - (PROFILE.GV.length - 1) * 9 + k * 18);
+const initial: FnCode = 'DE';
+---
+<figure class="wheel" data-wheel>
+  <div class="wheel-tabs" role="tablist" aria-label="NIST CSF 2.0 functions">
+    {FUNCTIONS.map((f) => (
+      <button type="button" role="tab" id={`tab-${f.code}`} aria-controls={`panel-${f.code}`} aria-selected={String(f.code === initial)} tabindex={f.code === initial ? 0 : -1} data-fn={f.code}>
+        <span class="code">{f.code}</span> {f.name}
+      </button>
+    ))}
+  </div>
+
+  <div class="wheel-body">
+    <svg class="wheel-svg" viewBox="-300 -300 600 600" aria-hidden="true">
+      <circle r={R_TICK + 6} class="wheel-hair" />
+      {ring.map((s, i) => (
+        <g class="seg" data-fn={s.code} style={`--i:${i + 1};--dx:${s.dx.toFixed(3)};--dy:${s.dy.toFixed(3)}`}>
+          <g class="seg-in">
+          <path d={s.d} class="seg-shape" />
+          {s.ticks.map((t) => <line class="seg-tick" x1={pt(R_TICK, t).split(' ')[0]} y1={pt(R_TICK, t).split(' ')[1]} x2={pt(R_TICK + 12, t).split(' ')[0]} y2={pt(R_TICK + 12, t).split(' ')[1]} />)}
+          <text x={s.lx} y={s.ly} class="seg-name" text-anchor="middle">{s.name}</text>
+          <text x={s.lx} y={Number(s.ly) + 26} class="seg-code" text-anchor="middle">{s.code}</text>
+          </g>
+        </g>
+      ))}
+      <g class="seg seg--hub" data-fn="GV" style="--i:0;--dx:0;--dy:0">
+        <g class="seg-in">
+        <circle r={R_HUB} class="seg-shape" />
+        {gvTicks.map((t) => <line class="seg-tick" x1={pt(R_HUB - 18, t).split(' ')[0]} y1={pt(R_HUB - 18, t).split(' ')[1]} x2={pt(R_HUB - 8, t).split(' ')[0]} y2={pt(R_HUB - 8, t).split(' ')[1]} />)}
+        <text y="4" class="seg-name" text-anchor="middle">Govern</text>
+        <text y="28" class="seg-code" text-anchor="middle">GV</text>
+        </g>
+      </g>
+    </svg>
+
+    <div class="wheel-panels">
+      {FUNCTIONS.map((f) => (
+        <div class="wheel-panel" role="tabpanel" id={`panel-${f.code}`} aria-labelledby={`tab-${f.code}`} data-fn={f.code} hidden={f.code !== initial}>
+          <p class="wheel-panel-head"><span class="fn" data-fn={f.code}>{f.code}</span> <strong>{f.name}</strong></p>
+          <p class="wheel-panel-line">{f.line}</p>
+          <ol class="wheel-list">
+            {PROFILE[f.code].map((p) => <li><span class="code">{p.cat}</span><a href={p.href}>{p.item}</a></li>)}
+          </ol>
+          <a class="arrow-link" href={`services.html#${f.slug}`}>{f.name} services <Icon name="arrow" /></a>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <figcaption class="figcap"><b>Fig. 1</b><span>Apex services by NIST Cybersecurity Framework 2.0 function. Ticks on the rim count the services under each function. Select a function to see them.</span></figcaption>
+</figure>
+
+<style>
+  .wheel { margin: 0; }
+  .wheel-tabs { display: flex; flex-wrap: wrap; gap: 0; border-bottom: 1px solid var(--rule); margin-bottom: 1.25rem; }
+  .wheel-tabs button {
+    position: relative; min-height: 44px; padding: .5rem .85rem .6rem; margin-bottom: -1px; background: none; border: 0; border-bottom: 3px solid transparent;
+    font: 500 .9rem/1 var(--f-text); color: var(--ink-2); cursor: pointer; transition: color .2s, border-color .3s var(--ease);
+  }
+  .wheel-tabs button .code { font-size: .78rem; color: var(--ink-2); }
+  .wheel-tabs button:hover { color: var(--ink); }
+  .wheel-tabs button[aria-selected='true'] { color: var(--ink); font-weight: 700; border-bottom-color: var(--c); }
+  .wheel-tabs [data-fn='GV'] { --c: var(--gv); } .wheel-tabs [data-fn='ID'] { --c: var(--id); } .wheel-tabs [data-fn='PR'] { --c: var(--pr); }
+  .wheel-tabs [data-fn='DE'] { --c: var(--de); } .wheel-tabs [data-fn='RS'] { --c: var(--rs); } .wheel-tabs [data-fn='RC'] { --c: var(--rc); }
+
+  .wheel-body { display: grid; grid-template-columns: minmax(0, 520px) minmax(15rem, 1fr); gap: 1.5rem; align-items: center; }
+  .wheel-svg { width: 100%; height: auto; overflow: visible; font-family: var(--f-display); }
+  .wheel-hair { fill: none; stroke: var(--rule); stroke-width: 1; }
+
+  .seg { cursor: pointer; transition: transform .6s var(--ease), opacity .4s var(--ease); }
+  .seg-shape { fill: var(--c); stroke: var(--paper); stroke-width: 5; }
+  .seg-tick { stroke: var(--c); stroke-width: 3; }
+  .seg--hub .seg-tick { stroke: var(--gv-ink); stroke-width: 2.5; opacity: .55; }
+  .seg-name { fill: var(--ink-c); font-size: 25px; font-weight: 700; font-variation-settings: 'wdth' 106; letter-spacing: -.01em; pointer-events: none; }
+  .seg-code { fill: var(--ink-c); font-family: var(--f-code); font-size: 18px; font-weight: 500; pointer-events: none; }
+  .seg[data-fn='GV'] { --c: var(--gv); --ink-c: var(--gv-ink); }
+  .seg[data-fn='ID'] { --c: var(--id); --ink-c: var(--id-ink); }
+  .seg[data-fn='PR'] { --c: var(--pr); --ink-c: var(--pr-ink); }
+  .seg[data-fn='DE'] { --c: var(--de); --ink-c: var(--de-ink); }
+  .seg[data-fn='RS'] { --c: var(--rs); --ink-c: var(--rs-ink); }
+  .seg[data-fn='RC'] { --c: var(--rc); --ink-c: var(--rc-ink); }
+  .seg:hover { transform: translate(calc(var(--dx) * 6px), calc(var(--dy) * 6px)); }
+  .seg.is-on { transform: translate(calc(var(--dx) * 16px), calc(var(--dy) * 16px)); }
+  .seg--hub.is-on { transform: scale(1.06); }
+    .seg.is-on .seg-shape { stroke: var(--ink); stroke-width: 3; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    :global(.js) .seg-in { animation: seg-in 1s var(--ease) both; animation-delay: calc(var(--i) * 90ms + 150ms); }
+    @keyframes seg-in { from { opacity: 0; transform: scale(.72) rotate(-14deg); } }
+  }
+
+  .wheel-panels { min-height: 22rem; }
+  .wheel-panel-head { display: flex; align-items: center; gap: .6rem; margin-bottom: .4rem; font-family: var(--f-display); font-size: 1.6rem; font-variation-settings: 'wdth' 108; letter-spacing: -.01em; }
+  .wheel-panel-head .fn { font-size: .85rem; }
+  .wheel-panel-head .fn::before { width: 1rem; height: 1rem; }
+  .wheel-panel-line { color: var(--ink-2); margin-bottom: 1rem; font-size: var(--t-small); }
+  .wheel-list { list-style: none; margin: 0 0 1.25rem; padding: 0; counter-reset: none; }
+  .wheel-list li { display: grid; grid-template-columns: 3.6rem 1fr; gap: .5rem; padding: .6rem 0; border-top: 1px solid var(--rule); font-size: .95rem; line-height: 1.4; }
+  .wheel-list li:last-child { border-bottom: 1px solid var(--rule); }
+  .wheel-list .code { color: var(--ink-2); padding-top: .15em; }
+  .wheel-list a { text-decoration: none; }
+  .wheel-list a:hover { text-decoration: underline; }
+  @media (prefers-reduced-motion: no-preference) { .wheel-panel:not([hidden]) { animation: panel-in .5s var(--ease); } }
+  @media (prefers-reduced-motion: reduce) { .seg { transition: none; } }
+  @keyframes panel-in { from { opacity: 0; transform: translateY(6px); } }
+
+  @media (max-width: 640px) {
+    .wheel-body { grid-template-columns: 1fr; }
+    .wheel-svg { max-width: 420px; margin-inline: auto; }
+    .wheel-tabs button { flex: 1 0 33%; padding-inline: .4rem; }
+    .wheel-panels { min-height: 0; }
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-wheel]').forEach((root) => {
+    const tabs = [...root.querySelectorAll<HTMLButtonElement>('[role="tab"]')];
+    const svg = root.querySelector('svg')!;
+    const segs = [...root.querySelectorAll<SVGGElement>('.seg')];
+    const select = (code: string, focus = false) => {
+      tabs.forEach((t) => {
+        const on = t.dataset.fn === code;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        if (on && focus) t.focus();
+      });
+      root.querySelectorAll<HTMLElement>('[role="tabpanel"]').forEach((p) => (p.hidden = p.dataset.fn !== code));
+      segs.forEach((s) => s.classList.toggle('is-on', s.dataset.fn === code));
+      svg.classList.add('has-sel');
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => select(t.dataset.fn!));
+      t.addEventListener('keydown', (e) => {
+        const step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (e.key === 'Home') { e.preventDefault(); select(tabs[0].dataset.fn!, true); }
+        else if (e.key === 'End') { e.preventDefault(); select(tabs[tabs.length - 1].dataset.fn!, true); }
+        else if (step) { e.preventDefault(); select(tabs[(i + step + tabs.length) % tabs.length].dataset.fn!, true); }
+      });
+    });
+    segs.forEach((s) => s.addEventListener('click', () => select(s.dataset.fn!)));
+    const initial = tabs.find((t) => t.getAttribute('aria-selected') === 'true');
+    if (initial) select(initial.dataset.fn!);
+  });
+</script>

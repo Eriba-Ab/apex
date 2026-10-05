@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import { LEADERS } from '../data/site';
+---
+<Base title="Leadership" page="team" description="Meet the leadership of Apex Cybersecurity Solutions: Damond Singleton, Tremicka Bryant, Corey Thurman, Algarnon Stamps and Emery De Cavitch.">
+  <header class="page-head">
+    <div class="wrap">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li>About</li><li aria-current="page">Leadership</li></ol>
+      <h1>The people accountable for your security.</h1>
+      <p class="lede muted">Apex is led by practitioners in security operations, governance and compliance, technology and procurement.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <ol class="people">
+        {LEADERS.map((l, i) => (
+          <li id={l.id}>
+            <img src={l.img} alt={`Portrait of ${l.name}`} width="300" height="300" loading={i < 2 ? 'eager' : 'lazy'}>
+            <div>
+              <h2>{l.name}</h2>
+              <p class="role">{l.role}</p>
+            </div>
+            <p class="bio">{l.bio}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .people { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .people li { display: grid; grid-template-columns: 160px 4fr 7fr; gap: var(--s4); align-items: start; padding-block: var(--s4); border-bottom: 1px solid var(--rule); scroll-margin-top: 90px; }
+  .people img { width: 160px; height: 160px; object-fit: cover; border-radius: 50%; filter: grayscale(1) contrast(1.05); }
+  .people h2 { font-size: var(--t-h3); font-variation-settings: 'wdth' 106; }
+  .role { color: var(--ink-2); margin-top: .35rem; font-size: var(--t-small); }
+  .bio { margin: 0; }
+  .people li:target { background: linear-gradient(var(--paper-2), var(--paper-2)) no-repeat 0 0 / 100% 100%; }
+  @media (max-width: 860px) {
+    .people li { grid-template-columns: 96px 1fr; gap: 1rem 1.25rem; }
+    .people img { width: 96px; height: 96px; }
+    .bio { grid-column: 1 / -1; }
+  }
+</style>

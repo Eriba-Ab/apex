@@ -1,0 +1,42 @@
+---
+import ServicePage from '../components/ServicePage.astro';
+import Icon from '../components/Icon.astro';
+---
+<ServicePage slug="mobile-surveillance-trailers" description="Solar-powered mobile security camera trailers from Apex, for rent or purchase, delivered to your site.">
+
+  <section class="section trailer" data-band="DE" style="margin-top:0">
+    <div class="wrap trailer-grid">
+      <figure class="trailer-fig">
+        <img src="img/trailer.webp" alt="An orange Apex solar surveillance trailer with two solar panels and a camera mast" width="1200" height="1600" loading="lazy">
+        <figcaption class="figcap"><b>Fig. 1</b><span>Solar surveillance trailer with mast-mounted cameras.</span></figcaption>
+      </figure>
+      <div>
+        <h2>Built for sites without power, staff or walls.</h2>
+        <p class="lede" style="margin-top:1.5rem">Construction sites, car parks, events and remote assets. Tow it in, raise the mast, and the site is covered.</p>
+        <table class="table mon">
+          <caption><b>Table 2.</b> Monitoring options.</caption>
+          <thead><tr><th scope="col">Option</th><th scope="col">What you get</th></tr></thead>
+          <tbody>
+            <tr><th scope="row" class="t-item">Self monitoring</th><td class="t-desc">24/7 access to live feeds, with zone-based alerts by email or text.</td></tr>
+            <tr><th scope="row" class="t-item">Central station monitoring</th><td class="t-desc">Trained analysts monitor video alerts. Emergency dispatch is available at additional cost.</td></tr>
+          </tbody>
+        </table>
+        <div class="actions">
+          <a class="btn" href="contact-us.html">Request a trailer quote <Icon name="arrow" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div style="height:var(--s6)"></div>
+</ServicePage>
+
+<style>
+  .trailer-grid { display: grid; grid-template-columns: 5fr 7fr; gap: var(--s5); align-items: center; }
+  .trailer-fig { margin: 0; }
+  .trailer-fig img { width: 100%; max-height: 640px; object-fit: cover; }
+  .mon { margin-top: 2rem; }
+  .mon caption, .mon caption b { color: var(--fg); }
+  .mon th, .mon td { border-color: color-mix(in srgb, var(--fg) 35%, transparent) !important; }
+  .mon thead th { border-top-color: var(--fg) !important; color: var(--fg); }
+  @media (max-width: 860px) { .trailer-grid { grid-template-columns: 1fr; } .trailer-fig img { max-height: 420px; } }
+</style>

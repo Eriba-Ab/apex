@@ -1,0 +1,58 @@
+{
+  "slug": "contact-us",
+  "title": "Contact-Apex Cybersecurity Solutions",
+  "description": "",
+  "sections": [
+    {
+      "theme": "",
+      "classes": [
+        "full-bleed-section",
+        "background-width--full-bleed",
+        "section-height--medium",
+        "content-width--wide",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "fluid",
+      "fluid": {
+        "id": "67f81224ec8a2f7fb4676a72",
+        "css": ".fe-67f81224ec8a2f7fb4676a72 { --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 ); display: grid; position: relative; grid-area: 1/1/-1/-1; grid-template-rows: repeat(10,minmax(24px, auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); row-gap: 11.0px; column-gap: 11.0px; overflow-x: hidden; overflow-x: clip; } @media (min-width: 768px) { .background-width--inset .fe-67f81224ec8a2f7fb4676a72 { --inset-padding: calc(var(--sqs-site-gutter) * 2); } .fe-67f81224ec8a2f7fb4676a72 { --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 ); --inset-padding: 0vw; --row-height-scaling-factor: 0.0215; --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) )); grid-template-rows: repeat(9,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); } } .fe-block-67f8122477d002f5972d7913 { grid-area: 1/2/11/10; z-index: 0; @media (max-width: 767px) { } } .fe-block-67f8122477d002f5972d7913 .sqs-block { justify-content: flex-start; } .fe-block-67f8122477d002f5972d7913 .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-67f8122477d002f5972d7913 { grid-area: 1/6/7/22; z-index: 0; } .fe-block-67f8122477d002f5972d7913 .sqs-block { justify-content: flex-start; } .fe-block-67f8122477d002f5972d7913 .sqs-block-alignment-wrapper { align-items: flex-start; } }",
+        "blocks": [
+          {
+            "id": "67f8122477d002f5972d7913",
+            "block": {
+              "type": "text",
+              "html": "<h4 style=\"text-align:center;white-space:pre-wrap;\" data-ph=\"contact-us-1\">elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim a<strong>enim ad minim</strong></h4><h4 style=\"text-align:center;white-space:pre-wrap;\" data-ph=\"contact-us-2\">labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequ <a href=\"mailto:Info@apexcybersecurity.org?subject=Request%20for%20response\"><strong>in voluptate velit esse ci</strong></a> voluptate velit esse cil</h4><h4 style=\"text-align:center;white-space:pre-wrap;\">No matter the need we’re here for you…</h4><h4 style=\"text-align:center;white-space:pre-wrap;\"><strong> “The trusted cybersecurity company”</strong></h4>"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "textSeq": [
+    {
+      "tag": "h4",
+      "words": 14,
+      "ph": "contact-us-1"
+    },
+    {
+      "tag": "h4",
+      "words": 35,
+      "ph": "contact-us-2"
+    },
+    {
+      "tag": "h4",
+      "words": 8,
+      "ph": null
+    },
+    {
+      "tag": "h4",
+      "words": 4,
+      "ph": null
+    }
+  ]
+}

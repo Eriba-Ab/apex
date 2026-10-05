@@ -1,0 +1,144 @@
+{
+  "slug": "network-infrastructure",
+  "title": "Network Infrastructure-Apex Cybersecurity Solutions",
+  "description": "",
+  "sections": [
+    {
+      "theme": "",
+      "classes": [
+        "full-bleed-section",
+        "background-width--full-bleed",
+        "section-height--medium",
+        "content-width--wide",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "fluid",
+      "fluid": {
+        "id": "6578a1762dc827399d146db3",
+        "css": ".fe-6578a1762dc827399d146db3 { --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 ); display: grid; position: relative; grid-area: 1/1/-1/-1; grid-template-rows: repeat(49,minmax(24px, auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); row-gap: 11.0px; column-gap: 11.0px; overflow-x: hidden; overflow-x: clip; } @media (min-width: 768px) { .background-width--inset .fe-6578a1762dc827399d146db3 { --inset-padding: calc(var(--sqs-site-gutter) * 2); } .fe-6578a1762dc827399d146db3 { --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 ); --inset-padding: 0vw; --row-height-scaling-factor: 0.0215; --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) )); grid-template-rows: repeat(23,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); } } .fe-block-db5f3ab86ff518df6dea { grid-area: 1/2/8/10; z-index: 0; @media (max-width: 767px) { } } .fe-block-db5f3ab86ff518df6dea .sqs-block { justify-content: center; } .fe-block-db5f3ab86ff518df6dea .sqs-block-alignment-wrapper { align-items: center; } @media (min-width: 768px) { .fe-block-db5f3ab86ff518df6dea { grid-area: 2/14/19/26; z-index: 0; } .fe-block-db5f3ab86ff518df6dea .sqs-block { justify-content: center; } .fe-block-db5f3ab86ff518df6dea .sqs-block-alignment-wrapper { align-items: center; } } .fe-block-d841e579900806014e0d { grid-area: 8/2/13/10; z-index: 1; @media (max-width: 767px) { } } .fe-block-d841e579900806014e0d .sqs-block { justify-content: center; } .fe-block-d841e579900806014e0d .sqs-block-alignment-wrapper { align-items: center; } @media (min-width: 768px) { .fe-block-d841e579900806014e0d { grid-area: 1/2/5/15; z-index: 1; } .fe-block-d841e579900806014e0d .sqs-block { justify-content: center; } .fe-block-d841e579900806014e0d .sqs-block-alignment-wrapper { align-items: center; } } .fe-block-b84b507dcf10b10158ae { grid-area: 13/2/26/9; z-index: 2; @media (max-width: 767px) { } } .fe-block-b84b507dcf10b10158ae .sqs-block { justify-content: flex-start; } .fe-block-b84b507dcf10b10158ae .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-b84b507dcf10b10158ae { grid-area: 5/2/21/14; z-index: 2; } .fe-block-b84b507dcf10b10158ae .sqs-block { justify-content: flex-start; } .fe-block-b84b507dcf10b10158ae .sqs-block-alignment-wrapper { align-items: flex-start; } } .fe-block-yui_3_17_2_1_1702402891369_24989 { grid-area: 26/2/38/10; z-index: 4; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1702402891369_24989 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1702402891369_24989 .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1702402891369_24989 { grid-area: 11/3/24/9; z-index: 4; } .fe-block-yui_3_17_2_1_1702402891369_24989 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1702402891369_24989 .sqs-block-alignment-wrapper { align-items: flex-start; } } .fe-block-yui_3_17_2_1_1744310125687_6825 { grid-area: 48/2/50/10; z-index: 5; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1744310125687_6825 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1744310125687_6825 .sqs-block-alignment-wrapper { align-items: center; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1744310125687_6825 { grid-area: 21/11/23/17; z-index: 5; } .fe-block-yui_3_17_2_1_1744310125687_6825 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1744310125687_6825 .sqs-block-alignment-wrapper { align-items: center; } }",
+        "blocks": [
+          {
+            "id": "db5f3ab86ff518df6dea",
+            "block": {
+              "type": "image",
+              "fluid": true,
+              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/46a6c287-c866-469d-a16d-b5761593fa67/Network-Infrastructure-solution-Dubai.jpg?format=1500w",
+              "alt": "",
+              "dims": "1684x960",
+              "focal": "0.5,0.5",
+              "fit": null,
+              "crop": null,
+              "maxWidth": null,
+              "href": null,
+              "caption": null
+            }
+          },
+          {
+            "id": "d841e579900806014e0d",
+            "block": {
+              "type": "text",
+              "html": "<h3 style=\"white-space:pre-wrap;\"><strong>Network Infrastructure Services</strong></h3>"
+            }
+          },
+          {
+            "id": "b84b507dcf10b10158ae",
+            "block": {
+              "type": "text",
+              "html": "<p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"network-infrastructure-1\">elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate </p><p style=\"text-align:justify;white-space: normal !important;white-space:pre-wrap;\" class=\"\" data-ph=\"network-infrastructure-2\">labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dol</p><p class=\"\" data-rte-preserve-empty=\"true\" style=\"white-space:pre-wrap;\"></p>"
+            }
+          },
+          {
+            "id": "yui_3_17_2_1_1702402891369_24989",
+            "block": {
+              "type": "text",
+              "html": "<ul data-rte-list=\"default\"><li><p class=\"\" style=\"white-space:pre-wrap;\">Rack and Stack</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Network and Edge services </p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Private Wireless Services</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Voice and Video</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">WAN</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Firewall</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Software-Defined Networking (SDN) Services</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">SD-WAN and SASE Services</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Cloud infrastructure managed services </p></li></ul>"
+            }
+          },
+          {
+            "id": "yui_3_17_2_1_1744310125687_6825",
+            "block": {
+              "type": "button",
+              "label": "Contact Us",
+              "href": "contact-us.html",
+              "size": "medium",
+              "variant": "primary",
+              "align": "center"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "textSeq": [
+    {
+      "tag": "h3",
+      "words": 3,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 34,
+      "ph": "network-infrastructure-1"
+    },
+    {
+      "tag": "p",
+      "words": 30,
+      "ph": "network-infrastructure-2"
+    },
+    {
+      "tag": "p",
+      "words": 0,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 3,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 3,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 3,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 1,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 1,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 4,
+      "ph": null
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "integrated-security-systems",
+  "title": "Integrated Security Systems-Apex Cybersecurity Solutions",
+  "description": "",
+  "sections": [
+    {
+      "theme": "",
+      "classes": [
+        "full-bleed-section",
+        "background-width--full-bleed",
+        "section-height--medium",
+        "content-width--wide",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "fluid",
+      "fluid": {
+        "id": "6591aaaba156b677388e58cd",
+        "css": ".fe-6591aaaba156b677388e58cd { --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 ); display: grid; position: relative; grid-area: 1/1/-1/-1; grid-template-rows: repeat(18,minmax(24px, auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); row-gap: 11.0px; column-gap: 11.0px; overflow-x: hidden; overflow-x: clip; } @media (min-width: 768px) { .background-width--inset .fe-6591aaaba156b677388e58cd { --inset-padding: calc(var(--sqs-site-gutter) * 2); } .fe-6591aaaba156b677388e58cd { --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 ); --inset-padding: 0vw; --row-height-scaling-factor: 0.0215; --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) )); grid-template-rows: repeat(9,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); } } .fe-block-yui_3_17_2_1_1704044607332_3538 { grid-area: 1/4/3/8; z-index: 1; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1704044607332_3538 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1704044607332_3538 .sqs-block-alignment-wrapper { align-items: center; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1704044607332_3538 { grid-area: 1/3/2/13; z-index: 1; } .fe-block-yui_3_17_2_1_1704044607332_3538 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1704044607332_3538 .sqs-block-alignment-wrapper { align-items: center; } } .fe-block-yui_3_17_2_1_1704044607332_4239 { grid-area: 3/2/9/10; z-index: 3; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1704044607332_4239 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1704044607332_4239 .sqs-block-alignment-wrapper { align-items: center; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1704044607332_4239 { grid-area: 2/3/10/13; z-index: 3; } .fe-block-yui_3_17_2_1_1704044607332_4239 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1704044607332_4239 .sqs-block-alignment-wrapper { align-items: center; } } .fe-block-d0e778f0777d39d10f53 { grid-area: 10/4/12/8; z-index: 2; @media (max-width: 767px) { } } .fe-block-d0e778f0777d39d10f53 .sqs-block { justify-content: center; } .fe-block-d0e778f0777d39d10f53 .sqs-block-alignment-wrapper { align-items: center; } @media (min-width: 768px) { .fe-block-d0e778f0777d39d10f53 { grid-area: 1/15/2/25; z-index: 2; } .fe-block-d0e778f0777d39d10f53 .sqs-block { justify-content: center; } .fe-block-d0e778f0777d39d10f53 .sqs-block-alignment-wrapper { align-items: center; } } .fe-block-yui_3_17_2_1_1704044607332_7846 { grid-area: 12/2/18/10; z-index: 4; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1704044607332_7846 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1704044607332_7846 .sqs-block-alignment-wrapper { align-items: center; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1704044607332_7846 { grid-area: 2/15/10/25; z-index: 4; } .fe-block-yui_3_17_2_1_1704044607332_7846 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1704044607332_7846 .sqs-block-alignment-wrapper { align-items: center; } }",
+        "blocks": [
+          {
+            "id": "yui_3_17_2_1_1704044607332_3538",
+            "block": {
+              "type": "button",
+              "label": "Key Card Access Systems",
+              "href": "https://www.apexcybersecurity.org/key-card-access-systems",
+              "size": "medium",
+              "variant": "primary",
+              "align": "center"
+            }
+          },
+          {
+            "id": "yui_3_17_2_1_1704044607332_4239",
+            "block": {
+              "type": "image",
+              "fluid": true,
+              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/9f11f6a6-5166-4fa0-9c5b-fa4347199a65/Keycard.jpg?format=1500w",
+              "alt": "",
+              "dims": "708x472",
+              "focal": "0.5,0.5",
+              "fit": null,
+              "crop": null,
+              "maxWidth": null,
+              "href": "https://www.apexcybersecurity.org/key-card-access-systems",
+              "caption": null
+            }
+          },
+          {
+            "id": "d0e778f0777d39d10f53",
+            "block": {
+              "type": "button",
+              "label": "Enterprise Security Cameras",
+              "href": "https://www.apexcybersecurity.org/enterprise-security-cameras",
+              "size": "medium",
+              "variant": "primary",
+              "align": "center"
+            }
+          },
+          {
+            "id": "yui_3_17_2_1_1704044607332_7846",
+            "block": {
+              "type": "image",
+              "fluid": true,
+              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/efa4c9e3-5a57-4c08-a496-db70bbcc3f31/Camera+Pic.png?format=1500w",
+              "alt": "",
+              "dims": "712x409",
+              "focal": "0.5,0.5",
+              "fit": null,
+              "crop": null,
+              "maxWidth": null,
+              "href": "https://www.apexcybersecurity.org/enterprise-security-cameras",
+              "caption": null
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "textSeq": []
+}

@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { FUNCTIONS, PROFILE, SERVICES } from '../data/site';
+---
+<Base title="Services" page="services" description="Every Apex Cybersecurity service organised by NIST CSF 2.0 function: Govern, Identify, Protect, Detect, Respond and Recover.">
+  <header class="page-head">
+    <div class="wrap">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Services</li></ol>
+      <h1>Services, organised the way you buy them.</h1>
+      <p class="lede muted">The NIST Cybersecurity Framework splits security into six functions. Find the one you are buying for and you’ll see exactly what Apex delivers under it, with the framework category beside each line.</p>
+      <nav class="jump" aria-label="Jump to function">
+        {FUNCTIONS.map((f) => <a class="fn fn--name" data-fn={f.code} href={`#${f.slug}`}><span class="code">{f.code}</span> {f.name}</a>)}
+      </nav>
+    </div>
+  </header>
+
+  {FUNCTIONS.map((f) => (
+    <section class="fband" id={f.slug} data-band={f.code} aria-labelledby={`h-${f.slug}`}>
+      <div class="wrap fband-grid">
+        <div class="fband-id">
+          <p class="fband-code" aria-hidden="true">{f.code}</p>
+          <h2 id={`h-${f.slug}`}>{f.name}</h2>
+          <p class="muted">{f.line}</p>
+        </div>
+        <div>
+          <ol class="fband-list">
+            {PROFILE[f.code].map((p) => (
+              <li><a href={p.href}><span class="code">{p.cat}</span><span>{p.item}</span><Icon name="arrow" /></a></li>
+            ))}
+          </ol>
+          <p class="fband-lines muted">Service lines: {SERVICES.filter((s) => s.fns.includes(f.code)).map((s, i, a) => <><a href={`${s.slug}.html`}>{s.short}</a>{i < a.length - 1 ? ', ' : ''}</>)}{f.code === 'PR' && <>, <a href="learning-platform.html">Apex Institute</a></>}</p>
+        </div>
+      </div>
+    </section>
+  ))}
+</Base>
+
+<style>
+  .jump { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin-top: var(--s4); padding-top: var(--s2); border-top: 1px solid var(--rule); }
+  .jump a { font-size: .9rem; text-decoration: none; min-height: 32px; }
+  .jump a:hover { text-decoration: underline; }
+  .fband { padding-block: clamp(3.5rem, 2.5rem + 4vw, 6.5rem); scroll-margin-top: 76px; }
+  .fband-grid { display: grid; grid-template-columns: 4fr 8fr; gap: var(--s5); align-items: start; }
+  .fband-code { margin: 0 0 1rem; font-family: var(--f-display); font-weight: 800; font-variation-settings: 'wdth' 125; font-size: clamp(5rem, 3rem + 7vw, 9.5rem); line-height: .8; letter-spacing: -.04em; }
+  .fband h2 { margin-bottom: .75rem; }
+  .fband-list { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--fg); }
+  .fband-list a { display: grid; grid-template-columns: 4.5rem 1fr 1.25rem; gap: 1rem; align-items: baseline; padding: 1.05rem 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 35%, transparent); text-decoration: none; font-size: clamp(1.05rem, 1rem + .3vw, 1.25rem); font-weight: 600; line-height: 1.35; }
+  .fband-list .code { font-size: .8rem; color: var(--muted); }
+  .fband-list svg { width: 1.2rem; height: 1.2rem; align-self: center; transition: transform .3s var(--ease); }
+  .fband-list a:hover svg { transform: translateX(5px); }
+  .fband-list a:hover span:nth-child(2) { text-decoration: underline; text-underline-offset: .2em; }
+  .fband-lines { margin-top: 1.25rem; font-size: var(--t-small); max-width: none; }
+  .fband-lines a { color: var(--fg); }
+  @media (max-width: 860px) {
+    .fband-grid { grid-template-columns: 1fr; gap: var(--s3); }
+    .fband-list a { grid-template-columns: 1fr 1.2rem; gap: .25rem 1rem; }
+    .fband-list .code { grid-column: 1 / -1; }
+  }
+</style>

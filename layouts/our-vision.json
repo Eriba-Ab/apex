@@ -1,0 +1,81 @@
+{
+  "slug": "our-vision",
+  "title": "Our Vision-Apex Cybersecurity Solutions",
+  "description": "",
+  "sections": [
+    {
+      "theme": "bright",
+      "classes": [
+        "background-width--full-bleed",
+        "section-height--custom",
+        "content-width--medium",
+        "horizontal-alignment--center",
+        "vertical-alignment--top"
+      ],
+      "style": "min-height: 10vh;",
+      "contentStyle": "padding-bottom: calc(10vmax / 5);",
+      "bg": null,
+      "divider": null,
+      "kind": "classic",
+      "rows": [
+        {
+          "cols": [
+            {
+              "span": 12,
+              "items": [
+                {
+                  "block": {
+                    "type": "text",
+                    "html": "<p style=\"text-align:center;white-space:pre-wrap;\" class=\"sqsrte-large\"><strong>Our Vision</strong></p><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"our-vision-1\">elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia</p><p style=\"text-align:center;white-space:pre-wrap;\" class=\"\" data-ph=\"our-vision-2\"> labore et dolore magna aliqua ut enim ad m </p>"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "image",
+                    "fluid": false,
+                    "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1617248923978-ZNE0RC17XYENBO2IDSEW/Services+edge-panduit.png?format=1500w",
+                    "alt": "Services edge-panduit.png",
+                    "dims": "1000x400",
+                    "focal": "0.5,0.5",
+                    "fit": "cover",
+                    "crop": "40%",
+                    "maxWidth": "1000px",
+                    "href": null,
+                    "caption": ""
+                  }
+                },
+                {
+                  "block": {
+                    "type": "button",
+                    "label": "Our Team",
+                    "href": "team.html",
+                    "size": "large",
+                    "variant": "secondary",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "textSeq": [
+    {
+      "tag": "p",
+      "words": 2,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 50,
+      "ph": "our-vision-1"
+    },
+    {
+      "tag": "p",
+      "words": 9,
+      "ph": "our-vision-2"
+    }
+  ]
+}

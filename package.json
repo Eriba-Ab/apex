@@ -1,0 +1,16 @@
+{
+  "name": "apex-clone",
+  "version": "1.0.0",
+  "description": "A plain HTML/CSS/JS rebuild of apexcybersecurity.org (a Squarespace site), made as a starting point for a redesign.",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

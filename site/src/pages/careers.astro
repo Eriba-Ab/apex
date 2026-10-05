@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { CONTACT } from '../data/site';
+---
+<Base title="Careers" page="careers" description="Careers at Apex Cybersecurity Solutions: cybersecurity analysts, infrastructure and network engineers. Send your CV to info@apexcybersecurity.co.uk.">
+  <header class="page-head" data-band="RC">
+    <div class="wrap">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Careers</li></ol>
+      <h1>Defend the organisations that rely on us.</h1>
+      <p class="lede">Apex builds teams of analysts and engineers who monitor, protect and build for our clients, around the clock.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="main empty">
+        <p class="empty-code code">No vacancies listed</p>
+        <h2>Current vacancies will be listed here.</h2>
+        <p>We’re always glad to hear from cybersecurity analysts, cloud and virtualisation engineers and network engineers. Send your CV and tell us what you’d like to work on.</p>
+        <div class="actions">
+          <a class="btn" href={`mailto:${CONTACT.email}?subject=Careers`}><Icon name="mail" />Send your CV</a>
+        </div>
+      </div>
+      <aside class="side">
+        <h2 class="side-h">New to the field?</h2>
+        <p>The Apex Institute’s 12-week programme prepares learners for Junior Cybersecurity Analyst roles, including CompTIA Security+ preparation and hands-on time with Splunk, Elastic, SentinelOne and Carbon Black.</p>
+        <a class="arrow-link" href="learning-platform.html">Explore the Learning Platform <Icon name="arrow" /></a>
+      </aside>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .empty { padding: var(--s4) 0; border-top: 2px solid var(--ink); }
+  .empty-code { color: var(--rs); margin-bottom: 1rem; }
+  .empty h2 { margin-bottom: 1rem; }
+  .side-h { font-size: var(--t-h3); margin-bottom: .75rem; }
+  .side p { font-size: var(--t-small); }
+</style>

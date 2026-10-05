@@ -1,0 +1,237 @@
+---
+import Base from '../layouts/Base.astro';
+import Wheel from '../components/Wheel.astro';
+import Icon from '../components/Icon.astro';
+import { CONTACT, FUNCTIONS, SERVICES, LEADERS, PARTNERS, VENDOR_FACTS } from '../data/site';
+---
+<Base title="Home" page="index" description="Apex Cybersecurity Solutions is an IT and cybersecurity firm with a UK office in Sevenoaks, Kent, covering every NIST CSF function: compliance, 24/7 managed detection and response, endpoint protection, network infrastructure, physical security and workforce training.">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Govern to Recover. <span>One partner, end to end.</span></h1>
+        <p class="lede">Apex is an IT and cybersecurity firm that covers the whole framework, from compliance readiness and 24/7 managed detection to network builds, physical security and workforce training.</p>
+        <div class="actions">
+          <a class="btn" href="contact-us.html">Start a conversation <Icon name="arrow" /></a>
+          <a class="btn btn--line" href={CONTACT.phoneHref}><Icon name="phone" />Call {CONTACT.phone}</a>
+        </div>
+        <p class="hero-cert">UK office: {CONTACT.address.join(', ')}</p>
+      </div>
+      <div class="hero-fig">
+        <Wheel />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight profile" aria-labelledby="profile-title">
+    <div class="wrap">
+      <div class="profile-head">
+        <h2 id="profile-title">Every service, placed on the framework.</h2>
+        <p class="muted">Procurement teams buy against the NIST Cybersecurity Framework. Here is how each Apex service line maps to it, so you can see coverage at a glance and pull the right pages into your file.</p>
+      </div>
+      <div class="matrix-scroll">
+        <table class="matrix">
+          <caption><b>Table 1.</b> Apex service lines by NIST CSF 2.0 function.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Service line</th>
+              {FUNCTIONS.map((f) => <th scope="col" class="m-fn" data-fn={f.code}><span class="code">{f.code}</span><span class="m-fn-name">{f.name}</span></th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {SERVICES.map((s) => (
+              <tr>
+                <th scope="row"><a href={`${s.slug}.html`}>{s.short}</a></th>
+                {FUNCTIONS.map((f) => s.fns.includes(f.code)
+                  ? <td class="m-on" data-fn={f.code}><span class="sr-only">{f.name}: yes</span></td>
+                  : <td class="m-off"><span class="sr-only">{f.name}: no</span></td>)}
+              </tr>
+            ))}
+            <tr>
+              <th scope="row"><a href="learning-platform.html">Apex Institute</a></th>
+              {FUNCTIONS.map((f) => f.code === 'PR'
+                ? <td class="m-on" data-fn={f.code}><span class="sr-only">{f.name}: yes</span></td>
+                : <td class="m-off"><span class="sr-only">{f.name}: no</span></td>)}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section watchband" data-band="DE" aria-labelledby="watch-title">
+    <div class="wrap watchband-grid">
+      <div>
+        <p class="watchband-clock" aria-hidden="true"><span data-clock-big>00:00</span><small data-clock-zone>UK</small></p>
+        <p class="muted watchband-sub">UK time, now. Apex’s Security Conservators (SC)® work from a cloud-powered virtual Security Operations Centre every hour of the day.</p>
+      </div>
+      <div>
+        <h2 id="watch-title">“We watch, we protect, our focus is you.”</h2>
+        <p style="margin-top:1.5rem">Managed Detection and Response analyses packets and system processes in real time, triages critical events, and contains incidents with detailed guidance on remediation. Endpoint Detection and Response adds host isolation, so an attack is stopped before it spreads.</p>
+        <div class="actions">
+          <a class="btn" href="mdr.html">Managed Detection and Response</a>
+          <a class="btn btn--line" href="edr.html">Endpoint Detection and Response</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section certified" aria-labelledby="cert-title">
+    <div class="wrap cert-grid">
+      <div>
+        <h2 id="cert-title">Ready for your vendor file.</h2>
+        <p class="lede" style="margin-top:1.5rem">One supplier for cyber, network and physical security work, with a UK office in Sevenoaks, Kent.</p>
+        <p class="muted">The facts your procurement team will ask for are below, including the UK certifications buyers look for.</p>
+      </div>
+      <div>
+        <dl class="vendor">
+          {VENDOR_FACTS.map((v) => <><dt>{v.label}</dt><dd>{v.value ?? <span class="pending">{v.pending}</span>}</dd></>)}
+        </dl>
+        <p class="figcap" style="border:0;margin-top:.75rem"><b>Table 2.</b><span>Vendor facts. Items in italics are still to be confirmed by Apex.</span></p>
+        <a class="arrow-link" href="about.html" style="margin-top:1.5rem">About the company <Icon name="arrow" /></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section leaders" aria-labelledby="leaders-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="leaders-head">
+        <h2 id="leaders-title">Led by practitioners.</h2>
+        <a class="arrow-link" href="team.html">Meet the leadership <Icon name="arrow" /></a>
+      </div>
+      <ul class="leaders-list">
+        {LEADERS.map((l) => (
+          <li>
+            <a href={`team.html#${l.id}`}>
+              <img src={l.img} alt="" width="300" height="300" loading="lazy">
+              <span class="l-name">{l.name}</span>
+              <span class="l-role">{l.role}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section institute" data-band="PR" aria-labelledby="inst-title">
+    <div class="wrap split">
+      <div class="main">
+        <h2 id="inst-title">Building the next generation of cybersecurity analysts.</h2>
+        <p class="lede" style="margin-top:1.5rem">The Apex Institute, powered by CyberBit, takes learners to Junior Cybersecurity Analyst in 12 weeks with instructor-led sessions, hands-on labs and real-world simulations.</p>
+        <p class="muted">Organisations can also bring custom awareness workshops and simulations to their own staff.</p>
+        <div class="actions">
+          <a class="btn" href="learning-platform.html">Explore the Learning Platform</a>
+          <a class="btn btn--line" href={`${CONTACT.live}/membership-access`} target="_blank" rel="noopener">Start a 7-day free trial <Icon name="external" /></a>
+        </div>
+      </div>
+      <dl class="side inst-facts">
+        <dt>Programme length</dt><dd>12 weeks</dd>
+        <dt>Outcome</dt><dd>Junior Cybersecurity Analyst</dd>
+        <dt>Certification prep</dt><dd>CompTIA Security+</dd>
+        <dt>Tools</dt><dd>Splunk, Elastic, SentinelOne, Carbon Black</dd>
+        <dt>Membership</dt><dd>12 months, with mentors and a private community</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section section--tight partners" aria-labelledby="partners-title">
+    <div class="wrap partners-row">
+      <h2 id="partners-title">Partners</h2>
+      <ul>
+        {PARTNERS.map((p) => <li><a href={p.href} target="_blank" rel="noopener"><img src={p.img} alt={p.name} loading="lazy"></a></li>)}
+        <li class="partner-text">CyberBit <span class="muted">training</span></li>
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<script>
+  const big = document.querySelector<HTMLElement>('[data-clock-big]');
+  const zone = document.querySelector<HTMLElement>('[data-clock-zone]');
+  const fmt = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZoneName: 'short' });
+  const set = () => {
+    const p = Object.fromEntries(fmt.formatToParts(new Date()).map((x) => [x.type, x.value]));
+    if (big) big.textContent = `${p.hour}:${p.minute}`.replace(/^24/, '00');
+    if (zone) zone.textContent = p.timeZoneName;
+  };
+  set();
+  setInterval(set, 30000);
+</script>
+
+<style>
+  .hero { padding-block: clamp(2.5rem, 1.5rem + 3vw, 4.5rem) clamp(3rem, 2rem + 3vw, 5rem); }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 2rem; align-items: start; }
+  .hero-copy { padding-top: clamp(0rem, 2vw, 2.5rem); }
+  .hero h1 { font-size: clamp(2.5rem, 1.6rem + 2.6vw, 3.6rem); font-variation-settings: 'wdth' 112; letter-spacing: -.03em; line-height: .98; }
+  .hero h1 span { display: block; color: var(--id); }
+  .hero .lede { margin-top: 1.75rem; }
+  .hero-cert { display: flex; align-items: center; gap: .8rem; margin-top: 2.25rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: var(--t-small); color: var(--ink-2); max-width: 44ch; }
+  .cert-mark { flex: none; display: grid; place-items: center; width: 3.1rem; height: 3.1rem; border-radius: 50%; border: 2px solid var(--ink); color: var(--ink); font: 800 .8rem/1 var(--f-display); font-variation-settings: 'wdth' 120; }
+
+  .profile-head { display: grid; grid-template-columns: 5fr 7fr; gap: var(--s4); align-items: end; margin-bottom: var(--s4); }
+  .profile-head p { margin: 0; }
+  .matrix-scroll { overflow-x: auto; }
+  .matrix { width: 100%; border-collapse: collapse; min-width: 340px; }
+  .matrix caption { caption-side: bottom; text-align: left; padding-top: .7rem; font-size: var(--t-small); color: var(--ink-2); }
+  .matrix caption b { color: var(--ink); }
+  .matrix th, .matrix td { border-top: 1px solid var(--rule); padding: 0; }
+  .matrix thead th { border-top: 2px solid var(--ink); text-align: left; font-weight: 600; font-size: var(--t-micro); color: var(--ink-2); padding: .7rem 0 .9rem; }
+  .matrix .m-fn { width: 10.5%; padding-left: .25rem; }
+  .matrix .m-fn .code { display: block; color: var(--ink); font-size: .95rem; }
+  .matrix .m-fn::after { content: ''; display: block; height: 4px; margin-top: .5rem; margin-right: 4px; background: var(--c); }
+  .matrix tbody th { text-align: left; font-weight: 600; padding: .85rem 1rem .85rem 0; font-size: 1rem; }
+  .matrix tbody th a { text-decoration: none; }
+  .matrix tbody th a:hover { text-decoration: underline; }
+  .matrix tbody tr:last-child > * { border-bottom: 1px solid var(--rule); }
+  .matrix td { position: relative; }
+  .matrix td.m-on::before { content: ''; position: absolute; inset: 4px 4px 4px 0; background: var(--c); }
+  .matrix td.m-off::before { content: ''; position: absolute; left: calc(50% - 2px); top: calc(50% - 2px); width: 4px; height: 4px; background: var(--rule); }
+  .matrix tbody tr { transition: background-color .2s; }
+  .matrix tbody tr:hover { background: var(--paper-2); }
+  .matrix [data-fn='GV'] { --c: var(--gv); } .matrix [data-fn='ID'] { --c: var(--id); } .matrix [data-fn='PR'] { --c: var(--pr); }
+  .matrix [data-fn='DE'] { --c: var(--de); } .matrix [data-fn='RS'] { --c: var(--rs); } .matrix [data-fn='RC'] { --c: var(--rc); }
+
+  .watchband-grid { display: grid; grid-template-columns: 5fr 6fr; gap: var(--s5); align-items: start; }
+  .watchband-clock { margin: 0; display: flex; align-items: baseline; gap: .6rem; font-family: var(--f-code); font-weight: 700; font-size: clamp(4rem, 2.2rem + 8vw, 9rem); line-height: .85; letter-spacing: -.03em; font-variant-numeric: tabular-nums; max-width: none; }
+  .watchband-clock small { font-size: .2em; letter-spacing: 0; font-weight: 500; }
+  .watchband-sub { margin-top: 1.5rem; max-width: 36ch; }
+  .watchband h2 { font-size: var(--t-h2); }
+
+  .cert-grid { display: grid; grid-template-columns: 5fr 7fr; gap: var(--s5); align-items: start; }
+
+  .leaders-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 1rem; margin-bottom: var(--s4); padding-top: var(--s5); border-top: 2px solid var(--ink); }
+  .leaders-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--s3); }
+  .leaders-list a { display: grid; gap: .2rem; text-decoration: none; }
+  .leaders-list img { width: 100%; max-width: 168px; aspect-ratio: 1; object-fit: cover; border-radius: 50%; margin-bottom: .9rem; filter: grayscale(1) contrast(1.05); transition: filter .5s var(--ease); }
+  .leaders-list a:hover img { filter: none; }
+  .l-name { font-family: var(--f-display); font-weight: 700; font-size: 1.15rem; font-variation-settings: 'wdth' 104; }
+  .l-role { font-size: var(--t-small); color: var(--ink-2); line-height: 1.35; }
+  .leaders-list a:hover .l-name { text-decoration: underline; text-underline-offset: .2em; }
+
+  .inst-facts { margin: 0; font-size: var(--t-small); }
+  .inst-facts dt { color: var(--muted); padding-top: .8rem; border-top: 1px solid color-mix(in srgb, var(--fg) 35%, transparent); }
+  .inst-facts dd { margin: .15rem 0 .8rem; font-weight: 600; font-size: 1.05rem; }
+
+  .partners-row { display: grid; grid-template-columns: auto 1fr; gap: var(--s4); align-items: center; }
+  .partners h2 { font-family: var(--f-text); font-size: var(--t-small); font-weight: 600; letter-spacing: 0; color: var(--ink-2); }
+  .partners ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem 2.5rem; }
+  .partners img { height: 52px; width: auto; mix-blend-mode: multiply; filter: grayscale(1); opacity: .85; transition: filter .3s, opacity .3s; }
+  .partners a:hover img { filter: none; opacity: 1; }
+  .partner-text { font-family: var(--f-display); font-weight: 700; font-size: 1.4rem; font-variation-settings: 'wdth' 112; }
+  .partner-text .muted { font-family: var(--f-text); font-size: var(--t-micro); font-weight: 400; }
+
+  @media (max-width: 1080px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-copy { padding-top: 0; }
+    .hero h1 { max-width: 14ch; }
+    .leaders-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+  @media (max-width: 860px) {
+    .profile-head, .watchband-grid, .partners-row { grid-template-columns: 1fr; }
+    .matrix .m-fn-name { display: none; }
+    .leaders-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cert-grid { grid-template-columns: 1fr; gap: var(--s4); }
+    .partners ul { justify-content: flex-start; }
+    .partners img { height: 40px; }
+  }
+</style>

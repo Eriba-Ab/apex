@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { VENDOR_FACTS } from '../data/site';
+---
+<Base title="Company" page="about" description="Apex Cybersecurity Solutions is an IT and cybersecurity services firm with a UK office at 52 High Street, Sevenoaks, Kent.">
+  <header class="page-head" data-band="ID">
+    <div class="wrap">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li>About</li><li aria-current="page">Company</li></ol>
+      <h1>A firm built to modernise, innovate and protect.</h1>
+      <p class="lede">Apex Cybersecurity Solutions is an IT and cybersecurity services firm. Our UK office is at 52 High Street, Sevenoaks, Kent TN13 1JG.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="main">
+        <p class="lede">Apex was founded to create an IT and cybersecurity company that provides the solutions and services to modernise, innovate and protect people and their businesses.</p>
+        <p>We work with organisations across the full lifecycle of their technology: outsourced technology support, cloud and network infrastructure, managed services, software tools, threat mitigation, incident response, data security, governance, risk and compliance, and vulnerability management. Around those core services we offer consultancy, training and technical support.</p>
+        <p>Because we also design and install physical security, from key card access to enterprise cameras and mobile surveillance trailers, Apex can secure a building and the network inside it under one relationship.</p>
+        <div class="actions">
+          <a class="btn" href="services.html">See services by function <Icon name="arrow" /></a>
+          <a class="btn btn--line" href="our-vision.html">Our vision</a>
+        </div>
+      </div>
+      <aside class="side">
+        <dl class="vendor vendor--stack">
+          {VENDOR_FACTS.map((v) => <><dt>{v.label}</dt><dd>{v.value ?? <span class="pending">{v.pending}</span>}</dd></>)}
+        </dl>
+        <p class="figcap" style="border:0;margin-top:.5rem"><b>Table 1.</b><span>Vendor facts.</span></p>
+      </aside>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .city { margin: 0; }
+  .city img { width: 100%; height: clamp(260px, 38vw, 520px); object-fit: cover; object-position: 50% 60%; }
+  .city .figcap { margin-top: .5rem; border: 0; }
+  .vendor--stack { grid-template-columns: 1fr; }
+  .vendor--stack dd { border-top: 0; padding-top: 0; }
+</style>

@@ -1,0 +1,90 @@
+{
+  "slug": "about",
+  "title": "Company-Apex Cybersecurity Solutions",
+  "description": "",
+  "sections": [
+    {
+      "theme": "bright",
+      "classes": [
+        "background-width--full-bleed",
+        "section-height--small",
+        "content-width--wide",
+        "horizontal-alignment--center",
+        "vertical-alignment--top"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "classic",
+      "rows": [
+        {
+          "cols": [
+            {
+              "span": 4,
+              "items": [
+                {
+                  "block": {
+                    "type": "image",
+                    "fluid": false,
+                    "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/1617253677760-7XU7BFOQDQRPJ2P4CLLB/City+Image.jpg?format=1500w",
+                    "alt": "City Image.jpg",
+                    "dims": "848x565",
+                    "focal": "0.5,0.5",
+                    "fit": "cover",
+                    "crop": "54.9549560546875%",
+                    "maxWidth": "848px",
+                    "href": null,
+                    "caption": null
+                  }
+                }
+              ]
+            },
+            {
+              "span": 7,
+              "items": [
+                {
+                  "block": {
+                    "type": "text",
+                    "html": "<h3 style=\"white-space:pre-wrap;\">Who we are</h3><p style=\"text-align:justify;white-space: normal !important;white-space:pre-wrap;\" class=\"\" data-ph=\"about-1\">elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum d </p><p style=\"text-align:justify;white-space: normal !important;white-space:pre-wrap;\" class=\"\" data-ph=\"about-2\">labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit sed do eius </p>"
+                  }
+                },
+                {
+                  "block": {
+                    "type": "button",
+                    "label": "Our Vision",
+                    "href": "our-vision.html",
+                    "size": "large",
+                    "variant": "secondary",
+                    "align": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "span": 1,
+              "items": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "textSeq": [
+    {
+      "tag": "h3",
+      "words": 3,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 60,
+      "ph": "about-1"
+    },
+    {
+      "tag": "p",
+      "words": 50,
+      "ph": "about-2"
+    }
+  ]
+}

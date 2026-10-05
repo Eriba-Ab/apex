@@ -1,0 +1,162 @@
+{
+  "slug": "mobile-surveillance-trailers",
+  "title": "Mobile Surveillance Trailers-Apex Cybersecurity Solutions",
+  "description": "",
+  "sections": [
+    {
+      "theme": "",
+      "classes": [
+        "full-bleed-section",
+        "background-width--full-bleed",
+        "section-height--medium",
+        "content-width--wide",
+        "horizontal-alignment--center",
+        "vertical-alignment--middle"
+      ],
+      "style": null,
+      "contentStyle": null,
+      "bg": null,
+      "divider": null,
+      "kind": "fluid",
+      "fluid": {
+        "id": "691fdbdb740fb8304d045a75",
+        "css": ".fe-691fdbdb740fb8304d045a75 { --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 ); display: grid; position: relative; grid-area: 1/1/-1/-1; grid-template-rows: repeat(55,minmax(24px, auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); row-gap: 11.0px; column-gap: 11.0px; overflow-x: hidden; overflow-x: clip; } @media (min-width: 768px) { .background-width--inset .fe-691fdbdb740fb8304d045a75 { --inset-padding: calc(var(--sqs-site-gutter) * 2); } .fe-691fdbdb740fb8304d045a75 { --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px); --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 ); --inset-padding: 0vw; --row-height-scaling-factor: 0.0215; --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) )); grid-template-rows: repeat(25,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto)); grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr); } } .fe-block-yui_3_17_2_1_1763694942700_3507 { grid-area: 1/2/14/10; z-index: 4; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1763694942700_3507 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1763694942700_3507 .sqs-block-alignment-wrapper { align-items: center; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1763694942700_3507 { grid-area: 1/2/16/11; z-index: 4; } .fe-block-yui_3_17_2_1_1763694942700_3507 .sqs-block { justify-content: center; } .fe-block-yui_3_17_2_1_1763694942700_3507 .sqs-block-alignment-wrapper { align-items: center; } } .fe-block-f5487df64f4601679f7d { grid-area: 14/2/16/10; z-index: 1; @media (max-width: 767px) { } } .fe-block-f5487df64f4601679f7d .sqs-block { justify-content: flex-start; } .fe-block-f5487df64f4601679f7d .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-f5487df64f4601679f7d { grid-area: 1/14/3/24; z-index: 2; } .fe-block-f5487df64f4601679f7d .sqs-block { justify-content: center; } .fe-block-f5487df64f4601679f7d .sqs-block-alignment-wrapper { align-items: center; } } .fe-block-yui_3_17_2_1_1763694942700_49732 { grid-area: 16/2/20/10; z-index: 8; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1763694942700_49732 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1763694942700_49732 .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1763694942700_49732 { grid-area: 16/2/21/11; z-index: 8; } .fe-block-yui_3_17_2_1_1763694942700_49732 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1763694942700_49732 .sqs-block-alignment-wrapper { align-items: flex-start; } } .fe-block-eacecd600210e1f8e158 { grid-area: 20/2/30/10; z-index: 2; @media (max-width: 767px) { } } .fe-block-eacecd600210e1f8e158 .sqs-block { justify-content: center; } .fe-block-eacecd600210e1f8e158 .sqs-block-alignment-wrapper { align-items: center; } @media (min-width: 768px) { .fe-block-eacecd600210e1f8e158 { grid-area: 3/14/9/26; z-index: 1; } .fe-block-eacecd600210e1f8e158 .sqs-block { justify-content: center; } .fe-block-eacecd600210e1f8e158 .sqs-block-alignment-wrapper { align-items: center; } } .fe-block-yui_3_17_2_1_1763694942700_6753 { grid-area: 30/2/33/10; z-index: 5; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1763694942700_6753 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1763694942700_6753 .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1763694942700_6753 { grid-area: 9/14/11/24; z-index: 5; } .fe-block-yui_3_17_2_1_1763694942700_6753 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1763694942700_6753 .sqs-block-alignment-wrapper { align-items: flex-start; } } .fe-block-yui_3_17_2_1_1763694942700_11041 { grid-area: 33/2/54/10; z-index: 7; @media (max-width: 767px) { } } .fe-block-yui_3_17_2_1_1763694942700_11041 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1763694942700_11041 .sqs-block-alignment-wrapper { align-items: flex-start; } @media (min-width: 768px) { .fe-block-yui_3_17_2_1_1763694942700_11041 { grid-area: 11/14/25/24; z-index: 7; } .fe-block-yui_3_17_2_1_1763694942700_11041 .sqs-block { justify-content: flex-start; } .fe-block-yui_3_17_2_1_1763694942700_11041 .sqs-block-alignment-wrapper { align-items: flex-start; } }",
+        "blocks": [
+          {
+            "id": "yui_3_17_2_1_1763694942700_3507",
+            "block": {
+              "type": "image",
+              "fluid": true,
+              "src": "https://images.squarespace-cdn.com/content/v1/601e1d9cbf34eb004be30732/9893297f-faef-4637-95e9-870d6d80e22c/Security-Camera-Trailer-800W-Solar.webp?format=1500w",
+              "alt": "",
+              "dims": "1200x1600",
+              "focal": "0.5,0.5",
+              "fit": null,
+              "crop": null,
+              "maxWidth": null,
+              "href": null,
+              "caption": null
+            }
+          },
+          {
+            "id": "f5487df64f4601679f7d",
+            "block": {
+              "type": "text",
+              "html": "<h2 style=\"white-space:pre-wrap;\">Security Camera Trailers</h2>"
+            }
+          },
+          {
+            "id": "yui_3_17_2_1_1763694942700_49732",
+            "block": {
+              "type": "text",
+              "html": "<ul data-rte-list=\"default\"><li><h4 style=\"white-space:pre-wrap;\">Nationwide delivery in USA or Canada</h4></li><li><h4 style=\"white-space:pre-wrap;\">Company brand applications</h4></li><li><h4 style=\"white-space:pre-wrap;\">Tow trailers site to site</h4></li></ul>"
+            }
+          },
+          {
+            "id": "eacecd600210e1f8e158",
+            "block": {
+              "type": "text",
+              "html": "<h2 style=\"white-space:pre-wrap;\">Available for Rental or Purchase</h2><p style=\"text-align:justify;white-space: normal !important;white-space:pre-wrap;\" class=\"\" data-ph=\"mobile-surveillance-trailers-1\">elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur e</p>"
+            }
+          },
+          {
+            "id": "yui_3_17_2_1_1763694942700_6753",
+            "block": {
+              "type": "text",
+              "html": "<h2 style=\"white-space:pre-wrap;\">Specially equipped to include:</h2>"
+            }
+          },
+          {
+            "id": "yui_3_17_2_1_1763694942700_11041",
+            "block": {
+              "type": "text",
+              "html": "<p class=\"\" style=\"white-space:pre-wrap;\">24/7 Recording</p><ul data-rte-list=\"default\"><li><p class=\"\" style=\"white-space:pre-wrap;\">Motion Detection with automated email/text alerts</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Solar Powered: No gas needed</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mobile-surveillance-trailers-2\">labore et dolore magna aliqua ut enim ad mini</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mobile-surveillance-trailers-3\">ad minim veniam quis nostrud exercitation ullamco l</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Two Monitoring Options Available<strong>:</strong></p><ul data-rte-list=\"default\"><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mobile-surveillance-trailers-4\"><strong>laboris nisi utx</strong> ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p></li><li><p class=\"\" style=\"white-space:pre-wrap;\" data-ph=\"mobile-surveillance-trailers-5\"><strong>consequat duis aute irure d</strong> irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui offi</p></li></ul></li><li><p class=\"\" style=\"white-space:pre-wrap;\">Free technical support throughout the rental</p></li></ul>"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "textSeq": [
+    {
+      "tag": "h2",
+      "words": 3,
+      "ph": null
+    },
+    {
+      "tag": "h4",
+      "words": 6,
+      "ph": null
+    },
+    {
+      "tag": "h4",
+      "words": 3,
+      "ph": null
+    },
+    {
+      "tag": "h4",
+      "words": 5,
+      "ph": null
+    },
+    {
+      "tag": "h2",
+      "words": 5,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 46,
+      "ph": "mobile-surveillance-trailers-1"
+    },
+    {
+      "tag": "h2",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 2,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 6,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 5,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 7,
+      "ph": "mobile-surveillance-trailers-2"
+    },
+    {
+      "tag": "p",
+      "words": 8,
+      "ph": "mobile-surveillance-trailers-3"
+    },
+    {
+      "tag": "p",
+      "words": 4,
+      "ph": null
+    },
+    {
+      "tag": "p",
+      "words": 21,
+      "ph": "mobile-surveillance-trailers-4"
+    },
+    {
+      "tag": "p",
+      "words": 25,
+      "ph": "mobile-surveillance-trailers-5"
+    },
+    {
+      "tag": "p",
+      "words": 6,
+      "ph": null
+    }
+  ]
+}

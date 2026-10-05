@@ -1,0 +1,53 @@
+---
+import ServicePage from '../components/ServicePage.astro';
+---
+<ServicePage slug="integrated-security-systems" description="Integrated physical security from Apex: key card and electric strike access control, and enterprise security camera systems with cloud video management.">
+  <section class="section sub" id="access" style="padding-top:0">
+    <div class="wrap split">
+      <div class="main">
+        <h2><span class="fn" data-fn="PR">PR.AA</span> Key card access systems</h2>
+        <p class="lede">Apex installs electric door strikes and key card access systems, with credentials to fit how your people work: key cards, key fobs, mobile credentials or passcode keypads.</p>
+        <p>Electric strikes are easy and affordable to install. Unlike traditional door locks they are durable, need few repairs, and return their cost over the long term. They come in configurations for most mechanical locksets and door and frame styles, in new construction and remodels alike.</p>
+        <h3>Where electric strikes work best</h3>
+        <ul class="ticks">
+          <li>Commercial buildings</li><li>Warehouses</li><li>Technology and industrial centres</li><li>Convention centres</li><li>Assisted living and apartment facilities</li>
+        </ul>
+      </div>
+      <figure class="side shot">
+        <img src="img/keycard.webp" alt="A key card held against an access reader beside a door" width="708" height="472" loading="lazy">
+        <figcaption class="figcap"><b>Fig. 1</b><span>Card reader access control.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section sub" id="cameras" style="padding-top:0">
+    <div class="wrap split">
+      <div class="main">
+        <h2><span class="fn" data-fn="DE">DE.CM</span> Enterprise security cameras</h2>
+        <p class="lede">Apex designs and installs custom enterprise camera systems that bring together access control and cloud-based video management.</p>
+        <p>We can deploy a full ecosystem of wired and wireless cameras, controller devices, VoIP phones and other access control products. An enterprise-class network video recorder stores up to 60 days of video from twenty 4K cameras.</p>
+        <h3>Camera features may include</h3>
+        <ul class="ticks">
+          <li>Compact dome or bullet designs in aluminum and polycarbonate</li><li>Plug-and-play installation</li><li>High ingress protection (IP) ratings</li><li>Motorized zoom</li><li>Built-in microphones</li><li>High definition at 30 fps</li>
+        </ul>
+        <h3>Seamless design and implementation</h3>
+        <p>Apex engineers are skilled in design and architecture, and will work with you to build the right system to protect your people and assets.</p>
+      </div>
+      <figure class="side shot">
+        <img src="img/camera.webp" alt="A range of enterprise security cameras: bullet, dome, turret and pan-tilt-zoom models" width="712" height="409" loading="lazy">
+        <figcaption class="figcap"><b>Fig. 2</b><span>Bullet, dome and pan-tilt-zoom camera options.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+</ServicePage>
+
+<style>
+  .sub h2 { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem; margin-bottom: 1.5rem; padding-top: var(--s4); border-top: 2px solid var(--ink); }
+  .sub h2 .fn { font-size: .85rem; }
+  .sub h3 { margin: 2rem 0 .75rem; }
+  .ticks { list-style: none; margin: 0; padding: 0; columns: 2 16rem; column-gap: 2rem; }
+  .ticks li { break-inside: avoid; padding: .5rem 0 .5rem 1.4rem; border-top: 1px solid var(--rule); position: relative; }
+  .ticks li::before { content: ''; position: absolute; left: 0; top: 1.05rem; width: .55rem; height: .55rem; background: var(--ink); }
+  .shot { margin: 0; padding-top: var(--s4); }
+  .shot img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+</style>
