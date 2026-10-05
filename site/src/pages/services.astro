@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { FUNCTIONS, PROFILE, SERVICES } from '../data/site';
 ---
-<Base title="Services" page="services" description="Every Apex Cybersecurity service organised by NIST CSF 2.0 function: Govern, Identify, Protect, Detect, Respond and Recover.">
+<Base title="Services" page="services" description="Every Apex Cyber Security service organised by NIST CSF 2.0 function: Govern, Identify, Protect, Detect, Respond and Recover.">
   <header class="page-head">
     <div class="wrap">
       <ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Services</li></ol>
@@ -29,7 +29,7 @@ import { FUNCTIONS, PROFILE, SERVICES } from '../data/site';
               <li><a href={p.href}><span class="code">{p.cat}</span><span>{p.item}</span><Icon name="arrow" /></a></li>
             ))}
           </ol>
-          <p class="fband-lines muted">Service lines: {SERVICES.filter((s) => s.fns.includes(f.code)).map((s, i, a) => <><a href={`${s.slug}.html`}>{s.short}</a>{i < a.length - 1 ? ', ' : ''}</>)}{f.code === 'PR' && <>, <a href="learning-platform.html">Apex Institute</a></>}</p>
+          <p class="fband-lines muted">Service lines: {SERVICES.filter((s) => s.fns.includes(f.code)).map((s, i, a) => <><a href={`${s.slug}.html`}>{s.short}</a>{i < a.length - 1 ? ', ' : ''}</>)}{f.code === 'PR' && <>, <a href="training.html">Training</a></>}</p>
         </div>
       </div>
     </section>

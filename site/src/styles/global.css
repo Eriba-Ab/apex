@@ -1,4 +1,4 @@
-/* Apex Cybersecurity — Framework Profile.
+/* Apex Cyber Security — Framework Profile.
    The six NIST CSF 2.0 function colors are the palette; they fill whole regions. */
 
 :root {
@@ -138,8 +138,7 @@ p:last-child { margin-bottom: 0; }
 /* Header */
 .header { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--paper) 94%, transparent); backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--rule); }
 .header .wrap { display: flex; align-items: center; gap: 2rem; min-height: 76px; }
-.logo { flex: none; display: block; }
-.logo img { height: 48px; width: auto; }
+.logo { flex: none; display: block; text-decoration: none; }
 .nav { display: flex; align-items: center; gap: .25rem; margin-left: auto; }
 .nav-item { position: relative; }
 .nav-item > a, .nav-item > button {
@@ -221,7 +220,7 @@ p:last-child { margin-bottom: 0; }
 .footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
 .footer a { text-decoration: none; }
 .footer a:hover { text-decoration: underline; }
-.footer-logo img { height: 44px; width: auto; }
+.footer-logo { text-decoration: none; }
 .footer-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: var(--s5); padding-top: var(--s2); border-top: 1px solid var(--rule); color: var(--ink-2); font-size: var(--t-micro); }
 .footer-base p { margin: 0; max-width: none; }
 
@@ -257,7 +256,6 @@ p:last-child { margin-bottom: 0; }
   .vendor dd { border-top: 0; padding-top: 0; }
 }
 @media (max-width: 520px) {
-  .logo img { height: 36px; }
   .watch-label { display: none; }
   .footer-grid { grid-template-columns: 1fr; }
 }

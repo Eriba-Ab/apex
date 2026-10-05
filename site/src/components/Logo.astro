@@ -1,0 +1,24 @@
+---
+// Apex Cyber Security wordmark: a peak ("A") whose crossbar is the orange watch line,
+// set beside the name in the display face. Text stays live for accessibility and crispness.
+interface Props { size?: 'md' | 'sm'; }
+const { size = 'md' } = Astro.props;
+---
+<span class={`wm wm--${size}`}>
+  <svg class="wm-mark" viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M3.5 29.5 16 4 28.5 29.5" fill="none" stroke="currentColor" stroke-width="5.2" stroke-linejoin="miter" stroke-miterlimit="10" />
+    <rect x="8.6" y="19.2" width="14.8" height="3.8" fill="var(--de)" />
+  </svg>
+  <span class="wm-text"><span class="wm-apex">Apex</span><span class="wm-rest">Cyber Security</span></span>
+</span>
+
+<style>
+  .wm { display: inline-flex; align-items: center; gap: .55em; color: var(--ink); line-height: 1; white-space: nowrap; }
+  .wm--md { font-size: 1.5rem; }
+  .wm--sm { font-size: 1.25rem; }
+  .wm-mark { width: 1.35em; height: 1.35em; flex: none; overflow: visible; }
+  .wm-text { display: inline-flex; align-items: baseline; gap: .32em; font-family: var(--f-display); letter-spacing: -.015em; }
+  .wm-apex { font-weight: 800; font-variation-settings: 'wdth' 118; }
+  .wm-rest { font-weight: 500; font-variation-settings: 'wdth' 100; color: var(--ink-2); }
+  @media (max-width: 520px) { .wm--md { font-size: 1.2rem; } }
+</style>

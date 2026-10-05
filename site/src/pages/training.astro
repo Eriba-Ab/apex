@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { CONTACT } from '../data/site';
+const learn = [
+  'Security fundamentals, networking and how attacks unfold',
+  'Reading logs and alerts, and responding to incidents the way a SOC analyst does',
+  'Ethical hacking techniques and vulnerability management',
+  'Security frameworks, standards and good practice',
+  'Preparation for the CompTIA Security+ certification',
+];
+const areas = [
+  ['Hands-on labs', 'Exercises in simulated IT environments with real attack scenarios, so learners practise rather than just read.'],
+  ['Industry tools', 'Time with the kinds of SIEM, firewall and endpoint tools used in security operations centres.'],
+  ['Certification preparation', 'Support for recognised certifications such as CompTIA Security+ and cloud security fundamentals.'],
+  ['Learning paths', 'Routes for SOC analysts, threat hunters, web application security and secure coding.'],
+  ['Awareness for staff', 'Short sessions and phishing simulations that help everyone in your organisation spot and report threats.'],
+];
+---
+<Base title="Training" page="training" description={`Cyber security training from Apex Cyber Security: hands-on analyst training, certification preparation and staff awareness sessions. Call ${CONTACT.phone}.`}>
+  <header class="page-head" data-band="PR">
+    <div class="wrap">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Training</li></ol>
+      <h1>Training for analysts, and for everyone else.</h1>
+      <p class="lede">Practical cyber security training: from the fundamentals to junior analyst level, plus awareness sessions for the whole organisation.</p>
+      <div class="actions">
+        <a class="btn" href="contact-us.html">Ask about training <Icon name="arrow" /></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="main">
+        <h2>Our approach</h2>
+        <p class="lede" style="margin-top:1.25rem">Our analyst training combines instructor-led sessions, hands-on labs and realistic simulations, so learners leave with skills they have already used.</p>
+        <p>Participants learn:</p>
+        <ol class="learn">
+          {learn.map((l) => <li>{l}</li>)}
+        </ol>
+      </div>
+      <aside class="side">
+        <dl class="glance">
+          <dt>Format</dt><dd>Instructor-led sessions, labs and simulations</dd>
+          <dt>Level</dt><dd>Beginner to junior analyst</dd>
+          <dt>Programme length and pricing</dt><dd><span class="pending">Apex to confirm</span></dd>
+          <dt>Enquiries</dt><dd><a href={`mailto:${CONTACT.email}?subject=Training`}>{CONTACT.email}</a></dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <table class="table">
+        <caption><b>Table 1.</b> What our training covers.</caption>
+        <thead><tr><th scope="col">Area</th><th scope="col">Detail</th></tr></thead>
+        <tbody>{areas.map(([a, d]) => <tr><th scope="row" class="t-item">{a}</th><td class="t-desc">{d}</td></tr>)}</tbody>
+      </table>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .learn { margin: 1.25rem 0 0; padding: 0; list-style: none; counter-reset: l; }
+  .learn li { counter-increment: l; display: grid; grid-template-columns: 2.5rem 1fr; padding: .8rem 0; border-top: 1px solid var(--rule); }
+  .learn li:last-child { border-bottom: 1px solid var(--rule); }
+  .learn li::before { content: counter(l); font-family: var(--f-code); font-size: .85rem; color: var(--pr); font-weight: 500; padding-top: .15em; }
+  .pending { font-weight: 400; color: var(--ink-2); font-style: italic; }
+</style>

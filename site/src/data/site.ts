@@ -1,5 +1,8 @@
-// Site content for the UK site (apexcybersecurity.co.uk). Copy is drawn from apexcybersecurity.org
-// (October 2026), tightened and localised; anything Apex has not published yet is marked `pending`.
+// Site content for Apex Cyber Security (apexcybersecurity.co.uk), Sevenoaks, Kent.
+// All copy is original to this site. Anything Apex has not confirmed yet is marked `pending`
+// and renders as a visible slot.
+
+export const COMPANY = 'Apex Cyber Security';
 
 export const CONTACT = {
   email: 'info@apexcybersecurity.co.uk',
@@ -11,8 +14,6 @@ export const CONTACT = {
   address: ['52 High Street', 'Sevenoaks', 'Kent', 'TN13 1JG'],
   mapHref: 'https://www.google.com/maps/search/?api=1&query=52+High+Street+Sevenoaks+Kent+TN13+1JG',
   timeZone: 'Europe/London',
-  linkedin: 'https://www.linkedin.com/in/damondsingleton/',
-  live: 'https://www.apexcybersecurity.org', // membership area and blog posts are hosted on the US site
 };
 
 export type FnCode = 'GV' | 'ID' | 'PR' | 'DE' | 'RS' | 'RC';
@@ -31,39 +32,39 @@ export const fn = (code: FnCode) => FUNCTIONS.find((f) => f.code === code)!;
 // What Apex delivers under each function. `cat` is the NIST CSF 2.0 category the item aligns to.
 export const PROFILE: Record<FnCode, { cat: string; item: string; href: string }[]> = {
   GV: [
-    { cat: 'GV.PO', item: 'Compliance readiness for NIST, ISO 27001, HIPAA and CMMC', href: 'consulting.html#scope' },
-    { cat: 'GV.RM', item: 'Risk advisory: objectives, measures and defensive strategy', href: 'consulting.html#scope' },
-    { cat: 'GV.OV', item: 'Governance, risk and compliance oversight led by a Chief GRC Officer', href: 'team.html#corey-thurman' },
+    { cat: 'GV.PO', item: 'Readiness for ISO/IEC 27001, NIST and other security standards', href: 'consulting.html#scope' },
+    { cat: 'GV.RM', item: 'Risk advice that turns findings into a plan your board can sign off', href: 'consulting.html#scope' },
+    { cat: 'GV.OV', item: 'Ongoing governance, risk and compliance support', href: 'consulting.html#scope' },
   ],
   ID: [
-    { cat: 'ID.RA', item: 'Security risk assessments across infrastructure, policy and user behaviour', href: 'consulting.html#scope' },
-    { cat: 'ID.RA', item: 'Vulnerability and threat analysis to find weaknesses and compliance gaps', href: 'consulting.html#scope' },
-    { cat: 'ID.RA', item: 'Vulnerability management: misconfigurations and exposed credentials', href: 'mdr.html#scope' },
-    { cat: 'ID.IM', item: 'Security architecture review for network, cloud and endpoints', href: 'consulting.html#scope' },
+    { cat: 'ID.RA', item: 'Risk assessments covering systems, policies and how people work', href: 'consulting.html#scope' },
+    { cat: 'ID.RA', item: 'Vulnerability scanning and threat analysis', href: 'consulting.html#scope' },
+    { cat: 'ID.RA', item: 'Continuous discovery of misconfigurations and leaked credentials', href: 'mdr.html#scope' },
+    { cat: 'ID.IM', item: 'Architecture reviews for network, cloud and endpoint security', href: 'consulting.html#scope' },
   ],
   PR: [
-    { cat: 'PR.PS', item: 'Next-gen endpoint prevention that blocks known and new attacks', href: 'edr.html#scope' },
-    { cat: 'PR.IR', item: 'Firewall, SD-WAN, SASE and software-defined networking', href: 'network-infrastructure.html#scope' },
-    { cat: 'PR.AA', item: 'Key card, fob, mobile and keypad door access control', href: 'integrated-security-systems.html#access' },
-    { cat: 'PR.PS', item: 'Secure DevOps and software development on Azure and AWS', href: 'devops.html#scope' },
-    { cat: 'PR.AT', item: 'Security awareness workshops and the Apex Institute', href: 'learning-platform.html' },
+    { cat: 'PR.PS', item: 'Endpoint protection that stops known and emerging attacks', href: 'edr.html#scope' },
+    { cat: 'PR.IR', item: 'Firewalls, SD-WAN, SASE and software-defined networks', href: 'network-infrastructure.html#scope' },
+    { cat: 'PR.AA', item: 'Door access control with cards, fobs, phones or keypads', href: 'integrated-security-systems.html#access' },
+    { cat: 'PR.PS', item: 'Secure software development and DevOps on Azure and AWS', href: 'devops.html#scope' },
+    { cat: 'PR.AT', item: 'Security awareness sessions and analyst training', href: 'training.html' },
   ],
   DE: [
-    { cat: 'DE.CM', item: '24/7 Managed Detection and Response from a cloud-powered virtual SOC', href: 'mdr.html' },
-    { cat: 'DE.CM', item: 'Continuous endpoint monitoring, recording and centralising of activity', href: 'edr.html#scope' },
-    { cat: 'DE.AE', item: 'Real-time alerting and triage of critical events', href: 'mdr.html#scope' },
-    { cat: 'DE.CM', item: 'Enterprise security cameras with cloud video management', href: 'integrated-security-systems.html#cameras' },
-    { cat: 'DE.CM', item: 'Solar-powered mobile surveillance trailers, for rent or purchase', href: 'mobile-surveillance-trailers.html' },
+    { cat: 'DE.CM', item: 'Managed detection and response, monitored 24 hours a day', href: 'mdr.html' },
+    { cat: 'DE.CM', item: 'Round-the-clock endpoint monitoring with a full activity record', href: 'edr.html#scope' },
+    { cat: 'DE.AE', item: 'Alerts triaged by analysts before they reach you', href: 'mdr.html#scope' },
+    { cat: 'DE.CM', item: 'CCTV and enterprise camera systems with cloud video management', href: 'integrated-security-systems.html#cameras' },
+    { cat: 'DE.CM', item: 'Solar-powered surveillance trailers, to rent or buy', href: 'mobile-surveillance-trailers.html' },
   ],
   RS: [
-    { cat: 'RS.MI', item: 'Host isolation that stops lateral spread on your behalf', href: 'edr.html#scope' },
-    { cat: 'RS.MA', item: 'Rapid containment with detailed remediation guidance', href: 'mdr.html#scope' },
-    { cat: 'RS.AN', item: 'Active threat hunting and root cause determination', href: 'edr.html#scope' },
-    { cat: 'RS.MA', item: 'Incident response planning and tabletop exercises', href: 'consulting.html#scope' },
+    { cat: 'RS.MI', item: 'Isolating compromised devices so an attack cannot spread', href: 'edr.html#scope' },
+    { cat: 'RS.MA', item: 'Fast containment, with step-by-step remediation advice', href: 'mdr.html#scope' },
+    { cat: 'RS.AN', item: 'Threat hunting and root-cause investigation', href: 'edr.html#scope' },
+    { cat: 'RS.MA', item: 'Incident response plans and tabletop exercises', href: 'consulting.html#scope' },
   ],
   RC: [
-    { cat: 'RC.RP', item: 'Response and recovery protocols, tested before you need them', href: 'consulting.html#scope' },
-    { cat: 'RC.RP', item: 'Cloud and network infrastructure rebuild and managed services', href: 'network-infrastructure.html#scope' },
+    { cat: 'RC.RP', item: 'Recovery plans, rehearsed before you need them', href: 'consulting.html#scope' },
+    { cat: 'RC.RP', item: 'Rebuilding and managing cloud and network infrastructure', href: 'network-infrastructure.html#scope' },
   ],
 };
 
@@ -84,19 +85,19 @@ export const SERVICES: Service[] = [
     name: 'Consulting, Assessments and Compliance',
     short: 'Consulting & Compliance',
     fns: ['GV', 'ID', 'RS', 'RC'],
-    lede: 'Assessment and advisory work that shows you where you stand, closes the gaps, and keeps you compliant.',
+    lede: 'Find out where you stand, fix what matters most, and stay compliant.',
     body: [
-      'Apex provides comprehensive cybersecurity assessment and consulting services designed to help organisations identify risks, strengthen defences and align with industry best practices.',
-      'Our advisory work covers risk and compliance end to end: identifying security gaps, mitigating threats, measuring objectives and building defensive strategies your leadership can stand behind.',
+      'We start by looking at your organisation the way an attacker or an auditor would: your systems, your policies and the way your people actually work.',
+      'You get a clear picture of your risks, a prioritised plan to close the gaps, and support to meet the standards your customers and regulators expect.',
     ],
     scopeTitle: 'Scope of consulting services',
     scope: [
-      { item: 'Security risk assessments', desc: 'In-depth evaluation of your security posture, including infrastructure, policies and user behaviour.', cat: 'ID.RA' },
-      { item: 'Vulnerability and threat analysis', desc: 'Scanning and assessment of systems to find potential threats, weaknesses and compliance gaps.', cat: 'ID.RA' },
-      { item: 'Governance, risk and compliance readiness', desc: 'Guidance on achieving and maintaining standards such as NIST, ISO 27001, HIPAA and CMMC.', cat: 'GV.PO' },
-      { item: 'Security architecture review', desc: 'Analysis and optimisation of network, cloud and endpoint architecture to reduce risk exposure.', cat: 'ID.IM' },
-      { item: 'Incident response planning and tabletop exercises', desc: 'Development and testing of response protocols so your team is ready before a breach.', cat: 'RS.MA' },
-      { item: 'Security awareness and training', desc: 'Custom workshops and simulations that improve cyber hygiene and reduce human error.', cat: 'PR.AT' },
+      { item: 'Risk assessment', desc: 'A structured review of your infrastructure, policies and day-to-day practices, ranked by risk.', cat: 'ID.RA' },
+      { item: 'Vulnerability and threat analysis', desc: 'Scanning and testing to find weaknesses before someone else does.', cat: 'ID.RA' },
+      { item: 'Compliance readiness', desc: 'Preparation for ISO/IEC 27001, NIST and other frameworks, through to audit.', cat: 'GV.PO' },
+      { item: 'Architecture review', desc: 'Recommendations to harden your network, cloud and endpoint design.', cat: 'ID.IM' },
+      { item: 'Incident response planning', desc: 'Written response and recovery plans, tested with your team in tabletop exercises.', cat: 'RS.MA' },
+      { item: 'Security awareness', desc: 'Practical sessions and simulations that help staff spot and report threats.', cat: 'PR.AT' },
     ],
   },
   {
@@ -104,20 +105,19 @@ export const SERVICES: Service[] = [
     name: 'Managed Detection and Response',
     short: 'Managed Detection & Response',
     fns: ['DE', 'RS', 'ID'],
-    lede: '24/7 protection and monitoring from a cloud-powered virtual Security Operations Centre.',
+    lede: 'Your environment monitored by security analysts, 24 hours a day, every day of the year.',
     body: [
-      'Apex delivers Managed Detection and Response through virtualised SIEM technology: multi-tenant, cloud security delivered as a service (SECaaS).',
-      'From a cloud-powered virtual Security Operations Centre, our Security Conservators (SC)® monitor your environment and respond to threats, analysing packets and system processes in real time.',
+      'We collect and correlate security data from across your estate in a cloud-based security operations centre, so threats are spotted early, wherever they start.',
+      'When something looks wrong, an analyst investigates, contains it where needed, and tells you exactly what happened and what to do next.',
     ],
-    scopeTitle: 'What MDR includes',
+    scopeTitle: 'What managed detection and response includes',
     scope: [
-      { item: 'Dedicated 24x7 security operations', desc: 'Your environment is monitored around the clock by the Security Conservators (SC)® team.', cat: 'DE.CM' },
-      { item: 'Monitoring', desc: 'Collect actionable intelligence from your IT environment, scan endpoints for vulnerabilities and misconfigurations, and respond to threats.', cat: 'DE.CM' },
-      { item: 'Real-time alerting', desc: 'Contain incidents quickly, with detailed guidance on remediation.', cat: 'RS.MA' },
-      { item: 'Issue triage', desc: 'Critical events surfaced with actionable insight, not noise.', cat: 'DE.AE' },
-      { item: 'Vulnerability management', desc: 'Discovery of digital risks such as system misconfigurations and exposed corporate credentials.', cat: 'ID.RA' },
-      { item: 'Cloud monitoring', desc: 'Identify cloud risks, monitor cloud platforms and simplify cloud security.', cat: 'DE.CM' },
-      { item: 'Unlimited logs', desc: 'Unlimited access to your own data.', cat: 'DE.CM' },
+      { item: '24/7 monitoring', desc: 'Analysts watching your environment around the clock, including weekends and bank holidays.', cat: 'DE.CM' },
+      { item: 'Alert triage', desc: 'Every alert is checked by a person, so you only hear about what matters.', cat: 'DE.AE' },
+      { item: 'Containment and remediation', desc: 'Rapid action to stop an incident, with clear guidance to fix the cause.', cat: 'RS.MA' },
+      { item: 'Exposure monitoring', desc: 'Ongoing checks for misconfigurations and leaked credentials.', cat: 'ID.RA' },
+      { item: 'Cloud monitoring', desc: 'Visibility of risks across your cloud platforms and services.', cat: 'DE.CM' },
+      { item: 'Log retention', desc: 'Your security data kept and available to you, without caps.', cat: 'DE.CM' },
     ],
   },
   {
@@ -125,22 +125,20 @@ export const SERVICES: Service[] = [
     name: 'Endpoint Detection and Response',
     short: 'Endpoint Detection & Response',
     fns: ['PR', 'DE', 'RS'],
-    lede: 'Threat hunting, identification and mitigation on every laptop, desktop, server and mobile device.',
+    lede: 'Protection for every laptop, desktop, server and mobile device, with a team ready to act.',
     body: [
-      'Apex Endpoint Detection and Response protects endpoints through threat definitions, machine and behavioural learning, and isolation.',
-      'It identifies suspicious behaviour and known threats, and uses next-gen endpoint prevention to block known and new attacks on compromised endpoints.',
+      'Endpoint detection and response combines prevention with behavioural detection, so it stops known malware and spots the unusual activity that signals a new attack.',
+      'If a device is compromised, we can isolate it immediately, find out how the attacker got in, and close the door behind them.',
     ],
     scopeTitle: 'Key capabilities',
     scope: [
-      { item: '24x7 continuous monitoring', desc: 'Activity across endpoints is recorded and centralised around the clock.', cat: 'DE.CM' },
-      { item: 'Prevention of known attacks', desc: 'Next-gen prevention blocks known threats before they run.', cat: 'PR.PS' },
-      { item: 'Detection of unknown attacks', desc: 'Machine learning and advanced analytics detect and isolate new attacks.', cat: 'DE.AE' },
-      { item: 'Alerting', desc: 'Alerts on confirmed threats and suspicious behaviour.', cat: 'DE.AE' },
-      { item: 'Tactical containment', desc: 'Host isolation on your behalf to stop lateral spread.', cat: 'RS.MI' },
-      { item: 'Active threat hunting', desc: 'Analysts look for threats that have not triggered an alert yet.', cat: 'RS.AN' },
-      { item: 'Root cause determination', desc: 'Every incident is traced to how it started.', cat: 'RS.AN' },
-      { item: 'Single agent', desc: 'One lightweight agent per endpoint.', cat: 'PR.PS' },
-      { item: 'Continuous tuning', desc: 'Ongoing management, tuning and refinement of the detection platform.', cat: 'ID.IM' },
+      { item: 'Continuous monitoring', desc: 'Device activity recorded and analysed around the clock.', cat: 'DE.CM' },
+      { item: 'Prevention', desc: 'Known threats blocked before they can run.', cat: 'PR.PS' },
+      { item: 'Behavioural detection', desc: 'Machine learning and analytics that flag new and unknown attacks.', cat: 'DE.AE' },
+      { item: 'Device isolation', desc: 'A compromised device cut off from the network to stop the spread.', cat: 'RS.MI' },
+      { item: 'Threat hunting', desc: 'Analysts searching proactively for attackers who have not triggered an alert.', cat: 'RS.AN' },
+      { item: 'Root-cause analysis', desc: 'Each incident traced back to its starting point.', cat: 'RS.AN' },
+      { item: 'Ongoing tuning', desc: 'Detection rules refined over time to fit your environment.', cat: 'ID.IM' },
     ],
   },
   {
@@ -148,22 +146,22 @@ export const SERVICES: Service[] = [
     name: 'DevOps and Application Development',
     short: 'DevOps & App Development',
     fns: ['PR', 'ID'],
-    lede: 'DevOps consulting and engineering from Azure and AWS certified partners.',
+    lede: 'Software and cloud platforms designed, built and run with security from the start.',
     body: [
-      'Apex is equipped with best-in-business developers. Collaborate with us to design precise solutions and applications that improve how your organisation works.',
-      'We build, scale, optimise, maintain and manage to your requirements, with security designed in from the first sprint rather than bolted on at the end.',
+      'Our developers and engineers build the applications your organisation needs, and the pipelines and cloud infrastructure that keep them running.',
+      'Security is part of every stage, from design and code review to deployment and monitoring, on Microsoft Azure and AWS.',
     ],
-    scopeTitle: 'Software development practice areas',
+    scopeTitle: 'Development practice areas',
     scope: [
-      { item: 'Web and mobile apps', desc: 'Public-facing and internal applications on web, iOS and Android.' },
-      { item: 'E-commerce applications', desc: 'Secure transaction and storefront platforms.' },
-      { item: 'Healthcare applications', desc: 'Applications built with patient data protection in mind.' },
-      { item: 'Fintech', desc: 'Financial technology systems.' },
-      { item: 'AI and machine learning', desc: 'Data-driven and model-backed applications.' },
-      { item: 'SaaS', desc: 'Multi-tenant software delivered as a service.' },
-      { item: 'Business intelligence', desc: 'Reporting and analytics for decision makers.' },
-      { item: 'Database', desc: 'Design, migration and administration.' },
-      { item: 'DevOps engineering', desc: 'CI/CD, infrastructure as code and cloud operations on Azure and AWS.' },
+      { item: 'Web and mobile applications', desc: 'Public-facing and internal applications for web, iOS and Android.' },
+      { item: 'E-commerce', desc: 'Secure online shops and payment journeys.' },
+      { item: 'Healthcare applications', desc: 'Software designed around the protection of patient data.' },
+      { item: 'Financial technology', desc: 'Systems for payments, lending and financial services.' },
+      { item: 'AI and machine learning', desc: 'Applications built on data and models.' },
+      { item: 'Software as a service', desc: 'Multi-tenant products delivered over the cloud.' },
+      { item: 'Business intelligence', desc: 'Dashboards and reporting for decision makers.' },
+      { item: 'Databases', desc: 'Design, migration and administration.' },
+      { item: 'DevOps engineering', desc: 'CI/CD pipelines, infrastructure as code and cloud operations.' },
     ],
   },
   {
@@ -171,22 +169,22 @@ export const SERVICES: Service[] = [
     name: 'Network Infrastructure',
     short: 'Network Infrastructure',
     fns: ['PR', 'RC', 'ID'],
-    lede: 'Cost-effective, scalable and secure networks, built and managed by certified engineers.',
+    lede: 'Networks that are secure, scalable and sensibly priced, from the comms room to the cloud.',
     body: [
-      'Network infrastructure services from Apex are tailored to your specific needs. We bring the expertise, services and technology to meet today’s goals while planning for future growth.',
-      'Our certified infrastructure team designs, builds and manages networks that are cost-effective, scalable and secure, from the rack to the cloud.',
+      'We design, install and manage network infrastructure around how your organisation works today, with room to grow.',
+      'Our engineers handle everything from racking equipment and wireless surveys to firewalls, SD-WAN and managed cloud infrastructure.',
     ],
     scopeTitle: 'Infrastructure services',
     scope: [
-      { item: 'Rack and stack', desc: 'Physical installation and cabling of network and server equipment.' },
-      { item: 'Network and edge services', desc: 'Design and deployment from the core to the edge.' },
-      { item: 'Private wireless services', desc: 'Secure private wireless networks for campuses and facilities.' },
+      { item: 'Installation', desc: 'Racking, cabling and commissioning of network and server equipment.' },
+      { item: 'Network and edge', desc: 'Core-to-edge network design and deployment.' },
+      { item: 'Private wireless', desc: 'Secure wireless networks for offices, campuses and sites.' },
       { item: 'Voice and video', desc: 'Unified communications infrastructure.' },
-      { item: 'WAN', desc: 'Wide-area connectivity between sites.' },
-      { item: 'Firewall', desc: 'Perimeter and internal segmentation.', cat: 'PR.IR' },
-      { item: 'Software-defined networking (SDN)', desc: 'Programmable, centrally managed networks.', cat: 'PR.IR' },
-      { item: 'SD-WAN and SASE', desc: 'Secure access for distributed sites and remote users.', cat: 'PR.IR' },
-      { item: 'Cloud infrastructure managed services', desc: 'Ongoing management of cloud environments.', cat: 'RC.RP' },
+      { item: 'Wide-area networking', desc: 'Reliable connections between your sites.' },
+      { item: 'Firewalls', desc: 'Perimeter protection and internal segmentation.', cat: 'PR.IR' },
+      { item: 'Software-defined networking', desc: 'Networks managed centrally and changed in software.', cat: 'PR.IR' },
+      { item: 'SD-WAN and SASE', desc: 'Secure access for branch sites and remote staff.', cat: 'PR.IR' },
+      { item: 'Managed cloud infrastructure', desc: 'Day-to-day management of your cloud environments.', cat: 'RC.RP' },
     ],
   },
   {
@@ -194,14 +192,14 @@ export const SERVICES: Service[] = [
     name: 'Integrated Security Systems',
     short: 'Integrated Security Systems',
     fns: ['PR', 'DE'],
-    lede: 'Physical security that works with your network: door access control and enterprise camera systems.',
+    lede: 'Access control and CCTV that work with your network, not alongside it.',
     body: [
-      'Cyber and physical security are one problem. Apex designs and installs the access control and video systems that protect your buildings, and connects them to the same network discipline we bring to everything else.',
+      'Physical and cyber security protect the same organisation. We design and install access control and camera systems, then connect them to your network with the same care we give everything else.',
     ],
     scopeTitle: 'Physical security systems',
     scope: [
-      { item: 'Key card access systems', desc: 'Electric door strikes with key cards, key fobs, mobile credentials or passcode keypads.', cat: 'PR.AA' },
-      { item: 'Enterprise security cameras', desc: 'Custom camera systems with access control and cloud-based video management.', cat: 'DE.CM' },
+      { item: 'Access control', desc: 'Electric strikes and readers using cards, fobs, mobile credentials or keypads.', cat: 'PR.AA' },
+      { item: 'Enterprise CCTV', desc: 'Camera systems with cloud-based video management and access control integration.', cat: 'DE.CM' },
     ],
   },
   {
@@ -209,80 +207,41 @@ export const SERVICES: Service[] = [
     name: 'Mobile Surveillance Trailers',
     short: 'Mobile Surveillance Trailers',
     fns: ['DE'],
-    lede: '24/7 eyes in the sky on your property: solar-powered camera trailers, for rent or purchase.',
+    lede: 'Self-powered camera towers for sites that need watching, available to rent or buy.',
     body: [
-      'Apex delivers security camera trailers directly to your site, for rental or purchase.',
-      'Trailers tow from site to site and can carry your organisation’s branding. Free technical support is included for the length of the rental.',
+      'Our trailers bring CCTV to places without power or a network connection: construction sites, car parks, events and remote assets.',
+      'Each unit is towed into place, runs on solar power and can be moved as your site changes. Technical support is included throughout a rental.',
     ],
-    scopeTitle: 'Every trailer comes equipped with',
+    scopeTitle: 'Every trailer includes',
     scope: [
-      { item: '24/7 recording', desc: 'Continuous recording, day and night.' },
-      { item: 'Motion detection', desc: 'Automated email and text alerts when motion is detected.' },
-      { item: 'Solar power', desc: 'No gas needed.' },
-      { item: 'Remote viewing', desc: 'View and retrieve stored footage from anywhere.' },
-      { item: '20′ or 30′ mast', desc: 'Mounted on an industrial-grade trailer.' },
-      { item: 'Self monitoring', desc: '24/7 access to live feeds, with zone-based alerts by email or text.' },
-      { item: 'Central station monitoring', desc: 'Trained analysts monitor video alerts; emergency dispatch available at additional cost.' },
-      { item: 'Free technical support', desc: 'Included throughout the rental.' },
+      { item: 'Continuous recording', desc: 'Footage recorded day and night.' },
+      { item: 'Motion alerts', desc: 'Email and text notifications when movement is detected.' },
+      { item: 'Solar power', desc: 'No generator or fuel needed.' },
+      { item: 'Remote access', desc: 'Live view and recorded footage from anywhere.' },
+      { item: 'Telescopic mast', desc: 'Cameras raised high for a wide view, on a heavy-duty trailer.' },
+      { item: 'Self-monitoring', desc: 'Live feeds and zone-based alerts sent straight to your team.' },
+      { item: 'Monitored option', desc: 'Alerts watched by trained operators, with escalation available.' },
+      { item: 'Technical support', desc: 'Help whenever you need it during the rental.' },
     ],
   },
 ];
 
 export const svc = (slug: string) => SERVICES.find((s) => s.slug === slug)!;
 
-export const LEADERS = [
-  {
-    id: 'damond-singleton', name: 'Damond Singleton', role: 'Chief Executive Officer and Founder', img: 'img/damond.webp',
-    bio: 'Damond founded Apex with a mission to be an outstanding, first-class cybersecurity defender and leader, consistently crafting and delivering superlative, resilient cybersecurity and threat-mitigating outcomes. He is recognised as one of the top cybersecurity professionals in the industry for innovation and business acumen, with extensive experience at Fortune 100 companies.',
-  },
-  {
-    id: 'tremicka-bryant', name: 'Tremicka Bryant', role: 'Vice President of Procurement', img: 'img/tremicka.webp',
-    bio: 'An accomplished global sourcing leader with more than 17 years in the industry. Her competencies include procurement governance, strategic sourcing, vendor management and contract negotiation. She is recognised as an open-minded leader with a bias for action, ethics and integrity.',
-  },
-  {
-    id: 'corey-thurman', name: 'Corey Thurman', role: 'Chief Governance, Risk and Compliance Officer', img: 'img/corey.webp',
-    bio: 'A thought leader, coach and mentor to start-ups. Corey is a governance facilitator who ensures the effective delivery of strategic governance, legal and regulatory compliance, records management, and public and government relations.',
-  },
-  {
-    id: 'algarnon-stamps', name: 'Algarnon Stamps', role: 'Chief Technology Officer', img: 'img/algarnon.webp',
-    bio: 'An information technology scientist with an MBA and a Master’s in Project Management, a BS in Telecommunications Management, and certifications in security and virtualisation/VDI. He brings deep Linux expertise to every engagement.',
-  },
-  {
-    id: 'emery-de-cavitch', name: 'Emery De Cavitch', role: 'Chief Information Security Officer', img: 'img/emery.webp',
-    bio: 'More than 15 years in cybersecurity, specialising in incident handling, digital forensics and cloud incident handling teams.',
-  },
-];
-
-export const PARTNERS = [
-  { name: 'AppGuard', href: 'https://www.appguard.us/', img: 'img/appguard.webp' },
-  { name: 'Uponder', href: 'https://uponder.com/', img: 'img/uponder.webp' },
-  { name: 'Krimson Group', href: 'https://www.krimsongroup.com/', img: 'img/krimson.webp' },
-  { name: 'RangeForce', href: 'https://rangeforce.com', img: 'img/rangeforce.webp' },
-];
-
-
-const BLOG = CONTACT.live + '/security-insight-blog/';
-export const POSTS = [
-  { title: 'Hackers Are Allegedly Using Flipper Devices to Steal Teslas and Break Into Hotel Rooms', date: '2025-04-14', img: 'img/blog-flipper.webp', href: BLOG + 'eaipt3f2jmllrk3uorv9tffpvyq45f', fn: 'PR' as FnCode },
-  { title: 'Crowd Strikes!', date: '2024-07-30', img: 'img/blog-crowdstrike.webp', href: BLOG + 'crowd-strikes', fn: 'RS' as FnCode },
-  { title: 'Online Holiday Shopping: Be Careful!', date: '2023-12-06', img: 'img/blog-holiday.webp', href: BLOG + 'ntnu0ktxlmvtc50gv1dp0w389trynx', fn: 'PR' as FnCode },
-];
-
-// Facts a procurement officer needs for a vendor file. `pending` = Apex to supply before launch.
+// Facts a procurement officer needs for a supplier file. `pending` = Apex to supply before launch.
 export const VENDOR_FACTS: { label: string; value?: string; pending?: string }[] = [
-  { label: 'Legal name', value: 'Apex Cybersecurity Solutions Ltd.' },
-  { label: 'UK office', value: '52 High Street, Sevenoaks, Kent TN13 1JG' },
+  { label: 'Company', value: 'Apex Cyber Security' },
+  { label: 'Office', value: '52 High Street, Sevenoaks, Kent TN13 1JG' },
+  { label: 'Companies House number', pending: 'Apex to supply' },
+  { label: 'VAT number', pending: 'Apex to supply' },
   { label: 'Cyber Essentials / Cyber Essentials Plus', pending: 'Apex to supply' },
   { label: 'ISO/IEC 27001', pending: 'Apex to supply' },
-  { label: 'Cloud partnerships', value: 'Microsoft Azure and AWS' },
-  { label: 'NAICS codes', value: '541512, 541519' },
-  { label: 'UEI / CAGE', value: 'Q9F4N358L237' },
-  { label: 'Contract vehicles', value: 'GSA MAS Schedule, NWAC' },
+  { label: 'Cloud platforms', value: 'Microsoft Azure and AWS' },
 ];
 
 export const NAV = [
-  { label: 'About', items: [['Company', 'about.html'], ['Our Vision', 'our-vision.html'], ['Leadership', 'team.html']] },
+  { label: 'About', href: 'about.html' },
   { label: 'Services', items: [['All services by function', 'services.html'], ...SERVICES.map((s) => [s.short, `${s.slug}.html`])] },
-  { label: 'Institute', items: [['Learning Platform', 'learning-platform.html'], ['Membership Access', `${CONTACT.live}/membership-access`], ['Events', 'events.html'], ['Security Blog', 'security-insight-blog.html']] },
+  { label: 'Training', href: 'training.html' },
   { label: 'Careers', href: 'careers.html' },
 ] as { label: string; items?: string[][]; href?: string }[];

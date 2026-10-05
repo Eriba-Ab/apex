@@ -2,15 +2,15 @@
 import Base from '../layouts/Base.astro';
 import Wheel from '../components/Wheel.astro';
 import Icon from '../components/Icon.astro';
-import { CONTACT, FUNCTIONS, SERVICES, LEADERS, PARTNERS, VENDOR_FACTS } from '../data/site';
+import { CONTACT, FUNCTIONS, SERVICES, VENDOR_FACTS } from '../data/site';
 ---
-<Base title="Home" page="index" description="Apex Cybersecurity Solutions is an IT and cybersecurity firm with a UK office in Sevenoaks, Kent, covering every NIST CSF function: compliance, 24/7 managed detection and response, endpoint protection, network infrastructure, physical security and workforce training.">
+<Base title="Home" page="index" description="Apex Cyber Security is a cyber security firm in Sevenoaks, Kent, covering every NIST CSF function: compliance, 24/7 managed detection and response, endpoint protection, network infrastructure, physical security and training.">
 
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <h1>Govern to Recover. <span>One partner, end to end.</span></h1>
-        <p class="lede">Apex is an IT and cybersecurity firm that covers the whole framework, from compliance readiness and 24/7 managed detection to network builds, physical security and workforce training.</p>
+        <p class="lede">Apex Cyber Security covers the whole framework, from compliance readiness and 24/7 managed detection to network builds, physical security and workforce training.</p>
         <div class="actions">
           <a class="btn" href="contact-us.html">Start a conversation <Icon name="arrow" /></a>
           <a class="btn btn--line" href={CONTACT.phoneHref}><Icon name="phone" />Call {CONTACT.phone}</a>
@@ -48,7 +48,7 @@ import { CONTACT, FUNCTIONS, SERVICES, LEADERS, PARTNERS, VENDOR_FACTS } from '.
               </tr>
             ))}
             <tr>
-              <th scope="row"><a href="learning-platform.html">Apex Institute</a></th>
+              <th scope="row"><a href="training.html">Training</a></th>
               {FUNCTIONS.map((f) => f.code === 'PR'
                 ? <td class="m-on" data-fn={f.code}><span class="sr-only">{f.name}: yes</span></td>
                 : <td class="m-off"><span class="sr-only">{f.name}: no</span></td>)}
@@ -63,11 +63,11 @@ import { CONTACT, FUNCTIONS, SERVICES, LEADERS, PARTNERS, VENDOR_FACTS } from '.
     <div class="wrap watchband-grid">
       <div>
         <p class="watchband-clock" aria-hidden="true"><span data-clock-big>00:00</span><small data-clock-zone>UK</small></p>
-        <p class="muted watchband-sub">UK time, now. Apex’s Security Conservators (SC)® work from a cloud-powered virtual Security Operations Centre every hour of the day.</p>
+        <p class="muted watchband-sub">UK time, now. Our security operations centre is staffed every hour of the day, every day of the year.</p>
       </div>
       <div>
-        <h2 id="watch-title">“We watch, we protect, our focus is you.”</h2>
-        <p style="margin-top:1.5rem">Managed Detection and Response analyses packets and system processes in real time, triages critical events, and contains incidents with detailed guidance on remediation. Endpoint Detection and Response adds host isolation, so an attack is stopped before it spreads.</p>
+        <h2 id="watch-title">Someone is always watching.</h2>
+        <p style="margin-top:1.5rem">Managed detection and response correlates activity across your estate in real time, puts every alert in front of an analyst, and contains incidents with clear guidance on the fix. Endpoint detection and response adds device isolation, so an attack stops where it starts.</p>
         <div class="actions">
           <a class="btn" href="mdr.html">Managed Detection and Response</a>
           <a class="btn btn--line" href="edr.html">Endpoint Detection and Response</a>
@@ -93,56 +93,27 @@ import { CONTACT, FUNCTIONS, SERVICES, LEADERS, PARTNERS, VENDOR_FACTS } from '.
     </div>
   </section>
 
-  <section class="section leaders" aria-labelledby="leaders-title" style="padding-top:0">
-    <div class="wrap">
-      <div class="leaders-head">
-        <h2 id="leaders-title">Led by practitioners.</h2>
-        <a class="arrow-link" href="team.html">Meet the leadership <Icon name="arrow" /></a>
-      </div>
-      <ul class="leaders-list">
-        {LEADERS.map((l) => (
-          <li>
-            <a href={`team.html#${l.id}`}>
-              <img src={l.img} alt="" width="300" height="300" loading="lazy">
-              <span class="l-name">{l.name}</span>
-              <span class="l-role">{l.role}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </section>
 
-  <section class="section institute" data-band="PR" aria-labelledby="inst-title">
+  <section class="section training-band" data-band="PR" aria-labelledby="inst-title">
     <div class="wrap split">
       <div class="main">
-        <h2 id="inst-title">Building the next generation of cybersecurity analysts.</h2>
-        <p class="lede" style="margin-top:1.5rem">The Apex Institute, powered by CyberBit, takes learners to Junior Cybersecurity Analyst in 12 weeks with instructor-led sessions, hands-on labs and real-world simulations.</p>
-        <p class="muted">Organisations can also bring custom awareness workshops and simulations to their own staff.</p>
+        <h2 id="inst-title">Training analysts, and the teams around them.</h2>
+        <p class="lede" style="margin-top:1.5rem">Hands-on training that takes people from the fundamentals to working as a junior security analyst, using industry tools in realistic simulated environments.</p>
+        <p class="muted">We also run security awareness sessions and phishing simulations for your own staff.</p>
         <div class="actions">
-          <a class="btn" href="learning-platform.html">Explore the Learning Platform</a>
-          <a class="btn btn--line" href={`${CONTACT.live}/membership-access`} target="_blank" rel="noopener">Start a 7-day free trial <Icon name="external" /></a>
+          <a class="btn" href="training.html">Explore training</a>
+          <a class="btn btn--line" href="contact-us.html">Ask about training <Icon name="arrow" /></a>
         </div>
       </div>
       <dl class="side inst-facts">
-        <dt>Programme length</dt><dd>12 weeks</dd>
-        <dt>Outcome</dt><dd>Junior Cybersecurity Analyst</dd>
-        <dt>Certification prep</dt><dd>CompTIA Security+</dd>
-        <dt>Tools</dt><dd>Splunk, Elastic, SentinelOne, Carbon Black</dd>
-        <dt>Membership</dt><dd>12 months, with mentors and a private community</dd>
+        <dt>Format</dt><dd>Instructor-led sessions, labs and simulations</dd>
+        <dt>Outcome</dt><dd>Ready for junior analyst roles</dd>
+        <dt>Certification preparation</dt><dd>CompTIA Security+</dd>
+        <dt>For organisations</dt><dd>Awareness sessions and phishing simulations</dd>
       </dl>
     </div>
   </section>
 
-  <section class="section section--tight partners" aria-labelledby="partners-title">
-    <div class="wrap partners-row">
-      <h2 id="partners-title">Partners</h2>
-      <ul>
-        {PARTNERS.map((p) => <li><a href={p.href} target="_blank" rel="noopener"><img src={p.img} alt={p.name} loading="lazy"></a></li>)}
-        <li class="partner-text">CyberBit <span class="muted">training</span></li>
-      </ul>
-    </div>
-  </section>
 </Base>
 
 <script>
@@ -199,39 +170,20 @@ import { CONTACT, FUNCTIONS, SERVICES, LEADERS, PARTNERS, VENDOR_FACTS } from '.
 
   .cert-grid { display: grid; grid-template-columns: 5fr 7fr; gap: var(--s5); align-items: start; }
 
-  .leaders-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 1rem; margin-bottom: var(--s4); padding-top: var(--s5); border-top: 2px solid var(--ink); }
-  .leaders-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--s3); }
-  .leaders-list a { display: grid; gap: .2rem; text-decoration: none; }
-  .leaders-list img { width: 100%; max-width: 168px; aspect-ratio: 1; object-fit: cover; border-radius: 50%; margin-bottom: .9rem; filter: grayscale(1) contrast(1.05); transition: filter .5s var(--ease); }
-  .leaders-list a:hover img { filter: none; }
-  .l-name { font-family: var(--f-display); font-weight: 700; font-size: 1.15rem; font-variation-settings: 'wdth' 104; }
-  .l-role { font-size: var(--t-small); color: var(--ink-2); line-height: 1.35; }
-  .leaders-list a:hover .l-name { text-decoration: underline; text-underline-offset: .2em; }
 
   .inst-facts { margin: 0; font-size: var(--t-small); }
   .inst-facts dt { color: var(--muted); padding-top: .8rem; border-top: 1px solid color-mix(in srgb, var(--fg) 35%, transparent); }
   .inst-facts dd { margin: .15rem 0 .8rem; font-weight: 600; font-size: 1.05rem; }
 
-  .partners-row { display: grid; grid-template-columns: auto 1fr; gap: var(--s4); align-items: center; }
-  .partners h2 { font-family: var(--f-text); font-size: var(--t-small); font-weight: 600; letter-spacing: 0; color: var(--ink-2); }
-  .partners ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem 2.5rem; }
-  .partners img { height: 52px; width: auto; mix-blend-mode: multiply; filter: grayscale(1); opacity: .85; transition: filter .3s, opacity .3s; }
-  .partners a:hover img { filter: none; opacity: 1; }
-  .partner-text { font-family: var(--f-display); font-weight: 700; font-size: 1.4rem; font-variation-settings: 'wdth' 112; }
-  .partner-text .muted { font-family: var(--f-text); font-size: var(--t-micro); font-weight: 400; }
 
   @media (max-width: 1080px) {
     .hero-grid { grid-template-columns: 1fr; }
     .hero-copy { padding-top: 0; }
     .hero h1 { max-width: 14ch; }
-    .leaders-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   }
   @media (max-width: 860px) {
-    .profile-head, .watchband-grid, .partners-row { grid-template-columns: 1fr; }
+    .profile-head, .watchband-grid { grid-template-columns: 1fr; }
     .matrix .m-fn-name { display: none; }
-    .leaders-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .cert-grid { grid-template-columns: 1fr; gap: var(--s4); }
-    .partners ul { justify-content: flex-start; }
-    .partners img { height: 40px; }
   }
 </style>

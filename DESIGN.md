@@ -193,7 +193,7 @@ components:
 
 The site is written as a NIST Cybersecurity Framework 2.0 profile, not as a security brochure. Each of the six CSF functions, Govern, Identify, Protect, Detect, Respond and Recover, has its own color, and those six colors are the whole palette. They are not small chips on white. They fill full-width bands at full saturation, so a page reads as a run of function regions. Between the bands is a cool, slightly green-grey paper with navy ink. Hierarchy comes from weight, width and color, ruled off by hairlines like a printed standards document. There are no cards, boxes or drop shadows holding content.
 
-The tone is documentary and procurement-grade. Figures and tables are numbered and captioned ("Fig. 1", "Table 2."). Outcome IDs such as `DE.CM` sit in a monospace beside the plain-language line they index. Service pages print cleanly as one sheet for a bid file. Two live details keep the page from feeling static. A 24-hour watch line at the top shows where "now" falls in the Chicago day. The interactive CSF wheel answers "what do you cover" for any function in one click.
+The tone is documentary and procurement-grade. Figures and tables are numbered and captioned ("Fig. 1", "Table 2."). Outcome IDs such as `DE.CM` sit in a monospace beside the plain-language line they index. Service pages print cleanly as one sheet for a bid file. Two live details keep the page from feeling static. A 24-hour watch line at the top shows where "now" falls in the UK day (GMT or BST). The interactive CSF wheel answers "what do you cover" for any function in one click.
 
 The confirmed rejections come from the direction contract: no dark data-center photography, no neon padlocks, no card grid of services.
 
@@ -203,7 +203,7 @@ The confirmed rejections come from the direction contract: no dark data-center p
 - No enclosing boxes: hairline rules, a 2px ink rule to open a list, and filled cells.
 - Numbered, captioned figures and tables throughout.
 - One orchestrated entrance (the wheel). All other motion is state feedback on an exponential ease-out.
-- Square corners (2px at most), except true circles: portraits, the MBE seal and the watch dot.
+- Square corners (2px at most), except true circles: the watch dot.
 
 ## Colors
 
@@ -212,8 +212,8 @@ The palette is saturated and works by role. Six function hues carry meaning, and
 ### Primary
 - **Govern Gold** (gv): Govern. It fills the wheel's hub and the Govern band and takes navy ink (7.0:1). On the navy ink band it is also the hover color for the close-band contact lines and the text selection color.
 - **Identify Blue** (id): Identify. It is the one function color with a second, system-wide job as the interaction color: button hover fill, nav and link hover text, the 3px focus ring, and the second line of the hero headline. It takes white ink (5.3:1) and reads at 4.9:1 as text on paper.
-- **Protect Purple** (pr): Protect, and the Apex Institute band. It takes white ink (7.4:1).
-- **Detect Orange** (de): Detect. It also marks "now": the watch-line progress bar and dot, the big Chicago clock band, and the text selection color on paper. It takes navy ink (5.5:1).
+- **Protect Purple** (pr): Protect, and the Training band. It takes white ink (7.4:1).
+- **Detect Orange** (de): Detect. It also marks "now": the watch-line progress bar and dot, the big UK clock band, and the text selection color on paper. It takes navy ink (5.5:1).
 - **Respond Red** (rs): Respond, and the Contact page header with the incident call. It takes white ink (5.4:1).
 - **Recover Green** (rc): Recover. It takes white ink (5.5:1).
 
@@ -248,12 +248,12 @@ Inside any band, muted text is derived rather than fixed: `color-mix(in srgb, fg
 - **Monogram** (800, `clamp(5rem, 3rem + 7vw, 9.5rem)`, 0.8, width 125, -0.04em): The giant two-letter function code (GV, ID, PR …) that heads each function band on Services.
 - **Headline** (700, `clamp(2.3rem, 1.6rem + 2.8vw, 4rem)`, 1.04, width 108): Page h1, at a max of 18ch in page heads. Headings use `text-wrap: balance`.
 - **Title** (700, `clamp(1.7rem, 1.3rem + 1.6vw, 2.6rem)`, 1.04, width 108): Section h2.
-- **Title Small** (700, `clamp(1.2rem, 1.1rem + .4vw, 1.4rem)`, 1.2, width 100): h3 and prose subheads. List-row names (related services, contact values, leader names) use Archivo 700 at width 104 to 106 between title-sm and title size.
+- **Title Small** (700, `clamp(1.2rem, 1.1rem + .4vw, 1.4rem)`, 1.2, width 100): h3 and prose subheads. List-row names (related services, contact values) use Archivo 700 at width 104 to 106 between title-sm and title size.
 - **Lede** (400, `clamp(1.15rem, 1.05rem + .45vw, 1.4rem)`, 1.45): Opening paragraph, 46ch (52ch in page heads).
 - **Body** (400, 1.0625rem, 1.6): Running text, with a 68ch max measure and `text-wrap: pretty`.
 - **Small** (400, .9rem): Captions, table cells, definition-list terms, footer.
 - **Label** (600, .8rem, no tracking, sentence case): Table column heads, footer column heads, the watch strip. Labels are never uppercase and never letter-spaced.
-- **Code** (Red Hat Mono 500, .8rem, tabular figures): Framework IDs (`DE.CM`, `GV.PO`), function codes and the watch-strip clock. The large Chicago clock on the Detect band is Red Hat Mono 700 at `clamp(4rem, 2.2rem + 8vw, 9rem)`.
+- **Code** (Red Hat Mono 500, .8rem, tabular figures): Framework IDs (`DE.CM`, `GV.PO`), function codes and the watch-strip clock. The large UK clock on the Detect band is Red Hat Mono 700 at `clamp(4rem, 2.2rem + 8vw, 9rem)`.
 
 ### Named Rules
 **The Expanded Display Rule.** Archivo always runs wider than normal: 108 for headings, 112 for display, 125 for monograms and 104 to 106 for row names. Only h3 returns to 100. A normal-width Archivo heading is off-system.
@@ -290,7 +290,7 @@ The system is flat. Depth comes from tonal layering (paper against full-saturati
 
 ## Shapes
 
-Corners are square. Buttons and the focus ring take a 2px corner (`hairline`) that only softens the edge. Bands, matrix cells, wedge fills, photographs and figures are fully square. True circles are the only rounded forms, and each has a reason: leadership portraits (grayscale, back to color on hover), the MBE certification seal (a 2px ink ring with "MBE" in Archivo 800 at width 120), and the watch-line "now" dot. The recurring silhouette is the small filled square of the function mark, sized at .8em in the function color.
+Corners are square. Buttons and the focus ring take a 2px corner (`hairline`) that only softens the edge. Bands, matrix cells, wedge fills, photographs and figures are fully square. The only true circle is the watch-line "now" dot. The logo mark is a square-mitred peak, not a rounded form. The recurring silhouette is the small filled square of the function mark, sized at .8em in the function color.
 
 The wheel is the one curved geometry. It has five annular wedges (outer radius 270, inner 112, 72° each) around a Govern hub (radius 98), and the wedges are separated by 5px paper strokes. Rim ticks count the services under each function.
 
@@ -316,7 +316,7 @@ Square, solid and readable. They should feel like form controls on an official d
 - **Link rows (function band list, related services, contact lines, close lines):** Grid rows of mono ID, label and arrow, with 1px hairlines and a 2px rule on top. On hover the arrow nudges 5px and the label underlines or turns Identify Blue.
 
 ### Navigation
-- **Watch strip:** A 38px navy ink band above the header. It holds "Security Conservators (SC)® on watch, 24 hours a day", a 24-hour track with 25 ticks (every sixth one taller), an orange elapsed bar and "now" dot set from Chicago time, a mono clock "Chicago HH:MM CT", and the incident phone link. Below 860px the track hides, and below 520px the label hides too, so the phone is always shown.
+- **Watch strip:** A 38px navy ink band above the header. It holds "Security operations on watch, 24 hours a day", a 24-hour track with 25 ticks (every sixth one taller), an orange elapsed bar and "now" dot set from UK time (Europe/London), a mono clock "UK HH:MM BST" (GMT in winter), and the incident phone link. Below 860px the track hides, and below 520px the label hides too, so the phone is always shown.
 - **Header:** Sticky, 76px, glass paper, with a 48px logo. Nav links are Public Sans 600 at .975rem with a 44px target, and turn Identify Blue on hover. The current page gets a 2px inset ink underline. Dropdowns open on hover (pointer devices) or click, have a 2px ink top border and the dropdown-lift shadow, and fade with a 4px rise. The first item is bold. The "Contact us" primary button closes the row.
 - **Mobile:** Below 1080px a 48px burger opens a full-screen paper sheet with focus trapped inside. It holds Archivo 700 1.35rem rows (`details` disclosures for groups) separated by hairlines, and ends in a full-width "Call" button.
 - **Footer:** A 1.4fr + 4 column grid on paper. Column heads are slate labels. A hairline base row carries the NIST non-endorsement notice.
@@ -333,7 +333,7 @@ Fig. 1 on the home page and the site's working index. It is a tablist of six fun
 - **Access:** Full ARIA tabs with arrow, Home and End keys. Clicking a wedge selects the matching tab.
 
 ### Photography
-Photographs are product evidence (key card reader, camera range, surveillance trailer, Chicago skyline) shown square-cornered inside a numbered, captioned figure. Partner logos are grayscale with a multiply blend at 85% opacity and return to color on hover. A blog post with no image gets a function-band tile showing its function code instead of a stock image.
+The site currently ships no photographs: Apex has no confirmed imagery yet, and the earlier reference imagery belonged to a different company and was removed. Any future photograph must be Apex's own, shown square-cornered inside a numbered, captioned figure. Until then, typography, function bands and the CSF wheel carry the visual weight.
 
 ## Do's and Don'ts
 
@@ -353,7 +353,7 @@ Photographs are product evidence (key card reader, camera range, surveillance tr
 - **Don't** enclose content in cards, tiles or bordered boxes, and don't lift content with shadows.
 - **Don't** use a function color for plain decoration, as a tint or a gradient, or in a role unrelated to its function.
 - **Don't** add colors beyond the six function hues and the paper and ink neutrals.
-- **Don't** round content corners beyond 2px. Circles are reserved for portraits, the MBE seal and the "now" dot.
+- **Don't** round content corners beyond 2px. Circles are reserved for the "now" dot.
 - **Don't** use dark data-center photography, neon padlock imagery or a card grid of services.
 - **Don't** set labels in uppercase or with letter-spacing. Labels are sentence case at .8rem, weight 600.
 - **Don't** add a second orchestrated entrance or scroll-triggered reveals.
