@@ -1,11 +1,18 @@
-// Site content. Copy is drawn from apexcybersecurity.org (October 2026) and tightened;
-// anything Apex has not published yet is marked `pending` and renders as a visible slot.
+// Site content for the UK site (apexcybersecurity.co.uk). Copy is drawn from apexcybersecurity.org
+// (October 2026), tightened and localised; anything Apex has not published yet is marked `pending`.
 
 export const CONTACT = {
   email: 'info@apexcybersecurity.co.uk',
-  phone: '+44 20 3865 1486',
-  phoneHref: 'tel:+442038651486',
-  city: 'London, UK',
+  phone: '01322 400328',
+  phoneHref: 'tel:+441322400328',
+  mobile: '07881 813550',
+  mobileHref: 'tel:+447881813550',
+  city: 'Sevenoaks, Kent',
+  address: ['52 High Street', 'Sevenoaks', 'Kent', 'TN13 1JG'],
+  mapHref: 'https://www.google.com/maps/search/?api=1&query=52+High+Street+Sevenoaks+Kent+TN13+1JG',
+  timeZone: 'Europe/London',
+  linkedin: 'https://www.linkedin.com/in/damondsingleton/',
+  live: 'https://www.apexcybersecurity.org', // membership area and blog posts are hosted on the US site
 };
 
 export type FnCode = 'GV' | 'ID' | 'PR' | 'DE' | 'RS' | 'RC';
@@ -16,7 +23,7 @@ export const FUNCTIONS: { code: FnCode; name: string; slug: string; line: string
   { code: 'PR', name: 'Protect', slug: 'protect', line: 'Safeguard endpoints, networks, doors and the people who use them.' },
   { code: 'DE', name: 'Detect', slug: 'detect', line: 'Watch everything, around the clock, and find attacks early.' },
   { code: 'RS', name: 'Respond', slug: 'respond', line: 'Contain incidents fast, with clear guidance on what to do next.' },
-  { code: 'RC', name: 'Recover', slug: 'recover', line: 'Restore operations and come back with stronger defenses.' },
+  { code: 'RC', name: 'Recover', slug: 'recover', line: 'Restore operations and come back with stronger defences.' },
 ];
 
 export const fn = (code: FnCode) => FUNCTIONS.find((f) => f.code === code)!;
@@ -29,7 +36,7 @@ export const PROFILE: Record<FnCode, { cat: string; item: string; href: string }
     { cat: 'GV.OV', item: 'Governance, risk and compliance oversight led by a Chief GRC Officer', href: 'team.html#corey-thurman' },
   ],
   ID: [
-    { cat: 'ID.RA', item: 'Security risk assessments across infrastructure, policy and user behavior', href: 'consulting.html#scope' },
+    { cat: 'ID.RA', item: 'Security risk assessments across infrastructure, policy and user behaviour', href: 'consulting.html#scope' },
     { cat: 'ID.RA', item: 'Vulnerability and threat analysis to find weaknesses and compliance gaps', href: 'consulting.html#scope' },
     { cat: 'ID.RA', item: 'Vulnerability management: misconfigurations and exposed credentials', href: 'mdr.html#scope' },
     { cat: 'ID.IM', item: 'Security architecture review for network, cloud and endpoints', href: 'consulting.html#scope' },
@@ -43,10 +50,10 @@ export const PROFILE: Record<FnCode, { cat: string; item: string; href: string }
   ],
   DE: [
     { cat: 'DE.CM', item: '24/7 Managed Detection and Response from a cloud-powered virtual SOC', href: 'mdr.html' },
-    { cat: 'DE.CM', item: 'Continuous endpoint monitoring, recording and centralizing of activity', href: 'edr.html#scope' },
+    { cat: 'DE.CM', item: 'Continuous endpoint monitoring, recording and centralising of activity', href: 'edr.html#scope' },
     { cat: 'DE.AE', item: 'Real-time alerting and triage of critical events', href: 'mdr.html#scope' },
     { cat: 'DE.CM', item: 'Enterprise security cameras with cloud video management', href: 'integrated-security-systems.html#cameras' },
-    { cat: 'DE.CM', item: 'Solar-powered mobile surveillance trailers, delivered nationwide', href: 'mobile-surveillance-trailers.html' },
+    { cat: 'DE.CM', item: 'Solar-powered mobile surveillance trailers, for rent or purchase', href: 'mobile-surveillance-trailers.html' },
   ],
   RS: [
     { cat: 'RS.MI', item: 'Host isolation that stops lateral spread on your behalf', href: 'edr.html#scope' },
@@ -79,15 +86,15 @@ export const SERVICES: Service[] = [
     fns: ['GV', 'ID', 'RS', 'RC'],
     lede: 'Assessment and advisory work that shows you where you stand, closes the gaps, and keeps you compliant.',
     body: [
-      'Apex provides comprehensive cybersecurity assessment and consulting services designed to help organizations identify risks, strengthen defenses and align with industry best practices.',
+      'Apex provides comprehensive cybersecurity assessment and consulting services designed to help organisations identify risks, strengthen defences and align with industry best practices.',
       'Our advisory work covers risk and compliance end to end: identifying security gaps, mitigating threats, measuring objectives and building defensive strategies your leadership can stand behind.',
     ],
     scopeTitle: 'Scope of consulting services',
     scope: [
-      { item: 'Security risk assessments', desc: 'In-depth evaluation of your security posture, including infrastructure, policies and user behavior.', cat: 'ID.RA' },
+      { item: 'Security risk assessments', desc: 'In-depth evaluation of your security posture, including infrastructure, policies and user behaviour.', cat: 'ID.RA' },
       { item: 'Vulnerability and threat analysis', desc: 'Scanning and assessment of systems to find potential threats, weaknesses and compliance gaps.', cat: 'ID.RA' },
       { item: 'Governance, risk and compliance readiness', desc: 'Guidance on achieving and maintaining standards such as NIST, ISO 27001, HIPAA and CMMC.', cat: 'GV.PO' },
-      { item: 'Security architecture review', desc: 'Analysis and optimization of network, cloud and endpoint architecture to reduce risk exposure.', cat: 'ID.IM' },
+      { item: 'Security architecture review', desc: 'Analysis and optimisation of network, cloud and endpoint architecture to reduce risk exposure.', cat: 'ID.IM' },
       { item: 'Incident response planning and tabletop exercises', desc: 'Development and testing of response protocols so your team is ready before a breach.', cat: 'RS.MA' },
       { item: 'Security awareness and training', desc: 'Custom workshops and simulations that improve cyber hygiene and reduce human error.', cat: 'PR.AT' },
     ],
@@ -97,10 +104,10 @@ export const SERVICES: Service[] = [
     name: 'Managed Detection and Response',
     short: 'Managed Detection & Response',
     fns: ['DE', 'RS', 'ID'],
-    lede: '24/7 protection and monitoring from a cloud-powered virtual Security Operations Center.',
+    lede: '24/7 protection and monitoring from a cloud-powered virtual Security Operations Centre.',
     body: [
-      'Apex delivers Managed Detection and Response through virtualized SIEM technology: multi-tenant, cloud security delivered as a service (SECaaS).',
-      'From a cloud-powered virtual Security Operations Center, our Security Conservators (SC)® monitor your environment and respond to threats, analyzing packets and system processes in real time.',
+      'Apex delivers Managed Detection and Response through virtualised SIEM technology: multi-tenant, cloud security delivered as a service (SECaaS).',
+      'From a cloud-powered virtual Security Operations Centre, our Security Conservators (SC)® monitor your environment and respond to threats, analysing packets and system processes in real time.',
     ],
     scopeTitle: 'What MDR includes',
     scope: [
@@ -120,15 +127,15 @@ export const SERVICES: Service[] = [
     fns: ['PR', 'DE', 'RS'],
     lede: 'Threat hunting, identification and mitigation on every laptop, desktop, server and mobile device.',
     body: [
-      'Apex Endpoint Detection and Response protects endpoints through threat definitions, machine and behavioral learning, and isolation.',
-      'It identifies suspicious behavior and known threats, and uses next-gen endpoint prevention to block known and new attacks on compromised endpoints.',
+      'Apex Endpoint Detection and Response protects endpoints through threat definitions, machine and behavioural learning, and isolation.',
+      'It identifies suspicious behaviour and known threats, and uses next-gen endpoint prevention to block known and new attacks on compromised endpoints.',
     ],
     scopeTitle: 'Key capabilities',
     scope: [
-      { item: '24x7 continuous monitoring', desc: 'Activity across endpoints is recorded and centralized around the clock.', cat: 'DE.CM' },
+      { item: '24x7 continuous monitoring', desc: 'Activity across endpoints is recorded and centralised around the clock.', cat: 'DE.CM' },
       { item: 'Prevention of known attacks', desc: 'Next-gen prevention blocks known threats before they run.', cat: 'PR.PS' },
       { item: 'Detection of unknown attacks', desc: 'Machine learning and advanced analytics detect and isolate new attacks.', cat: 'DE.AE' },
-      { item: 'Alerting', desc: 'Alerts on confirmed threats and suspicious behavior.', cat: 'DE.AE' },
+      { item: 'Alerting', desc: 'Alerts on confirmed threats and suspicious behaviour.', cat: 'DE.AE' },
       { item: 'Tactical containment', desc: 'Host isolation on your behalf to stop lateral spread.', cat: 'RS.MI' },
       { item: 'Active threat hunting', desc: 'Analysts look for threats that have not triggered an alert yet.', cat: 'RS.AN' },
       { item: 'Root cause determination', desc: 'Every incident is traced to how it started.', cat: 'RS.AN' },
@@ -143,8 +150,8 @@ export const SERVICES: Service[] = [
     fns: ['PR', 'ID'],
     lede: 'DevOps consulting and engineering from Azure and AWS certified partners.',
     body: [
-      'Apex is equipped with best-in-business developers. Collaborate with us to design precise solutions and applications that improve how your organization works.',
-      'We build, scale, optimize, maintain and manage to your requirements, with security designed in from the first sprint rather than bolted on at the end.',
+      'Apex is equipped with best-in-business developers. Collaborate with us to design precise solutions and applications that improve how your organisation works.',
+      'We build, scale, optimise, maintain and manage to your requirements, with security designed in from the first sprint rather than bolted on at the end.',
     ],
     scopeTitle: 'Software development practice areas',
     scope: [
@@ -204,8 +211,8 @@ export const SERVICES: Service[] = [
     fns: ['DE'],
     lede: '24/7 eyes in the sky on your property: solar-powered camera trailers, for rent or purchase.',
     body: [
-      'Apex delivers security camera trailers directly to your job site, usually within one to five business days, anywhere in the United States or Canada.',
-      'Trailers tow from site to site and can carry your organization’s branding. Free technical support is included for the length of the rental.',
+      'Apex delivers security camera trailers directly to your site, for rental or purchase.',
+      'Trailers tow from site to site and can carry your organisation’s branding. Free technical support is included for the length of the rental.',
     ],
     scopeTitle: 'Every trailer comes equipped with',
     scope: [
@@ -226,11 +233,11 @@ export const svc = (slug: string) => SERVICES.find((s) => s.slug === slug)!;
 export const LEADERS = [
   {
     id: 'damond-singleton', name: 'Damond Singleton', role: 'Chief Executive Officer and Founder', img: 'img/damond.webp',
-    bio: 'Damond founded Apex with a mission to be an outstanding, first-class cybersecurity defender and leader, consistently crafting and delivering superlative, resilient cybersecurity and threat-mitigating outcomes. He is recognized as one of the top cybersecurity professionals in the industry for innovation and business acumen, with extensive experience at Fortune 100 companies.',
+    bio: 'Damond founded Apex with a mission to be an outstanding, first-class cybersecurity defender and leader, consistently crafting and delivering superlative, resilient cybersecurity and threat-mitigating outcomes. He is recognised as one of the top cybersecurity professionals in the industry for innovation and business acumen, with extensive experience at Fortune 100 companies.',
   },
   {
     id: 'tremicka-bryant', name: 'Tremicka Bryant', role: 'Vice President of Procurement', img: 'img/tremicka.webp',
-    bio: 'An accomplished global sourcing leader with more than 17 years in the industry. Her competencies include procurement governance, strategic sourcing, vendor management and contract negotiation. She is recognized as an open-minded leader with a bias for action, ethics and integrity.',
+    bio: 'An accomplished global sourcing leader with more than 17 years in the industry. Her competencies include procurement governance, strategic sourcing, vendor management and contract negotiation. She is recognised as an open-minded leader with a bias for action, ethics and integrity.',
   },
   {
     id: 'corey-thurman', name: 'Corey Thurman', role: 'Chief Governance, Risk and Compliance Officer', img: 'img/corey.webp',
@@ -238,11 +245,11 @@ export const LEADERS = [
   },
   {
     id: 'algarnon-stamps', name: 'Algarnon Stamps', role: 'Chief Technology Officer', img: 'img/algarnon.webp',
-    bio: 'An information technology scientist with an MBA and a Master’s in Project Management, a BS in Telecommunications Management, and certifications in security and virtualization/VDI. He brings deep Linux expertise to every engagement.',
+    bio: 'An information technology scientist with an MBA and a Master’s in Project Management, a BS in Telecommunications Management, and certifications in security and virtualisation/VDI. He brings deep Linux expertise to every engagement.',
   },
   {
     id: 'emery-de-cavitch', name: 'Emery De Cavitch', role: 'Chief Information Security Officer', img: 'img/emery.webp',
-    bio: 'More than 15 years in cybersecurity, specializing in incident handling, digital forensics and cloud incident handling teams.',
+    bio: 'More than 15 years in cybersecurity, specialising in incident handling, digital forensics and cloud incident handling teams.',
   },
 ];
 
@@ -253,29 +260,20 @@ export const PARTNERS = [
   { name: 'RangeForce', href: 'https://rangeforce.com', img: 'img/rangeforce.webp' },
 ];
 
-const GUSTO = 'https://jobs.gusto.com/postings/apex-cybersecurity-solutions-';
-export const JOBS = [
-  { title: 'Jr. Cybersecurity Analyst', fn: 'DE' as FnCode, href: GUSTO + 'jr-cybersecurity-analyst-0549fa91-fb00-443c-830e-dcb24945e739' },
-  { title: 'Cybersecurity Analyst', fn: 'DE' as FnCode, href: GUSTO + 'cybersecurity-analyst-7b340f4e-ae3f-44a0-bebb-9738e42c7338' },
-  { title: 'Senior Cybersecurity Analyst', fn: 'RS' as FnCode, href: GUSTO + 'senior-security-analyst-6932f0f3-e65f-40ba-bea8-a34da4d236df' },
-  { title: 'Cloud and Virtualization Infrastructure Engineer', fn: 'PR' as FnCode, href: GUSTO + 'cloud-and-virtualization-infrastructure-engineer-abff896d-b387-4aea-9fbb-393d6c39b25d' },
-  { title: 'Network Engineer', fn: 'PR' as FnCode, href: GUSTO + 'network-engineer-937542d6-f1e7-4dd4-90d1-0ee3fab6d284' },
-  { title: 'Other IT roles', fn: 'ID' as FnCode, href: GUSTO + 'it-related-roles-5c9f5cc6-86ff-497b-82e7-4e70ced730f9' },
-];
 
 const BLOG = CONTACT.live + '/security-insight-blog/';
 export const POSTS = [
   { title: 'Hackers Are Allegedly Using Flipper Devices to Steal Teslas and Break Into Hotel Rooms', date: '2025-04-14', img: 'img/blog-flipper.webp', href: BLOG + 'eaipt3f2jmllrk3uorv9tffpvyq45f', fn: 'PR' as FnCode },
   { title: 'Crowd Strikes!', date: '2024-07-30', img: 'img/blog-crowdstrike.webp', href: BLOG + 'crowd-strikes', fn: 'RS' as FnCode },
-  { title: 'Black Cybersecurity Professionals, Chicago', date: '2023-12-20', img: '', href: BLOG + 'black-cybersecurity-professionals-chicago-networking-event', fn: 'GV' as FnCode },
   { title: 'Online Holiday Shopping: Be Careful!', date: '2023-12-06', img: 'img/blog-holiday.webp', href: BLOG + 'ntnu0ktxlmvtc50gv1dp0w389trynx', fn: 'PR' as FnCode },
 ];
 
 // Facts a procurement officer needs for a vendor file. `pending` = Apex to supply before launch.
 export const VENDOR_FACTS: { label: string; value?: string; pending?: string }[] = [
   { label: 'Legal name', value: 'Apex Cybersecurity Solutions Ltd.' },
-  { label: 'Headquarters', value: 'Sevenoaks, Kent, UK' },
-  { label: 'Diversity certification', value: 'Minority Business Enterprise (MBE), Supplying Place, UK' },
+  { label: 'UK office', value: '52 High Street, Sevenoaks, Kent TN13 1JG' },
+  { label: 'Cyber Essentials / Cyber Essentials Plus', pending: 'Apex to supply' },
+  { label: 'ISO/IEC 27001', pending: 'Apex to supply' },
   { label: 'Cloud partnerships', value: 'Microsoft Azure and AWS' },
   { label: 'NAICS codes', value: '541512, 541519' },
   { label: 'UEI / CAGE', value: 'Q9F4N358L237' },
@@ -286,5 +284,5 @@ export const NAV = [
   { label: 'About', items: [['Company', 'about.html'], ['Our Vision', 'our-vision.html'], ['Leadership', 'team.html']] },
   { label: 'Services', items: [['All services by function', 'services.html'], ...SERVICES.map((s) => [s.short, `${s.slug}.html`])] },
   { label: 'Institute', items: [['Learning Platform', 'learning-platform.html'], ['Membership Access', `${CONTACT.live}/membership-access`], ['Events', 'events.html'], ['Security Blog', 'security-insight-blog.html']] },
-  { label: 'Careers', href: 'chicagocareers.html' },
+  { label: 'Careers', href: 'careers.html' },
 ] as { label: string; items?: string[][]; href?: string }[];
