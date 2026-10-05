@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Astro build output and cache
+site/dist/
+site/.astro/
+
+# Netlify local state
+.netlify/
+site/.netlify/
